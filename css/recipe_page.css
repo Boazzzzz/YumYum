@@ -197,6 +197,12 @@ select::-ms-expand {
    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
 }
 
+.meal-link {
+   text-decoration: none;
+   color: inherit;
+   display: block;
+}
+
 .meal-content {
    padding: 3.2rem 4.8rem 4.8rem;
 }
