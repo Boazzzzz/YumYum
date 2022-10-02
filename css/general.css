@@ -1,0 +1,328 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 28 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights:
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights:
+Default: 1
+Small : 1.05
+medium : 1.2
+Paragraph default: 1.6
+
+- Letter spacing
+-0.5px
+0.75px
+
+- SPACING SYSTEM (px)
+2 / 4 / 6 / 8 / 12 / 16 / 24 / 32 / 40 / 48 / 64 / 80 / 96 / 128
+
+--- 02 COLORS
+
+- Primary: #7AD7A7
+- Tints: 
+#f2fbf6
+#e4f7ed
+#d7f3e5
+#6ec296
+
+- Shades: #6ec296
+- Acents:
+- Greys:
+#888
+#767676
+#6f6f6f
+#555
+#333
+#34495e
+
+--- 05 SHADOWS
+
+- box-shadow:
+# 0 2px 3px 0 rgba(0, 0, 0, 10%);
+
+--- 06 BORDER-RADIUS
+
+Default: 9px
+Medium: 11px
+Large: 60px
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 6 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* font-size: 10px;
+    10px / 16px = 0.625 = 62.5%
+    Percentage of user's browser font-size setting */
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #555;
+}
+
+/*********************************/
+/* GNEERAL REUSABLE COMPONENTS */
+/*********************************/
+
+.container {
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    row-gap: 9.6rem;
+    column-gap: 6.4rem;
+}
+
+.grid:not(:last-child) {
+    margin-bottom: 9.6rem;
+}
+
+.grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.grid--7-cols {
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.grid-h-v-center {
+    justify-items: center;
+    align-items: center;
+}
+
+.grid--center-v {
+    align-items: center;
+}
+
+.logo {
+    height: 5.2rem;
+}
+
+.heading-primary,
+.heading-secondary {
+    font-weight: 700;
+    color: #333;
+    letter-spacing: -0.5px;
+}
+
+.heading-primary {
+    font-size: 5.2rem;
+    line-height: 1.05;
+    margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+    font-size: 4.4rem;
+    line-height: 1.2;
+    margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+}
+
+.subheading {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #6ec296;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    letter-spacing: 0.75px;
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.6rem 3.2rem;
+    border-radius: 9px;
+    transition: all 0.3s;    
+}
+
+.btn--full:link,
+.btn--full:visited {
+    background-color: #7AD7A7;
+    color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+    background-color: #6ec296;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+    background-color: #fff;
+    color: #555;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+    background-color: #f2fbf6;
+    box-shadow: inset 0 0 0 3px #fff;
+}
+
+.link:link,
+.link:visited {
+    display: inline-block;
+    color: #7AD7A7;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+    color: #6ec296;
+    border-bottom: 1px solid transparent;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.list-item {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.list-icon {
+    width: 3rem;
+    height: 3rem;
+    color: #7AD7A7;
+}
+
+/* MEAL TAGS */
+
+.meal-tags {
+    margin-bottom: 1.2rem;
+    display: flex;
+    gap: 0.4rem;
+}
+
+.tag {
+    display:inline-block;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #333;
+    border-radius: 100px;
+    font-weight: 600;
+    opacity: 80%;
+}
+
+.tag--vegitarian {
+    background-color: #51cf66;
+}
+
+.tag--vegan {
+    background-color: #94d82d;
+}
+
+.tag--paleo {
+    background-color: #ffd43b;
+}
+
+.tag--keto {
+    background-color: #ffc800;
+}
+
+.all-recipes {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+/* HELPER / SETTINGS CLASSES */
+
+.margin-bottom-none {
+    margin-bottom: 0 !important;
+}
+
+.margin-right-sm {
+    margin-right: 1.6rem !important;
+}
+
+.margin-bottom-sm {
+    margin-bottom: 1.6rem !important;
+}
+
+.margin-bottom-md {
+    margin-bottom: 4.8rem !important;
+}
+
+.padding-bottom-lg {
+    padding-bottom: 9.6rem !important;
+}
+
+.column-gap-sm {
+    column-gap: 1.6rem;
+}
+
+.row-gap-sm {
+    row-gap: 1.6rem;
+}
+
+.coloum-gap-md {
+    column-gap: 4.8rem;
+}
+
+.row-gap-md {
+    row-gap: 4.8rem;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.width--fit-content {
+    width: fit-content;
+}
+
+strong {
+    font-weight: 500;
+}

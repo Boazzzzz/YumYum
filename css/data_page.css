@@ -1,0 +1,122 @@
+/*********************************/
+/* DATA PAGE GENERAL */
+/*********************************/
+
+.data-input,
+.data-select {
+   width: 100%;
+   font-size: 1.4rem;
+   padding: 0.8rem;
+   border: 1px solid #888;
+   outline: none;
+   color: #888;
+}
+
+.data-flex-row {
+   display: flex;
+   gap: 3rem;
+}
+
+.price-detail {
+   display: flex;
+   justify-content: space-between;
+}
+
+.price-detail span {
+   color: #888;
+   font-size: 1.8rem;
+}
+
+/* ------------------------------ */
+
+main {
+   padding-bottom: 9.6rem;
+}
+
+.data-page-header {
+   justify-content: flex-start;
+   border-bottom: 2px solid #6ec296;
+   margin-bottom: 4.8rem;
+}
+
+.data-nav {
+   margin-left: 20%;
+}
+
+.data-nav-text {
+   font-size: 1.8rem;
+   font-weight: 500;
+   color: #333;
+}
+
+.data-nav-text span {
+   color: #6ec296;
+}
+
+.data {
+   width: 60rem;
+}
+
+.hint {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   gap: 2.4rem;
+}
+
+.hint a,
+.hint span {
+   font-size: 1.4rem;
+}
+
+.data-flex-column {
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   padding-top: 3rem;
+}
+
+.data-flex-column span {
+   color: #7AD7A7;
+   font-size: 2rem;
+}
+
+.price-details {
+   padding: 2.4rem;
+   border-left: 1px solid #333;
+}
+
+.discpunt-code {
+   margin-top: 2.4rem;
+}
+
+.discount-code-input {
+   flex-grow: 1;
+}
+
+.price-total {
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   padding-top: 3.2rem;
+}
+
+.price-total :nth-child(3) span {
+   font-size: 3rem;
+   color: #000;
+}
+
+.month-total {
+   border-top: 1px solid #333;
+   border-bottom: 1px solid #333;
+   padding: 2.4rem 0;
+}
+
+.btn-continue {
+   width: fit-content;
+   align-self: flex-end;
+}
+
+
+
+

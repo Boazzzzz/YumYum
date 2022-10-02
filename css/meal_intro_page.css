@@ -1,0 +1,395 @@
+/*********************************/
+/* General */
+/*********************************/
+
+.shadow-box {
+   height: fit-content;
+   padding: 1.6rem;
+   background-color: #fff;
+   border-radius: 11px;
+   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 10%);
+}
+
+.header {
+   background-color: #fff;
+}
+
+main {
+   background-color: #f2fbf6;
+}
+
+/*********************************/
+/* MEAL DETAILS SECTION */
+/*********************************/
+
+.section-meal-details {
+   padding-bottom: 9.6rem;
+}
+
+.meal {
+   width: 80rem;
+   height: fit-content;
+   background-color: #fff;
+   margin-top: 4.8rem;
+   padding: 1.6rem;
+   border-radius: 11px;
+   grid-column: 1 / 2 span;
+}
+
+.meal-name {
+   font-size: 2.4rem;
+}
+
+.meal-name span {
+   color: #333;
+   font-size: 3.6rem;
+   font-weight: 600;
+   letter-spacing: -0.5px;
+}
+
+.meal-info {
+   width: fit-content;
+   padding-top: 2rem;
+}
+
+.meal-info p {
+   font-size: 1.6rem;
+}
+
+.lvs {
+   display: flex;
+   align-items: center;
+   gap: 0.6rem;
+}
+
+.circle-point {
+   width: 0.6rem;
+   height: 0.6rem;
+   background-color: rgb(224, 224, 27);
+   border-radius: 50%;
+}
+
+.circle-point--black {
+   background-color: #000;
+}
+
+.meal img {
+   width: 100%;
+}
+
+.cal-catogoies {
+   display: flex;
+   align-items: center;
+   gap: 1.6rem;
+}
+
+.calories {
+   font-size: 1.8rem;
+}
+
+.rating {
+   margin-left: auto;
+   font-size: 3.6rem;
+   overflow:hidden;
+}
+
+.rating input {
+float: right;
+opacity: 0;
+position: absolute;
+}
+
+.rating a,
+.rating label {
+   float:right;
+   color: #aaa;
+   text-decoration: none;
+   -webkit-transition: color .4s;
+   -moz-transition: color .4s;
+   -o-transition: color .4s;
+   transition: color .4s;
+}
+
+.rating label:hover ~ label,
+.rating input:focus ~ label,
+.rating label:hover,
+.rating a:hover,
+.rating a:hover ~ a,
+.rating a:focus,
+.rating a:focus ~ a		{
+   color: orange;
+   cursor: pointer;
+}
+
+.rating2 {
+   direction: rtl;
+}
+
+.rating2 a {
+   float:none
+}
+
+.rating p {
+   font-size: 1.2rem;
+   font-weight: 500;
+   margin-top: 0.6rem;
+}
+
+.nutrition {
+   margin-top: 12.8rem;
+   grid-column: 3 / 4;
+   grid-row: 1 / 3 span;
+}
+
+.nutrition-heading {
+   font-size: 2.4rem;
+   padding-bottom: 2rem;
+   letter-spacing: -0.75px;
+}
+
+.per-serving {
+   font-size: 2rem;
+   font-weight: 500;
+   text-align: end;
+   padding-bottom: 1.6rem;
+}
+
+.list-item--nutrition {
+   padding-bottom: 1.6rem;
+   justify-content: space-between;
+   border-bottom: 1px solid #6ec296;
+}
+
+.list-item--nutrition--first {
+   padding-top: 1.6rem;
+   border-top: 1px solid #6ec296;
+}
+
+.list-item--nutrition span {
+   color: #333;
+   font-size: 1.6rem;
+   font-style: italic;
+}
+
+.nutrition-info {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1.2rem;
+   padding-top: 1.2rem;
+}
+
+.alert-icon {
+   color: #7AD7A7;
+   width: 2.4rem;
+   height: 2.4rem;
+}
+
+.nutrition-info p {
+   font-size: 1.2rem;
+}
+
+.meal-intro {
+   width: 100%;
+   padding: 2.4rem 1.6rem;
+   grid-column: 1 / 2 span;
+   display: flex;
+   flex-direction: column;
+   gap: 1.2rem;
+}
+
+.meal-intro p {
+   line-height: 1.05;
+   font-size: 1.4rem;
+}
+
+.read-more {
+   font-size: 1.6rem;
+}
+
+.read-more:link,
+.read-more:visited {
+   border-bottom: 0;
+   font-weight: 500;
+}
+
+.read-more:hover,
+.read-more:active {
+   border-bottom: 0;
+}
+
+.ingredients-box {
+   width: 100%;
+   grid-column: 1 / 2 span;
+} 
+
+.ingredient-heading {
+   font-size: 2.4rem;
+   padding-bottom: 1.6rem;
+   letter-spacing: -0.75px;
+}
+
+.allergens {
+   font-size: 1.6rem;
+   padding-bottom: 1.2rem;
+}
+
+.ingredients {
+   padding: 4.8rem 2.4rem;
+}
+
+.ingredient {
+   display: flex;
+   align-items: center;
+   gap: 1.6rem;
+}
+
+.ingredient img {
+   width: 2.4rem;
+   height: 2.4rem;
+}
+
+.ingredient p {
+   font-size: 1.6rem;
+}
+
+.chef-intro {
+   display: flex;
+   justify-content: center;
+   gap: 4.8rem;
+   padding: 0 12.8rem;
+}
+
+.chef {
+   width: 80%;
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+}
+
+.chef-img {
+   border: 1px solid currentColor;
+   border-radius: 50%;
+   overflow: hidden;
+}
+
+.chef-img img {
+   width: 100%;
+   height: 100%;
+}
+
+.chef p {
+   font-size: 1.8rem;
+}
+
+.coarse-line {
+   width: 6.4rem;
+   height: 0.2rem;
+   background-color: #6ec296;
+}
+
+.chef-word {
+   color: #888;
+   font-size: 1.6rem;
+   letter-spacing: 0.75px;
+   line-height: 1.6;
+}
+
+.preparation {
+   padding: 9.6rem 12.8rem;
+   align-items: center;
+}
+
+.preparation-instruction {
+   width: 55rem;
+}
+
+.preparation-heading {
+   font-size: 2.8rem;
+   margin-bottom: 1.6rem;
+   padding-bottom: 2rem;
+   border-bottom: 1px solid #333;
+   letter-spacing: -0.75px;
+   text-align: center;
+}
+
+.preparation-slogan {
+   font-size: 3.2rem;
+   font-weight: 500;
+   color: #34495e;
+   margin-bottom: 3.6rem;
+}
+
+.preparation-step {
+   display: flex;
+   align-items: center;
+   gap: 1.6rem;
+}
+
+.step-number-box {
+   padding: 0.4rem;
+}
+
+.step-number {
+   font-size: 3.6rem;
+   font-weight: 700;
+   color: #ddd;
+}
+
+.heating-option {
+   font-size: 1.8rem;
+   text-transform: uppercase;
+}
+
+.step-contents {
+   padding: 3rem 10% 4.8rem;
+   display: flex;
+   flex-direction: column;
+   gap: 1.6rem;
+}
+
+.step-content {
+   font-size: 1.6em;
+   font-style: italic;
+   letter-spacing: 0.75px;
+   line-height: 1.05;
+}
+
+.preparation-img img {
+   width: 100%;
+}
+
+/*********************************/
+/* MORE MENU SECTION */
+/*********************************/
+
+.more-heading {
+   margin-bottom: 1.2rem;
+}
+
+.more-subheading {
+   font-size: 3rem;
+   margin-bottom: 4.8rem;
+}
+
+.meal-img-box {
+   border-radius: 9px;
+   overflow: hidden;
+}
+
+.more-meal-img {
+   width: 100%;
+   transition: all 0.4s;
+}
+
+.more-meal-img:hover {
+   transform: scale(1.1);
+}
+
+.more-meal-name {
+   color: #333;
+   font-size: 2rem;
+   font-weight: 500;
+   padding-top: 1.2rem;
+   letter-spacing: -0.5px;
+}

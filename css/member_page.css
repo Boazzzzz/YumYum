@@ -1,0 +1,120 @@
+/*********************************/
+/* HEADER */
+/*********************************/
+
+.header-member-page {
+   background-color: #fff;
+}
+
+/*********************************/
+/* MEMBER SETION */
+/*********************************/
+
+.section-member {
+   background-color: #f2fbf6;
+   padding: 4.8rem 0 9.6rem 0;
+}
+
+.sign-in-page {
+   align-items: center;
+   justify-items: center;
+}
+
+.sign-in-box {
+   background-color: #fff;
+   width: 75%;
+   margin: 4.8rem 0;
+   padding: 3.2rem;
+   box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.075);
+   border-radius: 11px;
+}
+
+.sign-in-text {
+   text-align: center;
+   font-size: 4.4rem;
+   font-weight: 500;
+   margin-bottom: 3.2rem;
+}
+
+.data-input {
+   display: flex;
+   flex-direction: column;
+}
+
+.data {
+   margin-bottom: 1.6rem;
+}
+
+.data label {
+   font-size: 2rem;
+}
+
+.data input {
+   width: 100%;
+   height: 2.4rem;
+   border-radius: 9px;
+}
+
+.forget-password {
+   font-size: 1.4rem;
+   text-align: right;
+   margin-bottom: 3.2rem;
+}
+
+.log-in-text {
+   width: fit-content;
+   align-self: center;
+   margin-bottom: 3.2rem;
+}
+
+.divider {
+   display: flex;
+   align-items: center;
+}
+
+.line {
+   width: 100%;
+   height: 0.1rem;
+   background-color: #000;
+   margin: 0 1.2rem;
+}
+
+.sign-in-app {
+   display: flex;
+   gap: 3.2rem;
+   justify-content: center;
+   align-items: center;
+   margin: 2rem 0;
+   padding: 1.2rem 0;
+   border: 1px solid #3187D7;
+   border-radius: 9px;
+}
+
+.sign-in-app img {
+   width: 3.2rem;
+   margin-left: 1.6rem;
+}
+
+.sign-in-app p {
+   color: #3187D7;
+   font-size: 2rem;
+   width: 80%;
+}
+
+.hint-text {
+   text-align: center;
+   font-size: 1.4rem;
+}
+
+.app-download-img {
+   height: 40rem;
+   grid-column: 1 / span 2;
+}
+
+.app-download-store {
+   justify-self: center;
+}
+
+.app-download-store img {
+   height: 4.4rem;
+}

@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="css/general.css">
+   <link rel="stylesheet" href="css/header&footer.css">
+   <link rel="stylesheet" href="css/recipe_page.css">
+   
+   <title>Recipe page</title>
+</head>
+<body>
+   <header class="header">
+      <a href="first_page.html">
+         <img  class="logo" src="./content_mine/img/logo_yumyum.png" alt="YumYum logo">
+      </a>
+      <nav class="main-nav">
+         <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="#">How it works</a></li>
+            <li>
+               <a class="main-nav-link" href="recipe_page.html"
+               >On the menu</a>
+            </li>
+            <li><a class="main-nav-link" href="#">Testimonials</a></li>
+            <li><a class="main-nav-link" href="#">Pricing</a></li>
+            <li>
+               <a 
+               class="main-nav-link nav-cta" 
+               href="plan-selected_page.html"
+               >Try it for free</a>
+            </li>
+         </ul>
+         <a class="main-nav-user" href="member_page.html">
+            <img src="./content_mine/img/user icon.png" alt="user icon">
+         </a>
+      </nav> 
+   </header>
+
+  <main>
+   <section class="section-banner">
+      <div class="banner">
+         <img class="banner-img" src="./content_mine/img_食譜頁/eating.jpg" alt="A family happily having meals">
+         <div class="banner-text">
+            <heading class="banner-heading">Explore your meals</heading>
+            <p class="banner-caption">Meal starting with $8.99per serving</p>
+         </div>
+         <div class="search">
+            <form class="search-bar" action="">
+               <input type="text" placeholder="search for recipes">
+               <button type="submit">
+                  <img src="./content_mine/img_食譜頁/search icon.png" alt="search icon">
+               </button>
+            </form>
+         </div>
+         <div class="date-boxes">
+            <div class="date-box">
+               <a class="date" href="#">SEP<br>26</a>
+            </div>
+            <div class="date-box date-box-second">
+               <a class="date" href="#">OCT<br>03</a>
+            </div>
+            <div class="date-box">
+               <a class="date" href="#">OCT<br>10</a>
+            </div>
+            <div class="date-box">
+               <a class="date" href="#">OCT<br>17</a>
+            </div>
+            <div class="date-box">
+               <a class="date" href="#">OCT<br>24</a>
+            </div>
+            <div class="date-box">
+               <a class="date" href="#">OCT<br>31</a>
+            </div>
+         </div>
+      </div> 
+   </section>
+
+   <section class="section-meal-kit">
+      <div class="container recipe-heading">
+         <p class="recipe-heading-text">Meal Kit</p>
+         <div class="select">
+            <select name="food-clasify" id="">
+               <option value="">SELECT</option>
+               <option value="vegetarian">Vegetarian</option>
+               <option value="vegan">Vegan</option>
+               <option value="pescatarian">Pescatarian</option>
+               <option value="gluten-free">Gluten-free</option>
+               <option value="lactose-free">Lactose-free</option>
+               <option value="keto">Keto</option>
+               <option value="paleo">Paleo</option>
+               <option value="low FODMAP">Low FODMAP</option>
+               <option value="kid-friendly">Kid-friendly</option>
+            </select>
+         </div>
+      </div>
+      <div class="container grid grid--3-cols margin-right-md">
+         <div class="meal">
+            <img 
+            class="meal-img" 
+            src="./content_mine/img_食譜頁/meals/meal-1.jpg" 
+            alt="Japanese Gyozas"
+            >
+            <div class="meal-content">
+               <div class="meal-tags">
+                  <span class="tag tag--vegitarian">Vegetarian</span>
+               </div>
+               <p class="meal-title">Japanese Gyozas</p>
+               <ul class="meal-attributes">
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="flame"
+                        ></ion-icon>
+                        <span><strong>650</strong> calories</span>
+                  </li>
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="restaurant"
+                        ></ion-icon>
+                        <span>NutriScore &reg; <strong>74</strong></span>
+                  </li>
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="star"
+                        ></ion-icon>
+                        <sapn><strong>4.9</strong> rating (537)</sapn>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         
+         <div class="meal">
+            <img 
+            class="meal-img" 
+            src="./content_mine/img_食譜頁/meals/meal-2.jpg" 
+            alt="Japanese Gyozas"
+            >
+            <div class="meal-content">
+               <div class="meal-tags">
+                  <span class="tag tag--vegitarian">Vegetarian</span>
+               </div>
+               <p class="meal-title">Japanese Gyozas</p>
+               <ul class="meal-attributes">
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="flame"
+                        ></ion-icon>
+                        <span><strong>650</strong> calories</span>
+                  </li>
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="restaurant"
+                        ></ion-icon>
+                        <span>NutriScore &reg; <strong>74</strong></span>
+                  </li>
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="star"
+                        ></ion-icon>
+                        <sapn><strong>4.9</strong> rating (537)</sapn>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         
+         <div class="meal">
+            <img 
+            class="meal-img" 
+            src="./content_mine/img_食譜頁/meals/meal-7.jpeg" 
+            alt="Japanese Gyozas"
+            >
+            <div class="meal-content">
+               <div class="meal-tags">
+                  <span class="tag tag--vegitarian">Vegetarian</span>
+               </div>
+               <p class="meal-title">Japanese Gyozas</p>
+               <ul class="meal-attributes">
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="flame"
+                        ></ion-icon>
+                        <span><strong>650</strong> calories</span>
+                  </li>
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="restaurant"
+                        ></ion-icon>
+                        <span>NutriScore &reg; <strong>74</strong></span>
+                  </li>
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="star"
+                        ></ion-icon>
+                        <sapn><strong>4.9</strong> rating (537)</sapn>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         
+         <div class="meal">
+            <img 
+            class="meal-img" 
+            src="./content_mine/img_食譜頁/meals/meal-1.jpg" 
+            alt="Japanese Gyozas"
+            >
+            <div class="meal-content">
+               <div class="meal-tags">
+                  <span class="tag tag--vegitarian">Vegetarian</span>
+               </div>
+               <p class="meal-title">Japanese Gyozas</p>
+               <ul class="meal-attributes">
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="flame"
+                        ></ion-icon>
+                        <span><strong>650</strong> calories</span>
+                  </li>
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="restaurant"
+                        ></ion-icon>
+                        <span>NutriScore &reg; <strong>74</strong></span>
+                  </li>
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="star"
+                        ></ion-icon>
+                        <sapn><strong>4.9</strong> rating (537)</sapn>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         
+         <div class="meal">
+            <img 
+            class="meal-img" 
+            src="./content_mine/img_食譜頁/meals/meal-2.jpg" 
+            alt="Japanese Gyozas"
+            >
+            <div class="meal-content">
+               <div class="meal-tags">
+                  <span class="tag tag--vegitarian">Vegetarian</span>
+               </div>
+               <p class="meal-title">Japanese Gyozas</p>
+               <ul class="meal-attributes">
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="flame"
+                        ></ion-icon>
+                        <span><strong>650</strong> calories</span>
+                  </li>
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="restaurant"
+                        ></ion-icon>
+                        <span>NutriScore &reg; <strong>74</strong></span>
+                  </li>
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="star"
+                        ></ion-icon>
+                        <sapn><strong>4.9</strong> rating (537)</sapn>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         
+         <div class="meal">
+            <img 
+            class="meal-img" 
+            src="./content_mine/img_食譜頁/meals/meal-7.jpeg" 
+            alt="Japanese Gyozas"
+            >
+            <div class="meal-content">
+               <div class="meal-tags">
+                  <span class="tag tag--vegitarian">Vegetarian</span>
+               </div>
+               <p class="meal-title">Japanese Gyozas</p>
+               <ul class="meal-attributes">
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="flame"
+                        ></ion-icon>
+                        <span><strong>650</strong> calories</span>
+                  </li>
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="restaurant"
+                        ></ion-icon>
+                        <span>NutriScore &reg; <strong>74</strong></span>
+                  </li>
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="star"
+                        ></ion-icon>
+                        <sapn><strong>4.9</strong> rating (537)</sapn>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <ul class="page-number">
+            <li><a class="page-number-link" href="#">1</a></li>
+            <li><a class="page-number-link" href="#">2</a></li>
+            <li><a class="page-number-link" href="#">3</a></li>
+            <li><a class="page-number-link" href="#">4</a></li>
+            <li><a class="page-number-link" href="#">5</a></li>
+            <li><a class="page-number-link" href="#">&gt;</a></li>
+            <li><a class="page-number-link" href="#">&gt;&gt;</a></li>
+         </ul>
+      </div>
+   </section>
+   
+   <section class="section-meal-kit">
+      <div class="container recipe-heading">
+         <p class="recipe-heading-text">Bundles and Save</p>
+         <div class="select">
+            <select name="food-clasify" id="">
+               <option value="">SELECT</option>
+               <option value="vegetarian">Vegetarian</option>
+               <option value="vegan">Vegan</option>
+               <option value="pescatarian">Pescatarian</option>
+               <option value="gluten-free">Gluten-free</option>
+               <option value="lactose-free">Lactose-free</option>
+               <option value="keto">Keto</option>
+               <option value="paleo">Paleo</option>
+               <option value="low FODMAP">Low FODMAP</option>
+               <option value="kid-friendly">Kid-friendly</option>
+            </select>
+         </div>
+      </div>
+      <div class="container grid grid--3-cols margin-right-md">
+         <div class="meal">
+            <img 
+            class="meal-img" 
+            src="./content_mine/img_食譜頁/meals/meal-4.jpeg" 
+            alt="Japanese Gyozas"
+            >
+            <div class="meal-content">
+               <div class="meal-tags">
+                  <span class="tag tag--vegitarian">Vegetarian</span>
+               </div>
+               <p class="meal-title">Japanese Gyozas</p>
+               <ul class="meal-attributes">
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="flame"
+                        ></ion-icon>
+                        <span><strong>650</strong> calories</span>
+                  </li>
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="restaurant"
+                        ></ion-icon>
+                        <span>NutriScore &reg; <strong>74</strong></span>
+                  </li>
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="star"
+                        ></ion-icon>
+                        <sapn><strong>4.9</strong> rating (537)</sapn>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         
+         <div class="meal">
+            <img 
+            class="meal-img" 
+            src="./content_mine/img_食譜頁/meals/meal-5.jpeg" 
+            alt="Japanese Gyozas"
+            >
+            <div class="meal-content">
+               <div class="meal-tags">
+                  <span class="tag tag--vegitarian">Vegetarian</span>
+               </div>
+               <p class="meal-title">Japanese Gyozas</p>
+               <ul class="meal-attributes">
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="flame"
+                        ></ion-icon>
+                        <span><strong>650</strong> calories</span>
+                  </li>
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="restaurant"
+                        ></ion-icon>
+                        <span>NutriScore &reg; <strong>74</strong></span>
+                  </li>
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="star"
+                        ></ion-icon>
+                        <sapn><strong>4.9</strong> rating (537)</sapn>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         
+         <div class="meal">
+            <img 
+            class="meal-img" 
+            src="./content_mine/img_食譜頁/meals/meal-6.jpeg" 
+            alt="Japanese Gyozas"
+            >
+            <div class="meal-content">
+               <div class="meal-tags">
+                  <span class="tag tag--vegitarian">Vegetarian</span>
+               </div>
+               <p class="meal-title">Japanese Gyozas</p>
+               <ul class="meal-attributes">
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="flame"
+                        ></ion-icon>
+                        <span><strong>650</strong> calories</span>
+                  </li>
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="restaurant"
+                        ></ion-icon>
+                        <span>NutriScore &reg; <strong>74</strong></span>
+                  </li>
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="star"
+                        ></ion-icon>
+                        <sapn><strong>4.9</strong> rating (537)</sapn>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         
+         <div class="meal">
+            <img 
+            class="meal-img" 
+            src="./content_mine/img_食譜頁/meals/meal-4.jpeg" 
+            alt="Japanese Gyozas"
+            >
+            <div class="meal-content">
+               <div class="meal-tags">
+                  <span class="tag tag--vegitarian">Vegetarian</span>
+               </div>
+               <p class="meal-title">Japanese Gyozas</p>
+               <ul class="meal-attributes">
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="flame"
+                        ></ion-icon>
+                        <span><strong>650</strong> calories</span>
+                  </li>
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="restaurant"
+                        ></ion-icon>
+                        <span>NutriScore &reg; <strong>74</strong></span>
+                  </li>
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="star"
+                        ></ion-icon>
+                        <sapn><strong>4.9</strong> rating (537)</sapn>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         
+         <div class="meal">
+            <img 
+            class="meal-img" 
+            src="./content_mine/img_食譜頁/meals/meal-5.jpeg" 
+            alt="Japanese Gyozas"
+            >
+            <div class="meal-content">
+               <div class="meal-tags">
+                  <span class="tag tag--vegitarian">Vegetarian</span>
+               </div>
+               <p class="meal-title">Japanese Gyozas</p>
+               <ul class="meal-attributes">
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="flame"
+                        ></ion-icon>
+                        <span><strong>650</strong> calories</span>
+                  </li>
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="restaurant"
+                        ></ion-icon>
+                        <span>NutriScore &reg; <strong>74</strong></span>
+                  </li>
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="star"
+                        ></ion-icon>
+                        <sapn><strong>4.9</strong> rating (537)</sapn>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         
+         <div class="meal">
+            <img 
+            class="meal-img" 
+            src="./content_mine/img_食譜頁/meals/meal-6.jpeg" 
+            alt="Japanese Gyozas"
+            >
+            <div class="meal-content">
+               <div class="meal-tags">
+                  <span class="tag tag--vegitarian">Vegetarian</span>
+               </div>
+               <p class="meal-title">Japanese Gyozas</p>
+               <ul class="meal-attributes">
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="flame"
+                        ></ion-icon>
+                        <span><strong>650</strong> calories</span>
+                  </li>
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="restaurant"
+                        ></ion-icon>
+                        <span>NutriScore &reg; <strong>74</strong></span>
+                  </li>
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="star"
+                        ></ion-icon>
+                        <sapn><strong>4.9</strong> rating (537)</sapn>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <ul class="page-number">
+            <li><a class="page-number-link" href="#">1</a></li>
+            <li><a class="page-number-link" href="#">2</a></li>
+            <li><a class="page-number-link" href="#">3</a></li>
+            <li><a class="page-number-link" href="#">4</a></li>
+            <li><a class="page-number-link" href="#">5</a></li>
+            <li><a class="page-number-link" href="#">&gt;</a></li>
+            <li><a class="page-number-link" href="#">&gt;&gt;</a></li>
+         </ul>
+      </div>
+   </section>
+   
+   <section class="section-discount">
+      <div class="container">
+         <div class="ad-sm">
+            <p class="ad-discription">Over 150 doctor-designed,<br>
+               chef-prepared meals
+            </p>
+            <div class="checked">
+               <div class="checked-discription">
+                  <img src="./content_mine/img_食譜頁/checked.png" alt="checked icon">
+                  <p>real results</p>
+               </div>
+               <div class="checked-discription">
+                  <img src="./content_mine/img_食譜頁/checked.png" alt="checked icon">
+                  <p>No contracts</p>
+               </div>
+            </div>
+            <div class="discount-label-box">
+               <div class="discount-label">
+                  <img src="./content_mine/img_食譜頁/discounts-2894133_1920.png" alt="">
+               </div>
+               <p>on your first three days</p>
+            </div>
+            <div class="view-plans-button">
+               <a class="btn btn--full" href="plan-selected_page.html"
+               >View plans</a>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section-meal-kit">
+      <div class="container recipe-heading">
+         <p class="recipe-heading-text">Extras</p>
+         <div class="select">
+            <select name="food-clasify" id="">
+               <option value="">SELECT</option>
+               <option value="vegetarian">Vegetarian</option>
+               <option value="vegan">Vegan</option>
+               <option value="pescatarian">Pescatarian</option>
+               <option value="gluten-free">Gluten-free</option>
+               <option value="lactose-free">Lactose-free</option>
+               <option value="keto">Keto</option>
+               <option value="paleo">Paleo</option>
+               <option value="low FODMAP">Low FODMAP</option>
+               <option value="kid-friendly">Kid-friendly</option>
+            </select>
+         </div>
+      </div>
+      <div class="container grid grid--3-cols margin-right-md">
+         <div class="meal">
+            <img 
+            class="meal-img" 
+            src="./content_mine/img_食譜頁/meals/meal-8.jpg" 
+            alt="Japanese Gyozas"
+            >
+            <div class="meal-content">
+               <div class="meal-tags">
+                  <span class="tag tag--vegitarian">Vegetarian</span>
+               </div>
+               <p class="meal-title">Japanese Gyozas</p>
+               <ul class="meal-attributes">
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="flame"
+                        ></ion-icon>
+                        <span><strong>650</strong> calories</span>
+                  </li>
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="restaurant"
+                        ></ion-icon>
+                        <span>NutriScore &reg; <strong>74</strong></span>
+                  </li>
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="star"
+                        ></ion-icon>
+                        <sapn><strong>4.9</strong> rating (537)</sapn>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         
+         <div class="meal">
+            <img 
+            class="meal-img" 
+            src="./content_mine/img_食譜頁/meals/meal-9.jpg" 
+            alt="Japanese Gyozas"
+            >
+            <div class="meal-content">
+               <div class="meal-tags">
+                  <span class="tag tag--vegitarian">Vegetarian</span>
+               </div>
+               <p class="meal-title">Japanese Gyozas</p>
+               <ul class="meal-attributes">
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="flame"
+                        ></ion-icon>
+                        <span><strong>650</strong> calories</span>
+                  </li>
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="restaurant"
+                        ></ion-icon>
+                        <span>NutriScore &reg; <strong>74</strong></span>
+                  </li>
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="star"
+                        ></ion-icon>
+                        <sapn><strong>4.9</strong> rating (537)</sapn>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         
+         <div class="meal">
+            <img 
+            class="meal-img" 
+            src="./content_mine/img_食譜頁/meals/meal-10.jpg" 
+            alt="Japanese Gyozas"
+            >
+            <div class="meal-content">
+               <div class="meal-tags">
+                  <span class="tag tag--vegitarian">Vegetarian</span>
+               </div>
+               <p class="meal-title">Japanese Gyozas</p>
+               <ul class="meal-attributes">
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="flame"
+                        ></ion-icon>
+                        <span><strong>650</strong> calories</span>
+                  </li>
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="restaurant"
+                        ></ion-icon>
+                        <span>NutriScore &reg; <strong>74</strong></span>
+                  </li>
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="star"
+                        ></ion-icon>
+                        <sapn><strong>4.9</strong> rating (537)</sapn>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         
+         <div class="meal">
+            <img 
+            class="meal-img" 
+            src="./content_mine/img_食譜頁/meals/meal-8.jpg" 
+            alt="Japanese Gyozas"
+            >
+            <div class="meal-content">
+               <div class="meal-tags">
+                  <span class="tag tag--vegitarian">Vegetarian</span>
+               </div>
+               <p class="meal-title">Japanese Gyozas</p>
+               <ul class="meal-attributes">
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="flame"
+                        ></ion-icon>
+                        <span><strong>650</strong> calories</span>
+                  </li>
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="restaurant"
+                        ></ion-icon>
+                        <span>NutriScore &reg; <strong>74</strong></span>
+                  </li>
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="star"
+                        ></ion-icon>
+                        <sapn><strong>4.9</strong> rating (537)</sapn>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         
+         <div class="meal">
+            <img 
+            class="meal-img" 
+            src="./content_mine/img_食譜頁/meals/meal-9.jpg" 
+            alt="Japanese Gyozas"
+            >
+            <div class="meal-content">
+               <div class="meal-tags">
+                  <span class="tag tag--vegitarian">Vegetarian</span>
+               </div>
+               <p class="meal-title">Japanese Gyozas</p>
+               <ul class="meal-attributes">
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="flame"
+                        ></ion-icon>
+                        <span><strong>650</strong> calories</span>
+                  </li>
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="restaurant"
+                        ></ion-icon>
+                        <span>NutriScore &reg; <strong>74</strong></span>
+                  </li>
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="star"
+                        ></ion-icon>
+                        <sapn><strong>4.9</strong> rating (537)</sapn>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         
+         <div class="meal">
+            <img 
+            class="meal-img" 
+            src="./content_mine/img_食譜頁/meals/meal-10.jpg" 
+            alt="Japanese Gyozas"
+            >
+            <div class="meal-content">
+               <div class="meal-tags">
+                  <span class="tag tag--vegitarian">Vegetarian</span>
+               </div>
+               <p class="meal-title">Japanese Gyozas</p>
+               <ul class="meal-attributes">
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="flame"
+                        ></ion-icon>
+                        <span><strong>650</strong> calories</span>
+                  </li>
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="restaurant"
+                        ></ion-icon>
+                        <span>NutriScore &reg; <strong>74</strong></span>
+                  </li>
+                  <li class="meal-attribute">
+                        <ion-icon 
+                        class="meal-icon" 
+                        name="star"
+                        ></ion-icon>
+                        <sapn><strong>4.9</strong> rating (537)</sapn>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <ul class="page-number">
+            <li><a class="page-number-link" href="#">1</a></li>
+            <li><a class="page-number-link" href="#">2</a></li>
+            <li><a class="page-number-link" href="#">3</a></li>
+            <li><a class="page-number-link" href="#">4</a></li>
+            <li><a class="page-number-link" href="#">5</a></li>
+            <li><a class="page-number-link" href="#">&gt;</a></li>
+            <li><a class="page-number-link" href="#">&gt;&gt;</a></li>
+         </ul>
+      </div>
+   </section>
+
+   <section class="section-ad-md">
+      <div class="container">
+         <div class="ad-md-box">
+            <div class="grid grid--3-cols grid-h-v-center row-gap-sm">
+               <div class="doctor-img">
+                  <img src="./content_mine/img_食譜頁/doctor.png" alt="doctor image">
+               </div>
+               <div class="ad-md-heading">
+                  <p>Select your plan, and then pick your meals.</p>
+               </div>
+               <div class="ad-md-caption">
+                  <p>Try something new every week or just pick your
+                     favorites. Creating a customized menu to enjoy 
+                     each week makes your bistroMD program unique.</p>
+               </div>
+               <div class="ad-md-button"><a class="btn btn--full" href="#">Order now</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   
+</main>
+
+   <footer class="footer">
+   <div class="container grid grid--footer">
+         <div class="logo-col">
+            <a class="footer-logo" href="first_page.html">
+               <img  
+               class="logo" 
+               src="./content_mine/img/logo_yumyum.png">
+            </a>
+
+            <ul class="social-links">
+               <li>
+                  <a class="footer-link" href="#">
+                     <ion-icon 
+                     class="social-icon" 
+                     name="logo-instagram"
+                     ></ion-icon>
+                  </a>
+               </li>
+               <li>
+                  <a class="footer-link" href="#">
+                     <ion-icon 
+                     class="social-icon" 
+                     name="logo-twitter"
+                     ></ion-icon>
+                  </a>
+               </li>
+               <li>
+                  <a class="footer-link" href="#">
+                     <ion-icon 
+                     class="social-icon" 
+                     name="logo-facebook"
+                     ></ion-icon>
+                  </a>
+               </li>
+            </ul>
+
+            <p class="copyright">Copyright &copy; by YumYum, Inc. All rights reserved.
+            </p>
+         </div>
+         <div class="address-col">
+            <p class="footer-heading">Contact us</p>
+            <address class="contacts"> 
+               <p>17 W Mountain Street, Glendale,ca, 91202  United States</p>
+               <p>
+                     <a 
+                     class="footer-link" href="tel:123456789"
+                     >123456789</a><br>
+                     <a 
+                     class="footer-link" href="mailto:YumYum@gmail.com"
+                     >YumYum@gmail.com</a>
+               </p>
+            </address>
+         </div>
+         <nav class="nav-col">
+            <p class="footer-heading">Acount</p>
+            <ul class="footer-nav">
+               <li><a class="footer-link" href="#">Create account</a></li>
+               <li>
+                  <a class="footer-link" href="member_page.html"
+                  >Sign in</a>
+               </li>
+               <li><a class="footer-link" href="#">iOS app</a></li>
+               <li><a class="footer-link" href="#">Android app</a></li>
+            </ul>
+         </nav>
+         <nav class="nav-col">
+            <p class="footer-heading">Company</p>
+            <ul class="footer-nav">
+               <li>
+                  <a class="footer-link" href="about_us_page.html"
+                  >About YumYum</a>
+               </li>
+               <li><a class="footer-link" href="#">For Business</a></li>
+               <li><a class="footer-link" href="#">Cooking partners</a></li>
+               <li><a class="footer-link" href="#">Careers</a></li>
+            </ul>
+         </nav>
+         <nav class="nav-col">
+            <p class="footer-heading">Resources</p>
+            <ul class="footer-nav">
+               <li><a class="footer-link" href="#">Recipe directory</a></li>
+               <li><a class="footer-link" href="#">Help center</a></li>
+               <li><a class="footer-link" href="#">Privacy & terms</a></li>
+            </ul>
+         </nav>
+   </div>
+   </footer>
+
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>
