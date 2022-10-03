@@ -45,7 +45,8 @@ Paragraph default: 1.6
 --- 05 SHADOWS
 
 - box-shadow:
-# 0 2px 3px 0 rgba(0, 0, 0, 10%);
+0 3.2rem 6.4rem rgba(0, 0, 0, 0.06)
+0 2px 3px 0 rgba(0, 0, 0, 10%)
 
 --- 06 BORDER-RADIUS
 
@@ -89,6 +90,8 @@ body {
     margin: 0 auto;
 }
 
+/* GRID */
+
 .grid {
     display: grid;
     row-gap: 9.6rem;
@@ -128,9 +131,7 @@ body {
     align-items: center;
 }
 
-.logo {
-    height: 5.2rem;
-}
+/* HEADING, SUBHEADING */
 
 .heading-primary,
 .heading-secondary {
@@ -167,6 +168,8 @@ body {
     letter-spacing: 0.75px;
 }
 
+/* BUTTON */
+
 .btn:link,
 .btn:visited {
     display: inline-block;
@@ -201,6 +204,8 @@ body {
     box-shadow: inset 0 0 0 3px #fff;
 }
 
+/* LINK */
+
 .link:link,
 .link:visited {
     display: inline-block;
@@ -216,6 +221,8 @@ body {
     color: #6ec296;
     border-bottom: 1px solid transparent;
 }
+
+/* LIST */
 
 .list {
     list-style: none;
@@ -235,6 +242,65 @@ body {
     width: 3rem;
     height: 3rem;
     color: #7AD7A7;
+}
+
+.logo {
+    height: 5.2rem;
+}
+
+/* MEAL CARD */
+
+.meal {
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+    border-radius: 11px;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+
+.meal:hover {
+    transform: translateY(-1.2rem);
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.meal-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+ }
+
+.meal-content {
+    padding: 3.2rem 4.8rem 4.8rem;
+}
+
+.meal-title {
+    font-size: 2.4rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 3.2rem;
+}
+
+.meal-attributes {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.meal-attribute {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.meal-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    color: #7AD7A7;
+}
+
+.meal-img {
+    width: 100%;
 }
 
 /* MEAL TAGS */
@@ -283,16 +349,20 @@ body {
     margin-bottom: 0 !important;
 }
 
-.margin-right-sm {
-    margin-right: 1.6rem !important;
-}
-
 .margin-bottom-sm {
     margin-bottom: 1.6rem !important;
 }
 
 .margin-bottom-md {
     margin-bottom: 4.8rem !important;
+}
+
+.margin-bottom-auto {
+    margin-bottom: auto !important;
+}
+
+.margin-right-sm {
+    margin-right: 1.6rem !important;
 }
 
 .padding-bottom-lg {
