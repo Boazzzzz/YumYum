@@ -13,9 +13,7 @@
 .banner-img {
    width: 100%;
    height: 60rem;
-   border-bottom: 3px solid #333;
-   opacity: 80%;
-   filter: brightness(90%);
+   opacity: 90%;
 }
 
 .banner-text {
@@ -31,7 +29,7 @@
 }
 
 .banner-heading {
-   color: #6ec296;
+   color: #d7f3e5;
    font-size: 8.6rem;
    font-weight: 500;
    
@@ -87,40 +85,50 @@
    height: 50%;
 }
 
-.date-boxes {
+/* DATE SELECTION  */
+
+.flex-box {
    display: flex;
+   gap: 3rem;
    justify-content: center;
-   align-items: center;
-   gap: 3.2rem;
-   position: absolute;
-   bottom: 2.5px;
-   left: 0;
-   right: 0;
-   margin: 0 auto;
 }
 
 .date-box {
-   width: 8rem;
-   height: 8rem;
-   border: 3px solid #333;
-   border-top-left-radius: 9px;
-   border-top-right-radius: 9px;
-   border-bottom: none;
-   padding-top: 1.2rem;
-   text-align: center;
+   width: fit-content;
 }
 
-.date-box-second {
+.hidden-box {
+   display: none;
+}
+
+.label-radio {
+   display: block;
+   width: 100%;
+   height: 8rem;
+   text-align: center;
+   padding: 2rem;
+   border: 3px solid #333;
+   border-bottom: 0;
+   border-top-left-radius: 11px; 
+   border-top-right-radius: 11px;
+   cursor: pointer;
    z-index: 1;
-   box-shadow: 0 3.2rem 6.4rem rgb(0 0 0 / 10%);
-   background-color: #fff;
+}
+
+.label-radio:hover {
+   background-color: #e4f7ed;
 }
 
 .date {
-   color: #34495e;
    font-size: 2.4rem;
-   text-decoration: none;
-   
+   font-weight: 600;
+   letter-spacing: 0.75px;
+}
+
+input[type=radio]:checked + .label-radio {
+   box-shadow: 3px 0px 12px -4px rgba(0, 0, 0, 0.35);
+   transform: translateY(2.5px);
+   background-color: #e4f7ed;
 }
 
 /*********************************/
@@ -129,6 +137,7 @@
 
 .section-meal-kit {
    padding: 9.6rem 0;
+   border-top: 3px solid #333;
 }
 
 .recipe-heading {
@@ -155,7 +164,7 @@ select {
    flex: 1;
    padding: 0 1rem;
    color: #fff;
-   background-color: #888;
+   background-color: #000;
    background-image: none;
    cursor: pointer;
 }
@@ -167,9 +176,9 @@ select::-ms-expand {
 .select {
    position: relative;
    display: flex;
-   width: 20em;
-   height: 3em;
-   border-radius: .25em;
+   width: 20rem;
+   height: 3rem;
+   border-radius: .25rem;
    overflow: hidden;
 }
 /* Arrow */
@@ -178,7 +187,7 @@ select::-ms-expand {
    position: absolute;
    top: 0;
    right: 0;
-   padding: 1em;
+   padding: 1rem;
    background-color: #34495e;
    transition: .25s all ease;
    pointer-events: none;
@@ -212,11 +221,11 @@ select::-ms-expand {
 }
 
 /*********************************/
-/* SECTION SMALL AD */
+/* SECTION DISCOUNT */
 /*********************************/
 
 .section-discount {
-   padding: 2.4rem 0;
+   padding-bottom: 9.6rem;
 }
 
 .ad-sm {

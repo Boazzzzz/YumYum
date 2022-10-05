@@ -49,7 +49,7 @@
                         YOUR MEALS. PAUSE ANYTIME.
                     </p>
                     <a href="plan_selected_page.html" class="btn btn--full margin-right-sm">Get started</a>
-                    <a href="recipe_page.html" class="btn btn--outline">Pick your meals &darr;</a>
+                    <a href="#section-deatured" class="btn btn--outline">Learn more &darr;</a>
                     <div class="delivered-meals">
                         <div class="delivered-imgs">
                             <img src="./content/img/customers/customer-1.jpg" alt="Customer photo">
@@ -74,7 +74,7 @@
             </div>
         </section>
 
-        <section class="section-featured">
+        <section class="section-featured" id="section-deatured">
             <div class="container">
                 <h2 class="heading-featured-in"></h2>
                 <div class="logos">
@@ -104,7 +104,7 @@
                 <div class="step-text-box">
                     <h3 class="heading-tertiary">Tell us what you like (and what not)</h3>
                     <p class="step-description">
-                         Never again waste time thinking about what to eat! Omnifood AI will create a 100% personalized weekly meal plan just for you. It makes sure you get all the nutrients and vitamins you need, no matter what diet you follow!
+                         Never again waste time thinking about what to eat! YumYum will create a 100% personalized weekly meal plan just for you. It makes sure you get all the nutrients and vitamins you need, no matter what diet you follow!
                     </p>
                 </div>
                 <div class="step-number-box">
@@ -117,7 +117,7 @@
                 <div class="step-text-box">
                     <h3 class="heading-tertiary">Approve your weekly meal plan</h3>
                     <p class="step-description">
-                        Once per week, approve the meal plan generated for you by Omnifood AI. You can change ingredients, swap entire meals, or even add your own recipes.
+                        Once per week, approve the meal plan generated for you by YumYum. You can change ingredients, swap entire meals, or even add your own recipes.
                     </p>
                 </div>
 
@@ -154,7 +154,7 @@
         
         <section class="section-meals">
             <div class="container">
-                <span class="subheading">Meals</span>
+                <span class="subheading">On the menu</span>
                 <h2 class="heading-secondary">
                     YumYum chooses from 5,000+ recipes
                 </h2>
@@ -566,9 +566,63 @@
         </section>
 
         <section class="section-cta">
-            <div class="container cta">
-                <div class="cta-text-box">CTA</div>
-                <div class="cta-img-box">IMAGE</div>
+            <div class="container">
+                <div class="cta">
+                    <div class="cta-text-box">
+                        <h2 class="heading-secondary">
+                            Get your first day for free!
+                        </h2>
+                        <p class="cta-text">
+                            Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You can cancel or pause anytime. And the first meal is on us!
+                        </p>
+                        <form 
+                        class="cta-form" 
+                        action="plan_selected_page.html"
+                        >
+                            <div>
+                                <label for="full-name">Full Name</label>
+                                <input 
+                                id="full-name" 
+                                type="text" 
+                                placeholder="Chen Ting"
+                                required
+                                >
+                            </div>
+
+                            <div>
+                                <label for="email">Email address</label>
+                                <input
+                                id="email" 
+                                type="email" 
+                                placeholder="YumYum@gmail.com"
+                                required
+                                >
+                            </div>
+
+                            <div>
+                                <label for="select-where">
+                                    Where did you hear from us ?
+                                </label>
+                                <select id="select-where" required>
+                                    <option value="">Choose an opotion</option>
+                                    <option value="friends">friends</option>
+                                    <option value="Youtube">YouTube videos</option>
+                                    <option value="Facebook">Facebook ad</option>
+                                    <option value="Podcast">Podcast</option>
+                                    <option value="Others">Others</option>
+                                </select>
+                            </div>
+
+                            <button class="btn btn--form"
+                            >Get started now</button>
+                        </form>
+                    </div>
+                    <div 
+                    class="cta-img-box" 
+                    role="img" 
+                    aria-label="people enjoying food"
+                    ></div>
+                </div>
             </div>
         </section>
     </main>
@@ -630,7 +684,10 @@
                 <p class="footer-heading">Acount</p>
                 <ul class="footer-nav">
                     <li><a class="footer-link" href="#">Create account</a></li>
-                    <li><a class="footer-link" href="member_page.html">Sign in</a></li>
+                    <li>
+                        <a class="footer-link" href="member_page.html"
+                        >Sign in</a>
+                    </li>
                     <li><a class="footer-link" href="#">iOS app</a></li>
                     <li><a class="footer-link" href="#">Android app</a></li>
                 </ul>
@@ -651,7 +708,9 @@
                         <a class="footer-link" href="#"
                         >Recipe directory</a>
                     </li>
-                    <li><a class="footer-link" href="#">Help center</a></li>
+                    <li>
+                        <a class="footer-link" href="#">Help center</a>
+                    </li>
                     <li>
                         <a class="footer-link" href="#"
                         >Privacy & terms</a>
@@ -661,6 +720,7 @@
         </div>
     </footer>
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+    </script>
 </body>
 </html>

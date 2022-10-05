@@ -26,7 +26,7 @@ main {
    padding-bottom: 9.6rem;
 }
 
-.meal {
+.meal-details {
    width: 80rem;
    height: fit-content;
    background-color: #fff;
@@ -73,7 +73,7 @@ main {
    background-color: #000;
 }
 
-.meal img {
+.meal-details img {
    width: 100%;
 }
 

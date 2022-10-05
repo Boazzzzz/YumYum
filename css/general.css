@@ -21,7 +21,7 @@ Paragraph default: 1.6
 0.75px
 
 - SPACING SYSTEM (px)
-2 / 4 / 6 / 8 / 12 / 16 / 24 / 32 / 40 / 48 / 64 / 80 / 96 / 128
+2 / 4 / 6 / 8 / 12 / 16 / 20 / 24 / 32 / 40 / 48 / 64 / 80 / 96 / 128
 
 --- 02 COLORS
 
@@ -30,7 +30,16 @@ Paragraph default: 1.6
 #f2fbf6
 #e4f7ed
 #d7f3e5
+#95dfb9
 #6ec296
+#254032
+
+
+- Secondry: #e67e22
+- Tints:
+#fdf2e9
+#fae5d3
+#eb984e
 
 - Shades: #6ec296
 - Acents:
@@ -47,6 +56,7 @@ Paragraph default: 1.6
 - box-shadow:
 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06)
 0 2px 3px 0 rgba(0, 0, 0, 10%)
+0 4px 12px -4px rgba(0, 0, 0, 0.35);
 
 --- 06 BORDER-RADIUS
 
@@ -78,6 +88,11 @@ body {
     line-height: 1;
     font-weight: 400;
     color: #555;
+}
+
+*:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.8rem hsla(149, 54%, 66%, 0.5);
 }
 
 /*********************************/
@@ -170,6 +185,7 @@ body {
 
 /* BUTTON */
 
+.btn,
 .btn:link,
 .btn:visited {
     display: inline-block;
@@ -178,7 +194,12 @@ body {
     font-weight: 600;
     padding: 1.6rem 3.2rem;
     border-radius: 9px;
-    transition: all 0.3s;    
+    transition: all 0.3s;
+    
+    /* Neccessary for .btn */
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
 }
 
 .btn--full:link,
@@ -202,6 +223,18 @@ body {
 .btn--outline:active {
     background-color: #f2fbf6;
     box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+    background-color: #254032;
+    color: #f2fbf6;
+    align-self: end;
+    padding: 1.2rem;
+}
+
+.btn--form:hover {
+    background-color: #fff;
+    color: #555;
 }
 
 /* LINK */
@@ -241,7 +274,7 @@ body {
 .list-icon {
     width: 3rem;
     height: 3rem;
-    color: #7AD7A7;
+    color: #e67e22;
 }
 
 .logo {
@@ -336,6 +369,14 @@ body {
 
 .tag--keto {
     background-color: #ffc800;
+}
+
+.tag--gluten-free {
+    background-color: #5fc2e2;
+}
+
+.tag--kid-frendly {
+    background-color: #697dcf;
 }
 
 .all-recipes {
