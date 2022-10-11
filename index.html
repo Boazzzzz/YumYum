@@ -1,78 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/header&footer.css">
-    <link rel="stylesheet" href="css/first_page.css">
+   <link rel="stylesheet" href="css/general.css">
+   <link rel="stylesheet" href="css/header&footer.css">
+   <link rel="stylesheet" href="css/first_page.css">
 
-    <title>YumYum</title>
+   <script src="JavaScript/general.js"></script>
+
+   <title>YumYum</title>
 </head>
 <body>
-    <header class="header">
-        <a href="#">
-            <img  class="logo" src="./content_mine/img/logo_yumyum.png" alt="YumYum logo">
-        </a>
-        <nav class="main-nav">
-            <ul class="main-nav-list">
-                <li><a class="main-nav-link" href="#">How it works</a></li>
-                <li><a class="main-nav-link" href="recipe_page.html">On the menu</a></li>
-                <li><a class="main-nav-link" href="#">Testimonials</a></li>
-                <li><a class="main-nav-link" href="#">Pricing</a></li>
-                <li><a class="main-nav-link nav-cta" href="plan_selected_page.html">Try it for free</a></li>
-            </ul>
-            <a class="main-nav-user" href="member_page.html">
-                <img src="./content_mine/img/user icon.png" alt="user icon">
-            </a>
-        </nav> 
-    </header>
+   <header class="header">
+      <a href="#">
+         <img  class="logo" src="./content_mine/img/logo_yumyum.png" alt="YumYum logo">
+      </a>
+      <nav class="main-nav">
+         <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="#">How it works</a></li>
+            <li><a class="main-nav-link" href="recipe_page.html">On the menu</a></li>
+            <li><a class="main-nav-link" href="#">Testimonials</a></li>
+            <li><a class="main-nav-link" href="#">Pricing</a></li>
+            <li><a class="main-nav-link nav-cta" href="plan_selected_page.html">Try it for free</a></li>
+         </ul>
+         <divs id="main-nav-user" class="main-nav-user">
+            <img src="./content_mine/img/user icon.png" alt="user icon">
+         </divs>
+      </nav>
+      <div id="main-nav-extension" class="main-nav-extension hidden">
+         <ul class="extension-list">
+            <li><a class="main-nav-link" href="member.html">Member</a></li>
+            <li><a class="main-nav-link" href="sign_in_page.html">Sign-in</a></li>
+         </ul>
+      </div> 
+   </header>
 
-    <main>
-        <section class="section-hero">
-            <div class="hero">
-                <div class="hero-text-box">
-                    <h1 class="heading-primary">
-                        Signature meals 
-                        from award-winning 
-                        chefs, delivered to 
-                        your door
-                    </h1>
-                    <p class="hero-description">
-                        DELIVERED FRESH DAILY. READY-TO-EAT. CUSTOMIZE 
-                        YOUR MEALS. PAUSE ANYTIME.
-                    </p>
-                    <a href="plan_selected_page.html" class="btn btn--full margin-right-sm">Get started</a>
-                    <a href="#section-deatured" class="btn btn--outline">Learn more &darr;</a>
-                    <div class="delivered-meals">
-                        <div class="delivered-imgs">
-                            <img src="./content/img/customers/customer-1.jpg" alt="Customer photo">
-                            <img src="./content/img/customers/customer-2.jpg" alt="Customer photo">
-                            <img src="./content/img/customers/customer-3.jpg" alt="Customer photo">
-                            <img src="./content/img/customers/customer-4.jpg" alt="Customer photo">
-                            <img src="./content/img/customers/customer-5.jpg" alt="Customer photo">
-                            <img src="./content/img/customers/customer-6.jpg" alt="Customer photo">
-                        </div>
-                        <p class="delivered-text">
-                             Our customers say <span>Great (4.8)</span> out of 5 based on 24,392 reviews !
-                        </p>
-                    </div>
-                </div>
-                <div class="hero-img-box">
-                    <img 
-                    class="hero-img" 
-                    src="./content_mine/img/eating.jpg" 
-                    alt="Women enjoying food"
-                    >
-                </div>
+   <main>
+      <section class="section-hero">
+         <div class="hero">
+            <div class="hero-text-box">
+               <h1 class="heading-primary">
+                  Signature meals 
+                  from award-winning 
+                  chefs, delivered to 
+                  your door
+               </h1>
+               <p class="hero-description">
+                  DELIVERED FRESH DAILY. READY-TO-EAT. CUSTOMIZE 
+                  YOUR MEALS. PAUSE ANYTIME.
+               </p>
+               <a href="plan_selected_page.html" class="btn btn--full margin-right-sm">Get started</a>
+               <a href="#section-deatured" class="btn btn--outline">Learn more &darr;</a>
+               <div class="delivered-meals">
+                  <div class="delivered-imgs">
+                     <img src="./content/img/customers/customer-1.jpg" alt="Customer photo">
+                     <img src="./content/img/customers/customer-2.jpg" alt="Customer photo">
+                     <img src="./content/img/customers/customer-3.jpg" alt="Customer photo">
+                     <img src="./content/img/customers/customer-4.jpg" alt="Customer photo">
+                     <img src="./content/img/customers/customer-5.jpg" alt="Customer photo">
+                     <img src="./content/img/customers/customer-6.jpg" alt="Customer photo">
+                  </div>
+                  <p class="delivered-text">
+                     Our customers say <span>Great (4.8)</span> out of 5 based on 24,392 reviews !
+                  </p>
+               </div>
             </div>
-        </section>
+            <div class="hero-img-box">
+               <img 
+               class="hero-img" 
+               src="./content_mine/img/eating.jpg" 
+               alt="Women enjoying food"
+               >
+            </div>
+         </div>
+      </section>
 
         <section class="section-featured" id="section-deatured">
             <div class="container">
@@ -445,7 +453,7 @@
             </div>
 
             <div class="container grid grid--2-cols margin-bottom-md">
-                <div class="pricing-plan pricing-plan--starter">
+                <!-- <div class="pricing-plan pricing-plan-beginner">
                     <header class="plan-header">
                         <p class="plan-name">Beginner</p>
                         <p class="plan-price"><span>$</span>299</p>
@@ -474,44 +482,89 @@
                     <div class="plan-sign-up">
                         <a href="plan_selected_page.html" class="btn btn--full">Get started</a>
                     </div>    
-                </div>
+                </div> -->
+                
+               <div class="pricing-plan pricing-plan-beginner">
+                  <div class="pricing-plan-inner">
+                     <div class="pricing-plan-front">
+                        <header class="plan-header">
+                           <p class="plan-name">Beginner</p>
+                           <p class="plan-text">program</p>
+                        </header>
+                        <ul class="list margin-bottom-auto">
+                           <li class="list-item">
+                              <ion-icon 
+                              class="list-icon" name="checkmark-circle-outline"
+                              ></ion-icon>
+                              <span>1 meal per day</span>
+                           </li>
+                           <li class="list-item">
+                              <ion-icon 
+                              class="list-icon" name="checkmark-circle-outline"
+                              ></ion-icon>
+                              <span>Order from 11am and 9pm</span>
+                           </li>
+                           <li class="list-item">
+                              <ion-icon 
+                              class="list-icon" name="checkmark-circle-outline"
+                              ></ion-icon>
+                              <span>Delivery is free</span>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="pricing-plan-back">
+                        <p class="plan-price"><span>$</span>299</p>
+                        <p class="plan-text">per month. Less than $10 per meal!</p>
+                        <div class="plan-sign-up">
+                           <a href="plan_selected_page.html" class="btn btn--full">Get started</a>
+                        </div>    
+                     </div>
+                  </div>
+               </div>
 
-                <div class="pricing-plan pricing-plan--complete">
-                    <header class="plan-header">
-                        <p class="plan-name">Advanced</p>
+               <div class="pricing-plan pricing-plan-advanced">
+                  <div class="pricing-plan-inner">
+                     <div class="pricing-plan-front">
+                        <header class="plan-header">
+                           <p class="plan-name">Advanced</p>
+                           <p class="plan-text">program</p>
+                        </header>
+                        <ul class="list">
+                           <li class="list-item">
+                              <ion-icon 
+                           class="list-icon" name="checkmark-circle-outline"
+                           ></ion-icon>
+                           <span><strong>2 meals</strong> per day</span>
+                           </li>
+                           <li class="list-item">
+                              <ion-icon 
+                              class="list-icon" name="checkmark-circle-outline"
+                              ></ion-icon>
+                              <span>Order <strong>24/7</strong></span>
+                           </li>
+                           <li class="list-item">
+                              <ion-icon 
+                              class="list-icon" name="checkmark-circle-outline"
+                              ></ion-icon>
+                              <span>Delivery is free</span>
+                           </li>
+                           <li class="list-item">
+                              <ion-icon 
+                              class="list-icon" name="checkmark-circle-outline"
+                              ></ion-icon>
+                              <span>Get access to latest recipes</span>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="pricing-plan-back">
                         <p class="plan-price"><span>$</span>538</p>
                         <p class="plan-text">per month. Less than $9 per meal!</p>
-                    </header>
-                    <ul class="list">
-                        <li class="list-item">
-                            <ion-icon 
-                            class="list-icon" name="checkmark-circle-outline"
-                            ></ion-icon>
-                            <span><strong>2 meals</strong> per day</span>
-                        </li>
-                        <li class="list-item">
-                            <ion-icon 
-                            class="list-icon" name="checkmark-circle-outline"
-                            ></ion-icon>
-                            <span>Order <strong>24/7</strong></span>
-                        </li>
-                        <li class="list-item">
-                            <ion-icon 
-                            class="list-icon" name="checkmark-circle-outline"
-                            ></ion-icon>
-                            <span>Delivery is free</span>
-                        </li>
-                        <li class="list-item">
-                            <ion-icon 
-                            class="list-icon" name="checkmark-circle-outline"
-                            ></ion-icon>
-                            <span>Get access to latest recipes</span>
-                        </li>
-                    </ul>
-                    <div class="plan-sign-up">
-                        <a href="plan_selected_page.html" class="btn btn--full">Get started</a>
-                    </div>
-                </div>
+                        <div class="plan-sign-up">
+                           <a href="plan_selected_page.html" class="btn btn--full">Get started</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
 
             <div class="container grid">
@@ -625,7 +678,7 @@
                 </div>
             </div>
         </section>
-    </main>
+   </main>
 
     <footer class="footer">
         <div class="container grid grid--footer">

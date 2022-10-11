@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="css/general.css">
+   <link rel="stylesheet" href="css/member.css">
+
+   <script src="JavaScript/member.js"></script>
+
+   <title>memeber page</title>
+</head>
+<body>
+   <div class="side-container">
+      <a href="#">
+         <img  class="logo" src="./content_mine/img/logo_yumyum.png" alt="YumYum logo">
+      </a>
+      <nav class="sidebar">
+         <ul class="side-nav">
+            <li class="side-nav-item side-nav--active">
+               <a class="side-nav-link" href="#">Overview</a>
+            </li>
+            <li class="side-nav-item">
+               <a class="side-nav-link" href="#">Suscription</a>
+            </li>
+            <li class="side-nav-item">
+               <a class="side-nav-link" href="#">My favorite</a>
+            </li>
+            <li class="side-nav-item">
+               <a class="side-nav-link" href="#">Meal List</a>
+            </li>
+         </ul>
+      </nav>
+      <div class="ad-box">
+         <p>Share your own recipe with the community</p>
+         <a class="btn btn--full" href="#">Upload now</a>
+         <div class="ad-box-img">
+            <img src="content_mine/img_member/recipe.jpg" alt="nutrition img">
+         </div>
+      </div>
+   </div>
+
+   <main>
+      <div class="main-container">
+         <div class="index">
+            <form id="search-bar" class="search-bar" action="">
+               <button type="submit">
+                  <img src="./content_mine/img_member/search icon.png" alt="search icon">
+               </button>
+               <input id="search-bar-input" type="text" placeholder="search by food">
+            </form>
+            <div>
+               filter
+            </div>
+         </div>
+         <div class="banner">
+            <div class="banner-text">
+               <h2 class="heading-tertiary">Add your own recipe</h2>
+               <p>Upload your own prefer recipe and meals to customize whatever you want to eat every week</p>
+            </div>
+            <img src="content_mine/img_member/man_eating.png" alt="man_eating">
+         </div>
+         <div class="meal-nutrition">
+            <div class="meal-nutrition-title">
+               <h2 class="heading-tertiary margin-bottom-none">
+                  Based on the program you choose
+               </h2>
+               <a 
+               class="link meal-nutrition-link" 
+               href="recipe_page.html"
+               >view more &rarr;</a>
+            </div>
+            <div class="grid grid--2-cols">
+               <div class="meal-nutrition-card">
+                  <div 
+                  class="grid grid--2-cols grid--center-v column-gap-sm margin-bottom-sm"
+                  >
+                     <img src="content_mine/img_member/meal/Cuban Mojo Shrimp.png" alt="Cuban Mojo Shrimp">
+                     <div>
+                        <p class="meal-title margin-bottom-sm">
+                           Cuban Mojo Shrimp
+                        </p>
+                        <span>600cal</span>
+                     </div>
+                  </div>
+                  <h3 class="ingredients heading-tertiary"
+                  >Ingredients</h3>
+                  <div class="grid grid--3-cols grid--center-v row-gap-sm column-gap-sm margin-bottom-md">
+                     <div class="ingredient">
+                        <img src="content_mine/img_member/ingredients/rice.png" alt="rice img">
+                        <span>rice</span>
+                     </div>
+                     <div class="ingredient">
+                        <img src="content_mine/img_member/ingredients/egg.png" alt="egg img">
+                        <span>egg</span>
+                     </div>
+                     <div class="ingredient">
+                        <img src="content_mine/img_member/ingredients/onion.png" alt="onion img">
+                        <span>onion</span>
+                     </div>
+                     <div class="ingredient">
+                        <img src="content_mine/img_member/ingredients/shrimp.png" alt="shrimp img">
+                        <span>shrimp</span>
+                     </div>
+                     <div class="ingredient">
+                        <img src="content_mine/img_member/ingredients/spinach.png" alt="vegetable img">
+                        <span>vegetable</span>
+                     </div>
+                     <div class="ingredient more-ingredient">
+                        <span>+7 more</span>
+                     </div>
+                  </div>
+                  <div class="grid grid--2-cols">
+                     <button><span>+</span> add to meal list</button>
+                     <div class="microwave-time">
+                        <img src="content_mine/img_member/clock.png" alt="clock img">
+                        <span>10 min</span>
+                     </div>
+                  </div>
+                  
+               </div>
+            </div>
+         </div>
+      </div>
+   </main>
+</body>
+</html>

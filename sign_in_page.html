@@ -2,46 +2,48 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/header&footer.css">
-    <link rel="stylesheet" href="css/member_page.css">
+   <link rel="stylesheet" href="css/general.css">
+   <link rel="stylesheet" href="css/header&footer.css">
+   <link rel="stylesheet" href="css/sign_in_page.css">
 
-    <title>會員頁</title>
+   <script src="JavaScript/general.js"></script>s
+
+   <title>會員頁</title>
 </head>
 
 <body>
-    <header class="header header-member-page">
-        <a href="index.html">
-            <img class="logo" src="./content_mine/img/logo_yumyum.png" alt="YumYum logo">
-        </a>
-        <nav class="main-nav">
-            <ul class="main-nav-list">
-                <li><a class="main-nav-link" href="#">How it works</a></li>
-                <li>
-                    <a class="main-nav-link" href="recipe_page.html"
-                    >On the menu</a>
-                </li>
-                <li><a class="main-nav-link" href="#">Testimonials</a></li>
-                <li><a class="main-nav-link" href="#">Pricing</a></li>
-                <li>
-                    <a 
-                    class="main-nav-link nav-cta" href="plan_selected_page.html"
-                    >Try it for free</a>
-                </li>
-            </ul>
-            <a class="main-nav-user" href="member_page.html">
-                <img src="./content_mine/img/user icon.png" alt="user icon">
-            </a>
-        </nav>
-    </header>
+   <header class="header">
+      <a href="index.html">
+         <img  class="logo" src="./content_mine/img/logo_yumyum.png" alt="YumYum logo">
+      </a>
+      <nav class="main-nav">
+         <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="#">How it works</a></li>
+            <li><a class="main-nav-link" href="recipe_page.html">On the menu</a></li>
+            <li><a class="main-nav-link" href="#">Testimonials</a></li>
+            <li><a class="main-nav-link" href="#">Pricing</a></li>
+            <li><a class="main-nav-link nav-cta" href="plan_selected_page.html">Try it for free</a></li>
+         </ul>
+         <divs id="main-nav-user" class="main-nav-user">
+            <img src="./content_mine/img/user icon.png" alt="user icon">
+         </divs>
+      </nav>
+      <div id="main-nav-extension" class="main-nav-extension hidden">
+         <ul class="extension-list">
+            <li><a class="main-nav-link" href="sign_in_page.html">Member</a></li>
+            <li><a class="main-nav-link" href="sign_in_page.html">Sign-in</a></li>
+         </ul>
+      </div> 
+   </header>
+
 
     <main>
         <section class="section-member">

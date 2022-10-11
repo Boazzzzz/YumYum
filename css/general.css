@@ -57,12 +57,14 @@ Paragraph default: 1.6
 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06)
 0 2px 3px 0 rgba(0, 0, 0, 10%)
 0 4px 12px -4px rgba(0, 0, 0, 0.35);
+0 15px 4px rgba(0, 0, 0, 0.15);
 
 --- 06 BORDER-RADIUS
 
 Default: 9px
 Medium: 11px
-Large: 60px
+Large: 15px
+Extra Large: 60px
 
 --- 07 WHITESPACE
 
@@ -71,28 +73,25 @@ Large: 60px
 
 */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
 }
 
 html {
-    /* font-size: 10px;
-    10px / 16px = 0.625 = 62.5%
-    Percentage of user's browser font-size setting */
-    font-size: 62.5%;
+   font-size: 62.5%;
 }
 
 body {
-    font-family: "Rubik", sans-serif;
-    line-height: 1;
-    font-weight: 400;
-    color: #555;
+   font-family: "Rubik", sans-serif;
+   line-height: 1;
+   font-weight: 400;
+   color: #555;
 }
 
 *:focus {
-    outline: none;
-    box-shadow: 0 0 0 0.8rem hsla(149, 54%, 66%, 0.5);
+   outline: none;
+   /* box-shadow: 0 0 0 0.8rem hsla(149, 54%, 66%, 0.5); */
 }
 
 /*********************************/
@@ -100,9 +99,9 @@ body {
 /*********************************/
 
 .container {
-    max-width: 120rem;
-    padding: 0 3.2rem;
-    margin: 0 auto;
+   max-width: 120rem;
+   padding: 0 3.2rem;
+   margin: 0 auto;
 }
 
 /* GRID */

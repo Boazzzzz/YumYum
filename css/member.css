@@ -1,0 +1,222 @@
+/*********************************/
+/* SIDE */
+/*********************************/
+
+.side-container {
+   display: flex;
+   flex-direction: column;
+   background-color: #f2fbf6;
+   width: 25rem;
+   height: 100%;
+   position: fixed;
+   top: 0%;
+   left: 0%;
+   z-index: 1;
+   padding: 4.8rem 2.4rem;
+}
+
+.side-nav {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 2.4rem;
+   font-size: 2rem;
+   list-style: none;
+   margin-top: 3.6rem;
+   align-items: center;
+}
+
+.side-nav-item {
+   position: relative;
+   width: 100%;
+   padding: 1.2rem;
+   cursor: pointer;
+}
+
+.side-nav-item::before {
+   position: absolute;
+   width: 2px;
+   height: 100%;
+   left: 0px;
+   top: 0px;
+   content: '';
+   background: #e67e22;
+   opacity: 0.3;
+   transition: all 0.3s;
+}
+
+.side-nav-item:hover::before {
+   width: 100%;
+}
+
+.side-nav-link {
+   text-decoration: none;
+   color: #888;
+}
+
+.ad-box {
+   padding: 1.2rem;
+   margin: 0 auto;
+   background-color: #e4f7ed;
+   opacity: 80%;
+   margin-top: auto;
+   padding-top: 9.6rem;
+   border-radius: 11px;
+   position: relative;
+}
+
+.ad-box p {
+   font-size: 1.6rem;
+   padding-bottom: 2rem;
+}
+
+.ad-box-img {
+   width: 50%;
+   height: 50%;
+   position: absolute;
+   margin: auto;
+   top: -20%;
+   left: 0;
+   right: 0;
+   border: 2px solid #fff;
+   border-radius: 50%;
+   overflow: hidden;
+}
+
+.ad-box-img img {
+   width: 100%;
+   height: 100%;
+}
+
+/*********************************/
+/* MAIN */
+/*********************************/
+
+.main-container {
+   max-width: 60%;
+   padding: 0 3.2rem;
+   margin: 0 auto;
+}
+
+.index {
+   padding: 4.8rem 0;
+   display: flex;
+}
+
+.search-bar {
+   width: 50%;
+   background-color: #34495e;
+   display: flex;
+   align-items: center;
+   border-radius: 60px;
+   padding: 0 1.2rem;
+   transition: width 0.3s;
+}
+
+.search-bar button {
+   border: none;
+   border-radius: 50%;
+   width: 6rem;
+   height: 6rem;
+   cursor: pointer;
+   background-color: inherit;
+}
+
+.search-bar img {
+   width: 50%;
+   height: 50%;
+}
+
+.search-bar input {
+   background-color: transparent;
+   outline: none;
+   border: 0;
+   flex: 1;
+   padding: 1.6rem;
+   font-size: 2rem;
+   color: #888;
+}
+
+.search-bar input::placeholder {
+   color: #888;
+}
+
+.search-bar:focus {
+   width: 100%;
+}
+
+.banner {
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   background-color: #e4f7ed;
+   border-radius: 15px;
+   padding: 3.2rem 4.8rem;
+   position: relative;
+}
+
+.banner-text p {
+   font-size: 1.6rem;
+   line-height: 1.6;
+
+}
+
+.banner img {
+   width: 36%;
+   bottom: -9%;
+   right: 0%;
+   position: absolute;
+}
+
+.meal-nutrition-title {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 2.4rem 0;
+}
+
+.meal-nutrition-card img {
+   width: 100%;
+}
+
+.meal-title + span {
+   font-size: 1.6rem;
+}
+
+.ingredient {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 0.8rem;
+   background-color: #f2fbf6;
+   padding: 1.6rem 0.8rem; 
+   border-radius: 9px;
+}
+
+.ingredient img {
+   width: 50%;
+}
+
+.more-ingredient {
+   height: 100%;
+   cursor: pointer;
+}
+
+.more-ingredient span {
+   margin: auto;
+   font-weight: 600;
+   font-size: 1.4rem;
+   color: #7AD7A7;
+}
+
+.microwave-time {
+   text-align: end;
+}
+
+.microwave-time img {
+   width: 10%;
+}
+
+.microwave-time span {
+   font-size: 1.2rem;
+   padding-bottom: 0.8rem;
+}

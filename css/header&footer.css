@@ -58,9 +58,38 @@
   background-color: #6ec296;
 }
 
+.main-nav-user {
+   cursor: pointer;
+}
+
 .main-nav-user img {
   height: 4rem;
   opacity: 80%;
+}
+
+.main-nav-extension {
+   position: absolute;
+   background-color: rgba(255, 255, 255, 0.8);
+   opacity: 80%;
+   width: 6%;
+   height: inherit;
+   right: 1.5%;
+   bottom: -100%;
+   text-align: center;
+   border-bottom-left-radius: 9px;
+   border-bottom-right-radius: 9px;
+}
+
+#main-nav-extension.hidden {
+   display: none;
+}
+
+.extension-list {
+   list-style: none;
+   padding: 1.6rem 0;
+   display: flex;
+   flex-direction: column;
+   gap: 1.6rem;
 }
 
 /*********************************/

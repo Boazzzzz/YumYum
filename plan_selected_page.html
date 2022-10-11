@@ -13,34 +13,35 @@
    <link rel="stylesheet" href="css/header&footer.css">
    <link rel="stylesheet" href="css/plan-selected-page.css">
 
+   <script src="JavaScript/general.js"></script>
+
    <title>plan-selected page</title>
 </head>
 <body>
    <header class="header">
-      <a href="index.html">
+      <a href="#">
          <img  class="logo" src="./content_mine/img/logo_yumyum.png" alt="YumYum logo">
       </a>
       <nav class="main-nav">
          <ul class="main-nav-list">
             <li><a class="main-nav-link" href="#">How it works</a></li>
-            <li>
-               <a class="main-nav-link" href="recipe_page.html"
-               >On the menu</a>
-            </li>
+            <li><a class="main-nav-link" href="recipe_page.html">On the menu</a></li>
             <li><a class="main-nav-link" href="#">Testimonials</a></li>
             <li><a class="main-nav-link" href="#">Pricing</a></li>
-            <li>
-               <a 
-               class="main-nav-link nav-cta" 
-               href="#"
-               >Try it for free</a>
-            </li>
+            <li><a class="main-nav-link nav-cta" href="plan_selected_page.html">Try it for free</a></li>
          </ul>
-         <a class="main-nav-user" href="member_page.html">
+         <divs id="main-nav-user" class="main-nav-user">
             <img src="./content_mine/img/user icon.png" alt="user icon">
-         </a>
-      </nav> 
+         </divs>
+      </nav>
+      <div id="main-nav-extension" class="main-nav-extension hidden">
+         <ul class="extension-list">
+            <li><a class="main-nav-link" href="member.html">Member</a></li>
+            <li><a class="main-nav-link" href="sign_in_page.html">Sign-in</a></li>
+         </ul>
+      </div> 
    </header>
+
 
    <main>
       <section class="section-plan-selected">
