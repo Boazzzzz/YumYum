@@ -308,7 +308,6 @@
 }
 
 .pricing-plan-beginner {
-   justify-self: end;
    display: flex;
    flex-direction: column;
    padding: 4.6rem;

@@ -13,7 +13,7 @@ function init() {
       button.addEventListener("click", () => {
          removeHiddenClasses();
          button.classList.add("hidden");
-         mainNavText.classList.add("hidden");
+         mainNavText.classList.toggle("hidden");
       });
    });
 
