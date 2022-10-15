@@ -51,6 +51,7 @@ main {
 
 .data-nav-text span {
    color: #6ec296;
+   border-bottom: 2px solid currentColor;
 }
 
 .data {

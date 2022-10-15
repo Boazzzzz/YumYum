@@ -22,10 +22,6 @@ main {
 /* MEAL DETAILS SECTION */
 /*********************************/
 
-.section-meal-details {
-   padding-bottom: 9.6rem;
-}
-
 .meal-details {
    width: 80rem;
    height: fit-content;
@@ -203,19 +199,22 @@ position: absolute;
    font-size: 1.4rem;
 }
 
-.read-more {
+.more {
+   display: none;
+}
+
+.read-more { 
    font-size: 1.6rem;
-}
-
-.read-more:link,
-.read-more:visited {
-   border-bottom: 0;
    font-weight: 500;
+   display: inline-block;
+   color: #7AD7A7;
+   padding-bottom: 2px;
+   transition: all 0.3s;
+   cursor: pointer;
 }
 
-.read-more:hover,
-.read-more:active {
-   border-bottom: 0;
+.read-more:hover {
+   color: #6ec296;
 }
 
 .ingredients-box {

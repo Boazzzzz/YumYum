@@ -12,8 +12,10 @@
    <link rel="stylesheet" href="css/general.css">
    <link rel="stylesheet" href="css/header&footer.css">
    <link rel="stylesheet" href="css/first_page.css">
+   <link rel="stylesheet" href="css/gird.css">
 
    <script src="JavaScript/general.js"></script>
+   <script src="JavaScript/first_page.js"></script>
 
    <title>YumYum</title>
 </head>
@@ -23,23 +25,43 @@
          <img  class="logo" src="./content_mine/img/logo_yumyum.png" alt="YumYum logo">
       </a>
       <nav class="main-nav">
-         <ul class="main-nav-list">
-            <li><a class="main-nav-link" href="#">How it works</a></li>
-            <li><a class="main-nav-link" href="recipe_page.html">On the menu</a></li>
-            <li><a class="main-nav-link" href="#">Testimonials</a></li>
-            <li><a class="main-nav-link" href="#">Pricing</a></li>
-            <li><a class="main-nav-link nav-cta" href="plan_selected_page.html">Try it for free</a></li>
-         </ul>
-         <divs id="main-nav-user" class="main-nav-user">
+         <div 
+         class="main-nav-text hidden"
+         id="main-nav-text"
+         >
+            <ul class="main-nav-list">
+               <li>
+                  <a class="main-nav-link" href="about_us_page.html"
+                  >About us</a>
+               </li>
+               <li><a class="main-nav-link" href="recipe_page.html">On the menu</a></li>
+               <li><a class="main-nav-link" href="#">Testimonials</a></li>
+               <li><a class="main-nav-link" href="#">FAQ</a></li>
+               <li><a class="main-nav-link nav-cta" href="plan_selected_page.html">Try it for free</a></li>
+            </ul>
+         </div>
+         <div id="main-nav-user" class="main-nav-user">
             <img src="./content_mine/img/user icon.png" alt="user icon">
-         </divs>
+         </div>
       </nav>
       <div id="main-nav-extension" class="main-nav-extension hidden">
          <ul class="extension-list">
             <li><a class="main-nav-link" href="member.html">Member</a></li>
             <li><a class="main-nav-link" href="sign_in_page.html">Sign-in</a></li>
          </ul>
-      </div> 
+      </div>
+
+      <button class="btn-mobile-nav">
+         <ion-icon 
+         class="icon-mobile-nav" 
+         name="menu-outline"
+         ></ion-icon>
+         <ion-icon 
+         class="icon-mobile-nav hidden" 
+         name="close-outline"
+         ></ion-icon>
+      </button>
+      
    </header>
 
    <main>
@@ -57,7 +79,7 @@
                   YOUR MEALS. PAUSE ANYTIME.
                </p>
                <a href="plan_selected_page.html" class="btn btn--full margin-right-sm">Get started</a>
-               <a href="#section-deatured" class="btn btn--outline">Learn more &darr;</a>
+               <a href="#section-how" class="btn btn--outline">Learn more &darr;</a>
                <div class="delivered-meals">
                   <div class="delivered-imgs">
                      <img src="./content/img/customers/customer-1.jpg" alt="Customer photo">
@@ -80,85 +102,100 @@
                >
             </div>
          </div>
+         <div class="container featured-in">
+            <div class="seen-on-text">Seen on</div>
+            <div class="logos">
+               
+                  <img 
+                  src="./content/img/logos/techcrunch.png" alt="Techcrunch">
+               
+              
+                  <img 
+                  src="./content/img/logos/business-insider.png" alt="Business Insider logo">
+               
+               
+
+                  <img 
+                  src="./content/img/logos/the-new-york-times.png" alt="The New York Times logo">
+               
+               
+
+                  <img 
+                  src="./content/img/logos/forbes.png" 
+                  alt="Forbes logo">
+               
+
+                  <img 
+                  src="./content/img/logos/usa-today.png" 
+                  alt="USA Today logo">
+               
+            </div>
+         </div>
       </section>
 
-        <section class="section-featured" id="section-deatured">
-            <div class="container">
-                <h2 class="heading-featured-in"></h2>
-                <div class="logos">
-                    <img 
-                    src="./content/img/logos/techcrunch.png" alt="Techcrunch">
-                    <img 
-                    src="./content/img/logos/business-insider.png" alt="Business Insider logo">
-                    <img 
-                    src="./content/img/logos/the-new-york-times.png" alt="The New York Times logo">
-                    <img 
-                    src="./content/img/logos/forbes.png" 
-                    alt="Forbes logo">
-                    <img 
-                    src="./content/img/logos/usa-today.png" 
-                    alt="USA Today logo">
-                </div>
-            </div>
-        </section>
+      <section class="section-how" id="section-how"> 
+         <div class="container">
+            <span class="subheading">How it works</span>
+            <h2 class="heading-secondary">Your daily dose of health in 3 simple steps</h2>
+         </div>
 
-        <section class="section-how"> 
-            <div class="container">
-                <span class="subheading">How it works</span>
-                <h2 class="heading-secondary">Your daily dose of health in 3 simple steps</h2>
-            </div>
+         <ol class="container how-container">
+            <li class="scrolling-box">
+               <div class="step-number-box">
+                  <p class="step-number">01</p>
+               </div>
+               <div class="step-text-box">
+                  <h3 class="heading-tertiary">Tell us what you like (and what not)</h3>
+                  <p class="step-description">
+                     Never again waste time thinking about what to eat! YumYum will create a 100% personalized weekly meal plan just for you. It makes sure you get all the nutrients and vitamins you need, no matter what diet you follow!
+                  </p>
+               </div>
+            </li>
 
-            <div class="container grid grid--2-cols grid--center-v">
-                <div class="step-text-box">
-                    <h3 class="heading-tertiary">Tell us what you like (and what not)</h3>
-                    <p class="step-description">
-                         Never again waste time thinking about what to eat! YumYum will create a 100% personalized weekly meal plan just for you. It makes sure you get all the nutrients and vitamins you need, no matter what diet you follow!
-                    </p>
-                </div>
-                <div class="step-number-box">
-                    <p class="step-number">01</p>
-                </div>
+            <li class="scrolling-box">
+               <div class="step-text-box">
+                  <h3 class="heading-tertiary">Approve your weekly meal plan</h3>
+                  <p class="step-description">
+                     Once per week, approve the meal plan generated for you by YumYum. You can change ingredients, swap entire meals, or even add your own recipes.
+                  </p>
+               </div>
+               <div class="step-number-box">
+                  <p class="step-number">02</p>
+               </div>
+            </li>
 
-                <div class="step-number-box">
-                    <p class="step-number">02</p>
-                </div>
-                <div class="step-text-box">
-                    <h3 class="heading-tertiary">Approve your weekly meal plan</h3>
-                    <p class="step-description">
-                        Once per week, approve the meal plan generated for you by YumYum. You can change ingredients, swap entire meals, or even add your own recipes.
-                    </p>
-                </div>
+            <li class="scrolling-box">
+               <div class="step-number-box">
+                  <p class="step-number">03</p>
+               </div>
+               <div class="step-text-box">
+                  <h3 class="heading-tertiary">Receive meals at convenient time</h3>
+                  <p class="step-description">
+                     Best chefs in town will cook your selected meal every day, and we will deliver it to your door whenever works best for you. You can change delivery schedule and address daily!
+                  </p>
+               </div>
+            </li>
+         </ol>
 
-                <div class="step-text-box">
-                    <h3 class="heading-tertiary">Receive meals at convenient time</h3>
-                    <p class="step-description">
-                        Best chefs in town will cook your selected meal every day, and we will deliver it to your door whenever works best for you. You can change delivery schedule and address daily!
-                    </p>
-                </div>
-                <div class="step-number-box">
-                    <p class="step-number">03</p>
-                </div>
-            </div>
-
-            <div class="container grid grid--4-cols">
-                <div class="step">
-                    <img class="step-img" src="./content_mine/img/how-it-works pic/task.png" alt="">        
-                    <p class="step-caption">Choose a plan</p>
-                </div>
-                <div class="step">
-                    <img class="step-img" src="./content_mine/img/how-it-works pic/pot.png">
-                    <p class="step-caption">We prep</p>
-                </div>
-                <div class="step">
-                    <img class="step-img" src="./content_mine/img/how-it-works pic/delivery.png">
-                    <p class="step-caption">We deliver</p>
-                </div>
-                <div class="step">
-                    <img class="step-img" src="./content_mine/img/how-it-works pic/microwave.png">
-                    <p class="step-caption">Heat & Enjoy</p>
-                </div>
-            </div>
-        </section>
+         <div class="container grid grid--4-cols">
+               <div class="step">
+                  <img class="step-img" src="./content_mine/img/how-it-works pic/task.png" alt="">        
+                  <p class="step-caption">Choose a plan</p>
+               </div>
+               <div class="step">
+                  <img class="step-img" src="./content_mine/img/how-it-works pic/pot.png">
+                  <p class="step-caption">We prep</p>
+               </div>
+               <div class="step">
+                  <img class="step-img" src="./content_mine/img/how-it-works pic/delivery.png">
+                  <p class="step-caption">We deliver</p>
+               </div>
+               <div class="step">
+                  <img class="step-img" src="./content_mine/img/how-it-works pic/microwave.png">
+                  <p class="step-caption">Heat & Enjoy</p>
+               </div>
+         </div>
+      </section>
         
         <section class="section-meals">
             <div class="container">
@@ -169,80 +206,84 @@
             </div>
     
             <div class="container grid grid--3-cols margin-right-md">
-                <div class="meal">
-                    <img 
-                    class="meal-img" 
-                    src="./content/img/meals/meal-1.jpg" 
-                    alt="Japanese Gyozas"
-                    >
-                    <div class="meal-content">
+               <div class="meal">
+                  <a class="meal-link" href="recipe_page.html">
+                     <img 
+                     class="meal-img" 
+                     src="./content/img/meals/meal-1.jpg" 
+                     alt="Japanese Gyozas"
+                     >
+                     <div class="meal-content">
                         <div class="meal-tags">
-                            <span class="tag tag--vegitarian">Vegetarian</span>
+                           <span class="tag tag--vegitarian">Vegetarian</span>
                         </div>
                         <p class="meal-title">Japanese Gyozas</p>
                         <ul class="meal-attributes">
-                            <li class="meal-attribute">
-                                <ion-icon 
-                                class="meal-icon" 
-                                name="flame"
-                                ></ion-icon>
-                                <span><strong>650</strong> calories</span>
-                            </li>
-                            <li class="meal-attribute">
-                                <ion-icon 
-                                class="meal-icon" 
-                                name="restaurant"
-                                ></ion-icon>
-                                <span>NutriScore &reg; <strong>74</strong></span>
-                            </li>
-                            <li class="meal-attribute">
-                                <ion-icon 
-                                class="meal-icon" 
-                                name="star"
-                                ></ion-icon>
-                                <sapn><strong>4.9</strong> rating (537)</sapn>
-                            </li>
+                           <li class="meal-attribute">
+                              <ion-icon 
+                              class="meal-icon" 
+                              name="flame"
+                              ></ion-icon>
+                              <span><strong>650</strong> calories</span>
+                           </li>
+                           <li class="meal-attribute">
+                              <ion-icon 
+                              class="meal-icon" 
+                              name="restaurant"
+                              ></ion-icon>
+                              <span>NutriScore &reg; <strong>74</strong></span>
+                           </li>
+                           <li class="meal-attribute">
+                              <ion-icon 
+                              class="meal-icon" 
+                              name="star"
+                              ></ion-icon>
+                              <sapn><strong>4.9</strong> rating (537)</sapn>
+                           </li>
                         </ul>
-                    </div>
-                </div>
+                     </div>
+                  </a>
+               </div>
 
-                <div class="meal">
-                    <img 
-                    class="meal-img" 
-                    src="./content/img/meals/meal-2.jpg" 
-                    alt="Japanese Gyozas"
-                    >
-                    <div class="meal-content">
+               <div class="meal">
+                  <a class="meal-link" href="recipe_page.html">
+                     <img 
+                     class="meal-img" 
+                     src="./content/img/meals/meal-2.jpg" 
+                     alt="Japanese Gyozas"
+                     >
+                     <div class="meal-content">
                         <div class="meal-tags">
-                            <span class="tag tag--vegan">Vegan</span>
-                            <span class="tag tag--paleo">Paleo</span>
+                           <span class="tag tag--vegan">Vegan</span>
+                           <span class="tag tag--paleo">Paleo</span>
                         </div>
                         <p class="meal-title">Avocado Salad</p>
                         <ul class="meal-attributes">
-                            <li class="meal-attribute">
-                                <ion-icon 
-                                class="meal-icon" 
-                                name="flame"
-                                ></ion-icon>
-                                <span><strong>400</strong> calories</span>
-                            </li>
-                            <li class="meal-attribute">
-                                <ion-icon 
-                                class="meal-icon" 
-                                name="restaurant"
-                                ></ion-icon>
-                                <span>NutriScore &reg; <strong>92</strong></span>
-                            </li>
-                            <li class="meal-attribute">
-                                <ion-icon 
-                                class="meal-icon" 
-                                name="star"
-                                ></ion-icon>
-                                <sapn><strong>4.8</strong> rating (441)</sapn>
-                            </li>
+                           <li class="meal-attribute">
+                              <ion-icon 
+                              class="meal-icon" 
+                              name="flame"
+                              ></ion-icon>
+                              <span><strong>400</strong> calories</span>
+                           </li>
+                           <li class="meal-attribute">
+                              <ion-icon 
+                              class="meal-icon" 
+                              name="restaurant"
+                              ></ion-icon>
+                              <span>NutriScore &reg; <strong>92</strong></span>
+                           </li>
+                           <li class="meal-attribute">
+                              <ion-icon 
+                              class="meal-icon" 
+                              name="star"
+                              ></ion-icon>
+                              <sapn><strong>4.8</strong> rating (441)</sapn>
+                           </li>
                         </ul>
-                    </div>
-                </div>
+                     </div>
+                  </a>
+               </div>
 
                 <div class="diets">
                     <h3 class="heading-tertiary">Works with any diet:</h3>

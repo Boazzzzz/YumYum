@@ -87,6 +87,7 @@ body {
    line-height: 1;
    font-weight: 400;
    color: #555;
+   overflow-x: hidden ;
 }
 
 *:focus {
@@ -187,18 +188,18 @@ body {
 .btn,
 .btn:link,
 .btn:visited {
-    display: inline-block;
-    text-decoration: none;
-    font-size: 2rem;
-    font-weight: 600;
-    padding: 1.6rem 3.2rem;
-    border-radius: 9px;
-    transition: all 0.3s;
-    
-    /* Neccessary for .btn */
-    border: none;
-    cursor: pointer;
-    font-family: inherit;
+   display: inline-block;
+   text-decoration: none;
+   font-size: 2rem;
+   font-weight: 600;
+   padding: 1.6rem 3.2rem;
+   border-radius: 9px;
+   transition: all 0.3s;
+   
+   /* Neccessary for .btn */
+   border: none;
+   cursor: pointer;
+   font-family: inherit;
 }
 
 .btn--full:link,
@@ -277,7 +278,7 @@ body {
 }
 
 .logo {
-    height: 5.2rem;
+   height: 4.8rem;
 }
 
 /* MEAL CARD */
@@ -385,6 +386,10 @@ body {
 
 /* HELPER / SETTINGS CLASSES */
 
+.margin-top-auto {
+   margin-top: auto !important;
+}
+
 .margin-bottom-none {
     margin-bottom: 0 !important;
 }
@@ -435,4 +440,41 @@ body {
 
 strong {
     font-weight: 500;
+}
+
+/* ====== MEDIA QUERIES ====== */
+
+@media (max-width: 1200px) {
+   html {
+      font-size: 56.25%;
+   }
+
+   .grid {
+      column-gap: 4.8rem;
+      row-gap: 6.4rem;
+   }
+
+   .heading-primary {
+      font-size: 4.4rem;
+   }
+
+   .heading-secondary {
+      font-size: 3.6rem;
+   }
+
+   .heading-tertiary {
+      font-size: 2.4rem;
+   }
+}
+
+@media (max-width: 1024px) {
+   html {
+      font-size: 50%;
+   }
+}
+
+@media (max-width: 768px) {
+   html {
+      font-size: 43.75%;
+   }
 }

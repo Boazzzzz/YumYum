@@ -1,18 +1,31 @@
-/*********************************/
-/* SIDE */
-/*********************************/
+body {
+   background-color: #e6e6e6;
+}
+
 
 .side-container {
    display: flex;
    flex-direction: column;
    background-color: #f2fbf6;
-   width: 25rem;
    height: 100%;
    position: fixed;
    top: 0%;
-   left: 0%;
    z-index: 1;
+}
+
+/*********************************/
+/* LEFT SIDE */
+/*********************************/
+
+.left-side-container {
+   max-width: 25rem;
+   width: 100%;
+   left: 0%;
    padding: 4.8rem 2.4rem;
+}
+
+.member-logo {
+   padding: 0.6rem;
 }
 
 .side-nav {
@@ -31,6 +44,7 @@
    width: 100%;
    padding: 1.2rem;
    cursor: pointer;
+   color: #888;
 }
 
 .side-nav-item::before {
@@ -47,11 +61,19 @@
 
 .side-nav-item:hover::before {
    width: 100%;
+   z-index: -1;
 }
 
-.side-nav-link {
-   text-decoration: none;
-   color: #888;
+.button {
+   color: inherit;
+   background-color: inherit;
+   cursor: pointer;
+   border: none;
+   font-size: 2rem;
+}
+
+.active {
+   color: #6ec296;
 }
 
 .ad-box {
@@ -92,15 +114,37 @@
 /* MAIN */
 /*********************************/
 
+.tab-content {
+   animation: anime 1s;
+   display: none;
+   overflow-y: scroll;
+   height: 100vh;
+}
+
+.show {
+   display: block;
+}
+
 .main-container {
    max-width: 60%;
-   padding: 0 3.2rem;
+   padding: 4.8rem 3.2rem;
    margin: 0 auto;
 }
 
+/* OVERVIEW */
+
 .index {
-   padding: 4.8rem 0;
+   padding-bottom: 4.8rem;
    display: flex;
+   align-items: center;
+   gap: 1.6rem;
+}
+
+.last-page-text {
+   font-size: 2rem;
+   font-weight: 600;
+   padding: 1.2rem;
+   cursor: pointer;
 }
 
 .search-bar {
@@ -109,7 +153,7 @@
    display: flex;
    align-items: center;
    border-radius: 60px;
-   padding: 0 1.2rem;
+   padding: 1.2rem;
    transition: width 0.3s;
 }
 
@@ -148,7 +192,7 @@
 .banner {
    display: grid;
    grid-template-columns: 2fr 1fr;
-   background-color: #e4f7ed;
+   background-color: #7fd7a7;
    border-radius: 15px;
    padding: 3.2rem 4.8rem;
    position: relative;
@@ -172,6 +216,12 @@
    justify-content: space-between;
    align-items: center;
    padding: 2.4rem 0;
+}
+
+.meal-nutrition-card {
+   background-color: #fff;
+   padding: 1.6rem;
+   border-radius: 11px;
 }
 
 .meal-nutrition-card img {
@@ -208,8 +258,27 @@
    color: #7AD7A7;
 }
 
+.add-button {
+   border: none;
+   border-radius: 6rem;
+   height: 3rem;
+   background-color: #7fd7a7;
+   cursor: pointer;
+   color: #fff;
+}
+
+.add-button span {
+   background-color: #fff;
+   border-radius: 50%;
+   padding: 0.2rem 0.4rem;
+   margin-right: 0.8rem;
+   color: #555;
+}
+
 .microwave-time {
-   text-align: end;
+   display: flex;
+   justify-content: flex-end;
+   gap: 0.6rem;
 }
 
 .microwave-time img {
@@ -218,5 +287,125 @@
 
 .microwave-time span {
    font-size: 1.2rem;
-   padding-bottom: 0.8rem;
 }
+
+/* RIGHT SIDE */
+
+.right-side-container {
+   max-width: 30rem;
+   width: 100%;
+   right: 0%;
+   padding: 4.8rem 1.6rem;
+   margin: 0 auto;
+}
+
+.right-icon {
+   display: flex;
+   gap: 1.6rem;
+   justify-content: flex-end;
+   cursor: pointer;
+}
+
+.right-icon img {
+   width: 3.2rem;
+   height: 3.2rem;
+   border-radius: 50%;
+}
+
+.report {
+   margin-top: 3.6rem;
+}
+
+.report-heading {
+   color: #888;
+   font-size: 1.6rem;
+   letter-spacing: 0.75px;
+   margin-bottom: 1.2rem;
+}
+
+.report-heading span {
+   font-size: 2.4rem;
+   font-weight: 500;
+   color: #333;
+}
+
+.chart {
+   width: 100%;
+   margin-top: 2.4rem;
+}
+
+.extras-title {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 2.4rem 0;
+}
+
+.extras-card {
+   display: flex;
+   flex-direction: column;
+   background-color: #fff;
+   padding: 1.2rem;
+   gap: 1.2rem;
+   border-radius: 11px;
+   box-shadow:  0 2px 3px 0 rgba(0, 0, 0, 10%);
+}
+
+.extras-card img {
+   width: 100%;
+}
+
+.extras-card span {
+   font-size: 1.6rem;
+   text-align: center;
+}
+
+.extras-name {
+   font-weight: 600;
+}
+
+/* MEAL LIST */
+
+.weekday span {
+   font-size: 2.8rem;
+   color: #e67e22;
+}
+
+.empty {
+   height: 15rem;
+   width: 15rem;
+   margin: 2.4rem 1.2rem;
+   border: solid 3px #000;
+   background: #fff;
+}
+
+.fill {
+   height: 14.5rem;
+   width: 14.5rem;
+   cursor: pointer;
+   background-image: url(../content_mine/img_member/meal_box_meals/meal01.png);
+   background-position: center;
+   background-size: 100%;
+   background-repeat: no-repeat;
+}
+
+.hold {
+   border: 5px solid #ccc;
+}
+
+.hovered {
+   background-color: #333;
+   border-color: #fff;
+   border-style: dashed;
+}
+
+.meal-list {
+   display: flex;
+   flex-direction: column;
+   gap: 2.4rem;
+}
+
+.meal-img {
+   
+}
+

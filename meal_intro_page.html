@@ -14,6 +14,7 @@
    <link rel="stylesheet" href="css/meal_intro_page.css">
 
    <script src="JavaScript/general.js"></script>
+   <script src="JavaScript/meal_intro.js"></script>
    
    <title>Meal introduction</title>
 </head>
@@ -24,7 +25,10 @@
       </a>
       <nav class="main-nav">
          <ul class="main-nav-list">
-            <li><a class="main-nav-link" href="#">How it works</a></li>
+            <li>
+               <a class="main-nav-link" href="about_us_page.html"
+               >About us</a>
+            </li>
             <li><a class="main-nav-link" href="recipe_page.html">On the menu</a></li>
             <li><a class="main-nav-link" href="#">Testimonials</a></li>
             <li><a class="main-nav-link" href="#">Pricing</a></li>
@@ -141,10 +145,16 @@
             </div>
 
             <div class="meal-intro shadow-box">
-               <p>The inspo for this keto dish came from everyone's secret dinner desire. What's that? To eat a giant bowl of spinach artichoke dip for dinner, obviously. In true Factor fashion, we transformed it into a hearty meal that'll actually leave you feeling satisfied afterwards (unlike said giant bowl). Herb-rubbed, grilled chicken is served atop a bed of the ...</p>
-               <a class="link read-more" href="#">Read more</a>
+               <div class="meal-intro-text">
+                  <p>
+                     Smoky flavors run throughout this meal, starting with grilled chicken breast that's brined, then tossed with Italian herbs and roasted garlic oil. It's served over cauliflower grits that are enriched with smoked cheddar cheese. On the side is salt-and-pepper roasted broccoli topped with a smoky chili-garlic butter, which adds a <span class="dots" id="dots">...</span><span class="more" id="more">of flavor.<br>
+                     All the comforting flavors of a home-cooked meal, but without any of the fuss. We start with a fire-grilled chicken breast, seasoned with basic, oregano, and garlic and nestle it in a delectable sun-dried tomato cream sauce made with Parmesan and spinach. It's served with tender zucchini noodles, perfect for lapping up every bit of the sauce.</span>
+                  </p>
+               </div>
+                  <div class="read-more" id="read-more-btn"
+                  >Read more</div>
             </div>
-            
+                  
             <div class="ingredients-box shadow-box">
                <h2 class="ingredient-heading">
                   Ingredients in this meal

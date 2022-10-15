@@ -1,5 +1,5 @@
 .section-chef {
-   padding: 9.6rem 0;
+   padding: 4.8rem 0;
 }
 
 .chef-heading {
@@ -15,6 +15,69 @@
 
 .chef-img {
    width: 100%;
+}
+
+/*********************************/
+/* KITCHENS SECTION */
+/*********************************/
+
+.section-kitchens {
+   padding: 9.6rem 0;
+}
+
+.kitchen-heading {
+   text-align: center;
+}
+
+.panel-container {
+   padding: 3.2rem;
+   max-width: 120rem;
+   display: flex;
+   justify-content: center;
+   margin: 0 auto;
+}
+
+.panel {
+   background-size: auto 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   height: 50rem;
+   border-radius: 6rem;
+   color: #333;
+   cursor: pointer;
+   flex: 0.5;
+   margin: 0 0.8rem;
+   position: relative;
+   transition: flex 0.5s ease-in;
+}
+
+.panel h3 {
+   font-size: 2.4rem;
+   position: absolute;
+   margin: auto;
+   right: 2rem;
+   bottom: 2rem;
+   opacity: 0;
+}
+
+.panel.active {
+   flex: 5;   
+}
+
+.panel.active h3 {
+   opacity: 1;
+   transition: opacity 0.3s ease-in 0.5s;
+}
+
+@media screen and (max-width: 480px) {
+   .panel-container {
+      max-width: auto;
+   }
+
+   .panel:nth-of-type(4),
+   .panel:nth-of-type(5) {
+      display: none;
+   }
 }
 
 .section-intro01 {
