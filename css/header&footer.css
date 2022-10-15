@@ -199,6 +199,14 @@
   color: #555;
 }
 
+.alert-text {
+   text-align: center;
+   color: #333;
+   font-size: 1.2rem;
+   font-weight: 500;
+   padding: 1.2rem 0;
+}
+
 /* ====== MEDIA QUERIES ====== */
 @media (max-width: 1200px) {
    .header-container {
@@ -245,3 +253,24 @@
       display: none;
    }
 }
+
+@media (max-width: 428px) {
+   .grid--footer {
+      grid-template-columns: repeat(3, 1fr);
+   }
+
+   .footer-logo .logo {
+      height: 3.2rem;
+   }
+
+   .logo-col {
+      order: 1;
+   }
+
+   .address-col {
+      order: 2;
+   }
+}
+
+
+

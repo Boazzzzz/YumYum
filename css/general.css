@@ -478,3 +478,32 @@ strong {
       font-size: 43.75%;
    }
 }
+
+@media (max-width: 428px) {
+   .grid {
+      row-gap: 4.8rem;
+      column-gap: 2.4rem;
+   }
+
+   .grid--2-cols,
+   .grid--3-cols,
+   .grid--4-cols {
+      grid-template-columns: 1fr;
+   }
+
+   .grid:not(:last-child) {
+      margin-bottom: 4.8rem;
+   }
+
+   .heading-secondary {
+      text-align: center;
+   }
+   
+   .heading-tertiary {
+      text-align: center;
+   }
+
+   .subheading {
+      text-align: center;
+   }
+}

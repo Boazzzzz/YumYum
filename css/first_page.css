@@ -97,14 +97,15 @@
 }
 
 .logos {
-    display: flex;
-    justify-content: space-around;
+   height: 3.2rem;
+   display: flex;
+   justify-content: space-around;
 }
 
 .logos img {
-    height: 3.2rem;
-    filter: brightness(0);
-    opacity: 50%;
+   height: 100%;
+   filter: brightness(0);
+   opacity: 50%;
 }
 
 /*********************************/
@@ -177,6 +178,10 @@
    background-color: #e4f7ed;
    z-index: -1;
 } */
+
+.step-container{
+   justify-items: center;
+}
 
 .step-img {
    width: 80%;
@@ -515,5 +520,68 @@
    .hero-img-box {
       width: 60%;
       justify-self: center;
+   }
+}
+
+@media (max-width: 428px) {
+   .section-hero {
+      padding: 2.4rem 0;
+   }
+
+   .logos {
+      height: 1.2rem;
+   }
+
+   .scrolling-box {
+      flex-direction: column;
+      gap: 3.2rem;
+   }
+
+   .scrolling-box:nth-of-type(2) .step-text-box {
+      order: 1;
+   }
+
+   .step {
+      width: 60%;
+   }
+
+   .meal-container {
+      padding: 0 6.4rem;
+   }
+
+   .diets-list {
+      width: fit-content;
+      margin: auto;
+   }
+
+   .section-testimonials {
+      grid-template-columns: 1fr;
+   }
+
+   .testimonials {
+      width: 100%;
+   }
+
+   .gallery {
+      grid-template-columns: repeat(6, 1fr);
+      padding: 2.4rem 0 4.8rem;
+      margin: auto;
+   }
+
+   .cta {
+      grid-template-columns: 1fr;
+   }
+
+   .cta-text-box {
+      padding: 3.2rem;
+   }
+
+   .cta-form {
+      grid-template-columns: 1fr;
+   }
+
+   .cta-img-box {
+      height: 32rem;
+      grid-row: 1 / 2;
    }
 }
