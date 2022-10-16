@@ -567,6 +567,10 @@
       margin: auto;
    }
 
+   .section-pricing {
+      padding: 0 6.4rem;
+   }
+
    .cta {
       grid-template-columns: 1fr;
    }
