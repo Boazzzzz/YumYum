@@ -317,7 +317,6 @@
 .pricing-plan-advanced {
    background-color: #f2fbf6;
    padding: 4.8rem;
-   position: relative;
    overflow: hidden;
 }
 
@@ -476,7 +475,11 @@
     background-position: center;
 }
 
-/* ====== MEDIA QUERIES ====== */
+/*********************************/
+/* MEDIA QUERIES */
+/*********************************/
+
+/* MEDEA: 1200px */
 @media (max-width: 1200px) {
    .hero {
       gap: 4.8rem;
@@ -486,6 +489,8 @@
       padding: 9.6rem 3.2rem;
    }
 }
+
+/* MEDEA: 1024px */
 
 @media (max-width: 1024px) {
    .testimonials-container {
@@ -502,6 +507,8 @@
       grid-template-columns: repeat(2, 1fr);
    }
 }
+
+/* MEDEA: 768px */
 
 @media (max-width: 768px) {
    .hero {
@@ -521,6 +528,8 @@
       justify-self: center;
    }
 }
+
+/* MEDEA: 428px */
 
 @media (max-width: 428px) {
    .section-hero {
@@ -568,7 +577,7 @@
    }
 
    .section-pricing {
-      padding: 0 6.4rem;
+      padding: 9.6rem 6.4rem;
    }
 
    .cta {
@@ -586,5 +595,13 @@
    .cta-img-box {
       height: 32rem;
       grid-row: 1 / 2;
+   }
+}
+
+/* MEDEA: 368px */
+
+@media (max-width: 368px) {
+   .pricing-plan {
+      width: 36rem;
    }
 }
