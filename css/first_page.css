@@ -576,6 +576,10 @@
       margin: auto;
    }
 
+   .pricing-container {
+      padding: 0;
+   }
+
    .section-pricing {
       padding: 9.6rem 6.4rem;
    }
@@ -595,13 +599,5 @@
    .cta-img-box {
       height: 32rem;
       grid-row: 1 / 2;
-   }
-}
-
-/* MEDEA: 368px */
-
-@media (max-width: 368px) {
-   .pricing-plan {
-      width: 36rem;
    }
 }
