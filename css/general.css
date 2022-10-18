@@ -44,6 +44,7 @@ Paragraph default: 1.6
 - Shades: #6ec296
 - Acents:
 - Greys:
+#eee
 #888
 #767676
 #6f6f6f
@@ -108,42 +109,46 @@ body {
 /* GRID */
 
 .grid {
-    display: grid;
-    row-gap: 9.6rem;
-    column-gap: 6.4rem;
+   display: grid;
+   row-gap: 9.6rem;
+   column-gap: 6.4rem;
 }
 
 .grid:not(:last-child) {
-    margin-bottom: 9.6rem;
+   margin-bottom: 9.6rem;
 }
 
 .grid--2-cols {
-    grid-template-columns: repeat(2, 1fr);
+   grid-template-columns: repeat(2, 1fr);
 }
 
 .grid--3-cols {
-    grid-template-columns: repeat(3, 1fr);
+   grid-template-columns: repeat(3, 1fr);
 }
 
 .grid--4-cols {
-    grid-template-columns: repeat(4, 1fr);
+   grid-template-columns: repeat(4, 1fr);
 }
 
 .grid--5-cols {
-    grid-template-columns: repeat(5, 1fr);
+   grid-template-columns: repeat(5, 1fr);
 }
 
 .grid--7-cols {
-    grid-template-columns: repeat(7, 1fr);
+   grid-template-columns: repeat(7, 1fr);
 }
 
 .grid-h-v-center {
-    justify-items: center;
-    align-items: center;
+   justify-items: center;
+   align-items: center;
 }
 
 .grid--center-v {
-    align-items: center;
+   align-items: center;
+}
+
+.grid--center-h {
+   justify-items: center;
 }
 
 /* HEADING, SUBHEADING */
@@ -442,7 +447,9 @@ strong {
     font-weight: 500;
 }
 
-/* ====== MEDIA QUERIES ====== */
+/*********************************/
+/* MEDIA QUERIES */
+/*********************************/
 
 @media (max-width: 1200px) {
    html {

@@ -21,7 +21,6 @@
 </head>
 <body>
    <header class="header">
-      
       <a href="#">
          <img  class="logo" src="./content_mine/img/logo_yumyum.png" alt="YumYum logo">
       </a>
@@ -62,7 +61,6 @@
          name="close-outline"
          ></ion-icon>
       </button>
-      
    </header>
 
    <main>
@@ -70,10 +68,7 @@
          <div class="hero">
             <div class="hero-text-box">
                <h1 class="heading-primary">
-                  Signature meals 
-                  from award-winning 
-                  chefs, delivered to 
-                  your door
+                  Say hello to super healthy meals!
                </h1>
                <p class="hero-description">
                   DELIVERED FRESH DAILY. READY-TO-EAT. CUSTOMIZE 
@@ -95,29 +90,46 @@
                   </p>
                </div>
             </div>
-            <div class="hero-img-box">
-               <img 
-               class="hero-img" 
-               src="./content_mine/img/eating.jpg" 
-               alt="Women enjoying food"
-               >
-            </div>
+            <ul class="meal-attributes">
+               <li class="meal-attribute">
+                  <ion-icon 
+                  class="meal-icon" 
+                  name="flame"
+                  ></ion-icon>
+                  <span><strong>650</strong> calories</span>
+               </li>
+               <li class="meal-attribute">
+                  <ion-icon 
+                  class="meal-icon" 
+                  name="restaurant"
+                  ></ion-icon>
+                  <span>NutriScore &reg; <strong>74</strong></span>
+               </li>
+               <li class="meal-attribute">
+                  <ion-icon 
+                  class="meal-icon" 
+                  name="star"
+                  ></ion-icon>
+                  <sapn><strong>4.9</strong> rating (537)</sapn>
+               </li>
+            </ul>
          </div>
          <div class="container featured-in">
             <div class="seen-on-text">Seen on</div>
             <div class="logos">
-                  <img 
-                  src="./content/img/logos/techcrunch.png" alt="Techcrunch">
-                  <img 
-                  src="./content/img/logos/business-insider.png" alt="Business Insider logo">
-                  <img 
-                  src="./content/img/logos/the-new-york-times.png" alt="The New York Times logo">
-                  <img 
-                  src="./content/img/logos/forbes.png" 
-                  alt="Forbes logo">
-                  <img 
-                  src="./content/img/logos/usa-today.png" 
-                  alt="USA Today logo">
+               <img 
+               src="./content/img/logos/techcrunch.png" alt="Techcrunch">
+               <img 
+               src="./content/img/logos/business-insider.png" alt="Business Insider logo">
+               <img 
+               src="./content/img/logos/the-new-york-times.png" 
+               alt="The New York Times logo">
+               <img 
+               src="./content/img/logos/forbes.png" 
+               alt="Forbes logo">
+               <img 
+               src="./content/img/logos/usa-today.png" 
+               alt="USA Today logo">
             </div>
          </div>
       </section>
@@ -166,23 +178,41 @@
             </li>
          </ol>
 
-         <div class="container grid grid--4-cols step-container">
-               <div class="step">
-                  <img class="step-img" src="./content_mine/img/how-it-works pic/task.png" alt="">        
-                  <p class="step-caption">Choose a plan</p>
+         <div class="container">
+            <div class="progress-container">
+               <div class="progress-number">
+                  <div class="progress-line" id="progress-line"></div>
+                  <div class="circle progress-active">1</div>
+                  <div class="circle">2</div>
+                  <div class="circle">3</div>
+                  <div class="circle">4</div>
                </div>
-               <div class="step">
-                  <img class="step-img" src="./content_mine/img/how-it-works pic/pot.png">
-                  <p class="step-caption">We prep</p>
+               <button 
+               class="progress-btn" 
+               id="prev" 
+               disabled
+               >Prev</button>
+               <button class="progress-btn" id="next">Next</button>
+            </div>
+               
+            <div class="grid grid--4-cols grid--center-h">
+               <div class="progress">
+                  <img class="progress-img" src="./content_mine/img/how-it-works pic/task.png" alt="">        
+                  <p class="progress-caption">Choose a plan</p>
                </div>
-               <div class="step">
-                  <img class="step-img" src="./content_mine/img/how-it-works pic/delivery.png">
-                  <p class="step-caption">We deliver</p>
+               <div class="progress progress-hide">
+                  <img class="progress-img" src="./content_mine/img/how-it-works pic/pot.png">
+                  <p class="progress-caption">We prep</p>
                </div>
-               <div class="step">
-                  <img class="step-img" src="./content_mine/img/how-it-works pic/microwave.png">
-                  <p class="step-caption">Heat & Enjoy</p>
+               <div class="progress progress-hide">
+                  <img class="progress-img" src="./content_mine/img/how-it-works pic/delivery.png">
+                  <p class="progress-caption">We deliver</p>
                </div>
+               <div class="progress progress-hide">
+                  <img class="progress-img" src="./content_mine/img/how-it-works pic/microwave.png">
+                  <p class="progress-caption">Heat & Enjoy</p>
+               </div>
+            </div>
          </div>
       </section>
         
