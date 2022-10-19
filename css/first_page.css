@@ -4,7 +4,7 @@
 
 .section-hero {
    padding-top: 4.8rem;
-   height: 100vh;
+   position: relative;
 }
 
 .section-hero::before {
@@ -13,13 +13,13 @@
    filter: brightness(30%);
    background-position: center;
    background-size: cover;
+   background-attachment: fixed;
    display: block;
    position: absolute;
    left: 0;
    top: 0;
    width: 100vw;
-   height: 100vh;
-   max-height: 100vh;
+   height: 100%;
    z-index: -1;
    opacity: 30%;
 }
@@ -38,10 +38,6 @@
     font-size: 2rem;
     line-height: 1.6;
     margin-bottom: 4.8rem;
-}
-
-.hero-img {
-    width: 100%;
 }
 
 .delivered-meals {
@@ -75,6 +71,26 @@
 .delivered-text span {
     color: #e67e22;
     font-weight: 700;
+}
+
+.hero-icons {
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   gap: 3.6rem;
+   justify-self: center;
+}
+
+.hero-icon {
+   display: flex;
+   align-items: center;
+   gap: 1.6rem;
+   font-size: 2rem;
+}
+
+.hero-icon img {
+   width: 4.8rem;
+   height: 4.8rem;
 }
 
 /*********************************/
@@ -176,6 +192,7 @@
    min-width: 30rem;
    margin: 0 auto;
    padding: 3.6rem 0;
+   display: none;
 }
 
 .progress-number {
@@ -200,7 +217,7 @@
 }
 
 .progress-line {
-   background-color: #3498db;
+   background-color: #7AD7A7;
    position: absolute;
    top: 50%;
    left: 0;
@@ -225,11 +242,11 @@
 }
 
 .circle.progress-active {
-   border-color: #3498db;
+   border-color: #7AD7A7;
 }
 
 .progress-btn {
-   background-color: #3498db;
+   background-color: #7AD7A7;
    color: #fff;
    border: 0;
    border-radius: 9px;
@@ -237,6 +254,10 @@
    padding: 0.8rem 3rem;
    margin: 0.6rem;
    font-size: 1.4rem;
+}
+
+.progress-btn:nth-of-type(1) {
+   background-color: #eee;
 }
 
 .progress-btn:active {
@@ -591,6 +612,11 @@
       text-align: center;
    }
 
+   .hero-icons {
+      flex-direction: row;
+      justify-self: center;
+   }
+
    .delivered-meals {
       justify-content: center;
    }
@@ -619,6 +645,10 @@
 
    .scrolling-box:nth-of-type(2) .step-text-box {
       order: 1;
+   }
+
+   .progress-container {
+      display: block;
    }
 
    .progress {

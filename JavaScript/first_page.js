@@ -37,9 +37,8 @@ function init() {
       }
       
       update();
-
-      progress.forEach()
-   })
+      updateProgress();
+   });
    
    prev.addEventListener('click', function() {
       currentActive--;
@@ -49,6 +48,7 @@ function init() {
       }
 
       update();
+      updateProgress();
    })
    
    function update() {
@@ -66,12 +66,24 @@ function init() {
 
       if (currentActive === 1) {
          prev.disabled = true;
+         prev.style.backgroundColor = "#eee";
       } else if (currentActive === circles.length) {
          next.disabled = true;
+         next.style.backgroundColor = "#eee";
       } else {
          prev.disabled = false;
          next.disabled = false;
+         prev.style.backgroundColor = "#7AD7A7";
+         next.style.backgroundColor = "#7AD7A7";
       }
+   }
+
+   function updateProgress() {
+      idx = currentActive - 1;
+      progress.forEach(progress => {
+         progress.classList.add("progress-hide");
+      });
+      progress[idx].classList.remove("progress-hide");
    }
 }
 
