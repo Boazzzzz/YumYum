@@ -322,30 +322,6 @@ body {
    margin-bottom: 3.2rem;
 }
 
-.meal-attributes {
-   list-style: none;
-   display: flex;
-   flex-direction: column;
-   gap: 2rem;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-}
-
-.meal-attribute {
-   font-size: 1.8rem;
-   display: flex;
-   align-items: center;
-   gap: 1.6rem;
-}
-
-.meal-icon {
-   height: 2.4rem;
-   width: 2.4rem;
-   color: #7AD7A7;
-}
-
 .meal-img {
    width: 100%;
 }

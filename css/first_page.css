@@ -493,82 +493,6 @@
 }
 
 /*********************************/
-/* CTA SECTION */
-/*********************************/
-
-.section-cta {
-    padding-bottom: 12.8rem;
-}
-
-.cta {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    background-color: #7AD7A7;
-    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
-    border-radius: 11px;
-    background-image: linear-gradient(to right bottom, #95dfb9, #7AD7A7);
-    overflow: hidden;
-}
-
-.cta-text-box {
-    padding: 4.8rem 6.4rem 6.4rem;
-    color: #254032;
-}
-
-.cta .heading-secondary {
-    color: inherit;
-    margin-bottom: 3.2rem;
-}
-
-.cta-text {
-    font-size: 1.8rem;
-    line-height: 1.6;
-    margin-bottom: 4.8rem;
-}
-
-.cta-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 3.2rem;
-    row-gap: 2.4rem;
-}
-
-.cta-form label {
-    display: block;
-    font-size: 1.6rem;
-    font-weight: 500;
-    margin-bottom: 1.2rem;
-}
-.cta-form input,
-.cta-form select {
-    width: 100%;
-    padding: 1.2rem;
-    font-size: 1.8rem;
-    font-family: inherit;
-    color: inherit;
-    border: none;
-    background-color: #f2fbf6;
-    border-radius: 9px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-.cta-form input::placeholder {
-    color: #aaa;
-}
-
-.cta *:focus {
-    outline: none;
-    box-shadow: 0 0 0 0.8rem hsla(147, 53%, 97%, 0.5);
-}
-
-.cta-img-box {
-    background-image: linear-gradient(to right bottom, hsla(149, 54%, 73%, 0.3), hsla(149, 54%, 66%, 0.3)), 
-    url(../content_mine/img/eating02.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-/*********************************/
 /* MEDIA QUERIES */
 /*********************************/
 
@@ -688,22 +612,5 @@
 
    .section-pricing {
       padding: 9.6rem 6.4rem;
-   }
-
-   .cta {
-      grid-template-columns: 1fr;
-   }
-
-   .cta-text-box {
-      padding: 3.2rem;
-   }
-
-   .cta-form {
-      grid-template-columns: 1fr;
-   }
-
-   .cta-img-box {
-      height: 32rem;
-      grid-row: 1 / 2;
    }
 }

@@ -9,11 +9,12 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+   <!-- swiper CSS -->
+   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
    <link rel="stylesheet" href="css/general.css">
    <link rel="stylesheet" href="css/header&footer.css">
    <link rel="stylesheet" href="css/recipe_page.css">
-
-   <script src="JavaScript/general.js"></script>
    
    <title>Recipe page</title>
 </head>
@@ -23,28 +24,43 @@
          <img  class="logo" src="./content_mine/img/logo_yumyum.png" alt="YumYum logo">
       </a>
       <nav class="main-nav">
-         <ul class="main-nav-list">
-            <li>
-               <a class="main-nav-link" href="about_us_page.html"
-               >About us</a>
-            </li>
-            <li><a class="main-nav-link" href="recipe_page.html">On the menu</a></li>
-            <li><a class="main-nav-link" href="#">Testimonials</a></li>
-            <li><a class="main-nav-link" href="#">Pricing</a></li>
-            <li><a class="main-nav-link nav-cta" href="plan_selected_page.html">Try it for free</a></li>
-         </ul>
-         <divs id="main-nav-user" class="main-nav-user">
+         <div 
+         class="main-nav-text hidden"
+         id="main-nav-text"
+         >
+            <ul class="main-nav-list">
+               <li>
+                  <a class="main-nav-link" href="about_us_page.html"
+                  >About us</a>
+               </li>
+               <li><a class="main-nav-link" href="recipe_page.html">On the menu</a></li>
+               <li><a class="main-nav-link" href="#">Testimonials</a></li>
+               <li><a class="main-nav-link" href="#">FAQ</a></li>
+               <li><a class="main-nav-link nav-cta" href="plan_selected_page.html">Try it for free</a></li>
+            </ul>
+         </div>
+         <div id="main-nav-user" class="main-nav-user">
             <img src="./content_mine/img/user icon.png" alt="user icon">
-         </divs>
+         </div>
       </nav>
       <div id="main-nav-extension" class="main-nav-extension hidden">
          <ul class="extension-list">
             <li><a class="main-nav-link" href="member.html">Member</a></li>
             <li><a class="main-nav-link" href="sign_in_page.html">Sign-in</a></li>
          </ul>
-      </div> 
-   </header>
+      </div>
 
+      <button class="btn-mobile-nav">
+         <ion-icon 
+         class="icon-mobile-nav" 
+         name="menu-outline"
+         ></ion-icon>
+         <ion-icon 
+         class="icon-mobile-nav hidden" 
+         name="close-outline"
+         ></ion-icon>
+      </button>
+   </header>
 
   <main>
    <section class="section-banner">
@@ -65,6 +81,170 @@
             </form>
          </div>
       </div> 
+   </section>
+
+   <section class="section-meal-feature">
+      <div class="container meal-feature-container">
+         <div class="meal-feature-texts">
+            <span class="meal-feature-text meal-feature-text-active">Popular</span>
+            <span class="meal-feature-text">Latest</span>
+         </div>
+         <div class="slider-container swiper">
+            <div class="slide-content">
+               <div class="meal-card-wrapper swiper-wrapper">
+                  <div class="meal feature-meal swiper-slide">
+                     <a class="meal-link" href="./meal_intro_page.html">
+                        <img  
+                        class="meal-img" 
+                        src="./content_mine/img_食譜頁/meals/meal-5.jpeg" 
+                        alt="BBQ pork chop"
+                        >
+                        <div class="meal-content">
+                           <div class="meal-tags">
+                              <span class="tag tag--vegitarian">Vegetarian</span>
+                           </div>
+                           <p class="meal-title">BBQ pork chop</p>
+                        </div>
+                     </a>
+                  </div>
+
+                  <div class="meal feature-meal swiper-slide">
+                     <a class="meal-link" href="./meal_intro_page.html">
+                        <img  
+                        class="meal-img" 
+                        src="./content_mine/img_食譜頁/meals/meal-6.jpeg" 
+                        alt="Philly cheesesteak"
+                        >
+                        <div class="meal-content">
+                           <div class="meal-tags">
+                              <span class="tag tag--vegan">Vegan</span>
+                              <span class="tag tag--paleo">Paleo</span>
+                           </div>
+                           <p class="meal-title">Philly cheesesteak</p>
+                        </div>
+                     </a>
+                  </div>
+
+                  <div class="meal feature-meal swiper-slide">
+                     <a class="meal-link" href="./meal_intro_page.html">
+                        <img  
+                        class="meal-img" 
+                        src="./content_mine/img_食譜頁/meals/meal-7.jpeg" 
+                        alt="Sliced turkey"
+                        >
+                        <div class="meal-content">
+                           <div class="meal-tags">
+                              <span class="tag tag--keto">Keto</span>
+                           </div>
+                           <p class="meal-title">Sliced turkey</p>
+                        </div>
+                     </a>
+                  </div>
+
+                  <div class="meal feature-meal swiper-slide">
+                     <a class="meal-link" href="./meal_intro_page.html">
+                        <img  
+                        class="meal-img" 
+                        src="./content_mine/img_食譜頁/meals/meal-5.jpeg" 
+                        alt="BBQ pork chop"
+                        >
+                        <div class="meal-content">
+                           <div class="meal-tags">
+                              <span class="tag tag--vegitarian">Vegetarian</span>
+                           </div>
+                           <p class="meal-title">BBQ pork chop</p>
+                        </div>
+                     </a>
+                  </div>
+
+                  <div class="meal feature-meal swiper-slide">
+                     <a class="meal-link" href="./meal_intro_page.html">
+                        <img  
+                        class="meal-img" 
+                        src="./content_mine/img_食譜頁/meals/meal-6.jpeg" 
+                        alt="Philly cheesesteak"
+                        >
+                        <div class="meal-content">
+                           <div class="meal-tags">
+                              <span class="tag tag--vegan">Vegan</span>
+                              <span class="tag tag--paleo">Paleo</span>
+                           </div>
+                           <p class="meal-title">Philly cheesesteak</p>
+                        </div>
+                     </a>
+                  </div>
+                  
+                  <div class="meal feature-meal swiper-slide">
+                     <a class="meal-link" href="./meal_intro_page.html">
+                        <img  
+                        class="meal-img" 
+                        src="./content_mine/img_食譜頁/meals/meal-7.jpeg" 
+                        alt="Sliced turkey"
+                        >
+                        <div class="meal-content">
+                           <div class="meal-tags">
+                              <span class="tag tag--keto">Keto</span>
+                           </div>
+                           <p class="meal-title">Sliced turkey</p>
+                        </div>
+                     </a>
+                  </div>
+
+                  <div class="meal feature-meal swiper-slide">
+                     <a class="meal-link" href="./meal_intro_page.html">
+                        <img  
+                        class="meal-img" 
+                        src="./content_mine/img_食譜頁/meals/meal-5.jpeg" 
+                        alt="BBQ pork chop"
+                        >
+                        <div class="meal-content">
+                           <div class="meal-tags">
+                              <span class="tag tag--vegitarian">Vegetarian</span>
+                           </div>
+                           <p class="meal-title">BBQ pork chop</p>
+                        </div>
+                     </a>
+                  </div>
+
+                  <div class="meal feature-meal swiper-slide">
+                     <a class="meal-link" href="./meal_intro_page.html">
+                        <img  
+                        class="meal-img" 
+                        src="./content_mine/img_食譜頁/meals/meal-6.jpeg" 
+                        alt="Philly cheesesteak"
+                        >
+                        <div class="meal-content">
+                           <div class="meal-tags">
+                              <span class="tag tag--vegan">Vegan</span>
+                              <span class="tag tag--paleo">Paleo</span>
+                           </div>
+                           <p class="meal-title">Philly cheesesteak</p>
+                        </div>
+                     </a>
+                  </div>
+
+                  <div class="meal feature-meal swiper-slide">
+                     <a class="meal-link" href="./meal_intro_page.html">
+                        <img  
+                        class="meal-img" 
+                        src="./content_mine/img_食譜頁/meals/meal-7.jpeg" 
+                        alt="Sliced turkey"
+                        >
+                        <div class="meal-content">
+                           <div class="meal-tags">
+                              <span class="tag tag--keto">Keto</span>
+                           </div>
+                           <p class="meal-title">Sliced turkey</p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="swiper-button-next swiper-btn"></div>
+         <div class="swiper-button-prev swiper-btn"></div>
+         <div class="swiper-pagination"></div>
+      </div>
    </section>
 
    <div class="container">
@@ -156,29 +336,6 @@
                      <span class="tag tag--vegitarian">Vegetarian</span>
                   </div>
                   <p class="meal-title">Japanese Gyozas</p>
-                  <ul class="meal-attributes">
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="flame"
-                        ></ion-icon>
-                        <span><strong>650</strong> calories</span>
-                     </li>
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="restaurant"
-                        ></ion-icon>
-                        <span>NutriScore &reg; <strong>74</strong></span>
-                     </li>
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="star"
-                        ></ion-icon>
-                        <sapn><strong>4.9</strong> rating (537)</sapn>
-                     </li>
-                  </ul>
                </div>
             </a>
          </div>
@@ -196,29 +353,6 @@
                      <span class="tag tag--paleo">Paleo</span>
                   </div>
                   <p class="meal-title">Avocado Salad</p>
-                  <ul class="meal-attributes">
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="flame"
-                        ></ion-icon>
-                        <span><strong>400</strong> calories</span>
-                     </li>
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="restaurant"
-                        ></ion-icon>
-                        <span>NutriScore &reg; <strong>92</strong></span>
-                     </li>
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="star"
-                        ></ion-icon>
-                        <sapn><strong>4.8</strong> rating (441)</sapn>
-                     </li>
-                  </ul>
                </div>
             </a>
          </div>
@@ -235,29 +369,6 @@
                      <span class="tag tag--keto">keto</span>
                   </div>
                   <p class="meal-title">Sliced Turkey</p>
-                  <ul class="meal-attributes">
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="flame"
-                        ></ion-icon>
-                        <span><strong>888</strong> calories</span>
-                     </li>
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="restaurant"
-                        ></ion-icon>
-                        <span>NutriScore &reg; <strong>70</strong></span>
-                     </li>
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="star"
-                        ></ion-icon>
-                        <sapn><strong>4.5</strong> rating (879)</sapn>
-                     </li>
-                  </ul>
                </div>
             </a>
          </div>
@@ -274,29 +385,6 @@
                      <span class="tag tag--vegitarian">Vegetarian</span>
                   </div>
                   <p class="meal-title">Japanese Gyozas</p>
-                  <ul class="meal-attributes">
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="flame"
-                        ></ion-icon>
-                        <span><strong>650</strong> calories</span>
-                     </li>
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="restaurant"
-                        ></ion-icon>
-                        <span>NutriScore &reg; <strong>74</strong></span>
-                     </li>
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="star"
-                        ></ion-icon>
-                        <sapn><strong>4.9</strong> rating (537)</sapn>
-                     </li>
-                  </ul>
                </div>
             </a>
          </div>
@@ -314,29 +402,6 @@
                      <span class="tag tag--paleo">Paleo</span>
                   </div>
                   <p class="meal-title">Avocado Salad</p>
-                  <ul class="meal-attributes">
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="flame"
-                        ></ion-icon>
-                        <span><strong>400</strong> calories</span>
-                     </li>
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="restaurant"
-                        ></ion-icon>
-                        <span>NutriScore &reg; <strong>92</strong></span>
-                     </li>
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="star"
-                        ></ion-icon>
-                        <sapn><strong>4.8</strong> rating (441)</sapn>
-                     </li>
-                  </ul>
                </div>
             </a>
          </div>
@@ -353,297 +418,6 @@
                      <span class="tag tag--keto">keto</span>
                   </div>
                   <p class="meal-title">Sliced Turkey</p>
-                  <ul class="meal-attributes">
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="flame"
-                        ></ion-icon>
-                        <span><strong>888</strong> calories</span>
-                     </li>
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="restaurant"
-                        ></ion-icon>
-                        <span>NutriScore &reg; <strong>70</strong></span>
-                     </li>
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="star"
-                        ></ion-icon>
-                        <sapn><strong>4.5</strong> rating (879)</sapn>
-                     </li>
-                  </ul>
-               </div>
-            </a>
-         </div>
-      </div>
-      <div class="container">
-         <ul class="page-number">
-            <li><a class="page-number-link" href="#">1</a></li>
-            <li><a class="page-number-link" href="#">2</a></li>
-            <li><a class="page-number-link" href="#">3</a></li>
-            <li><a class="page-number-link" href="#">4</a></li>
-            <li><a class="page-number-link" href="#">5</a></li>
-            <li><a class="page-number-link" href="#">&gt;</a></li>
-            <li><a class="page-number-link" href="#">&gt;&gt;</a></li>
-         </ul>
-      </div>
-   </section>
-   
-   <section class="section-meal-kit">
-      <div class="container recipe-heading">
-         <p class="recipe-heading-text">Bundles and Save</p>
-         <div class="select">
-            <select name="food-clasify" id="">
-               <option value="">SELECT</option>
-               <option value="vegetarian">Vegetarian</option>
-               <option value="vegan">Vegan</option>
-               <option value="pescatarian">Pescatarian</option>
-               <option value="gluten-free">Gluten-free</option>
-               <option value="lactose-free">Lactose-free</option>
-               <option value="keto">Keto</option>
-               <option value="paleo">Paleo</option>
-               <option value="low FODMAP">Low FODMAP</option>
-               <option value="kid-friendly">Kid-friendly</option>
-            </select>
-         </div>
-      </div>
-      <div class="container grid grid--3-cols margin-right-md">
-         <div class="meal">
-            <a class="meal-link" href="./meal_intro_page.html">
-               <img 
-               class="meal-img" 
-               src="./content_mine/img_食譜頁/meals/meal-4.jpeg" 
-               alt="Japanese Gyozas"
-               >
-               <div class="meal-content">
-                  <div class="meal-tags">
-                     <span class="tag tag--vegan">vegan</span>
-                     <span class="tag tag--keto">keto</span>
-                  </div>
-                  <p class="meal-title">Cuban Mojo Shrimp</p>
-                  <ul class="meal-attributes">
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="flame"
-                        ></ion-icon>
-                        <span><strong>600</strong> calories</span>
-                     </li>
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="restaurant"
-                        ></ion-icon>
-                        <span>NutriScore &reg; <strong>89</strong></span>
-                     </li>
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="star"
-                        ></ion-icon>
-                        <sapn><strong>4.9</strong> rating (1221)</sapn>
-                     </li>
-                  </ul>
-               </div>
-            </a>
-         </div>
-         
-         <div class="meal">
-            <a class="meal-link" href="./meal_intro_page.html">
-               <img 
-               class="meal-img" 
-               src="./content_mine/img_食譜頁/meals/meal-5.jpeg" 
-               alt="Japanese Gyozas"
-               >
-               <div class="meal-content">
-                  <div class="meal-tags">
-                     <span class="tag tag--gluten-free">gluten-free</span>
-                  </div>
-                  <p class="meal-title">BBQ Pork Chop</p>
-                  <ul class="meal-attributes">
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="flame"
-                        ></ion-icon>
-                        <span><strong>796</strong> calories</span>
-                     </li>
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="restaurant"
-                        ></ion-icon>
-                        <span>NutriScore &reg; <strong>75</strong></span>
-                     </li>
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="star"
-                        ></ion-icon>
-                        <sapn><strong>5.0</strong> rating (666)</sapn>
-                     </li>
-                  </ul>
-               </div>
-            </a>
-         </div>
-         
-         <div class="meal">
-            <a class="meal-link" href="./meal_intro_page.html">
-               <img 
-               class="meal-img" 
-               src="./content_mine/img_食譜頁/meals/meal-6.jpeg" 
-               alt="Japanese Gyozas"
-               >
-               <div class="meal-content">
-                  <div class="meal-tags">
-                     <span class="tag tag--paleo">paleo</span>
-                  </div>
-                  <p class="meal-title">Philly Cheesesteak</p>
-                  <ul class="meal-attributes">
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="flame"
-                        ></ion-icon>
-                        <span><strong>563</strong> calories</span>
-                     </li>
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="restaurant"
-                        ></ion-icon>
-                        <span>NutriScore &reg; <strong>79</strong></span>
-                     </li>
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="star"
-                        ></ion-icon>
-                        <sapn><strong>4.9</strong> rating (350)</sapn>
-                     </li>
-                  </ul>
-               </div>
-            </a>
-         </div>
-         
-         <div class="meal">
-            <a class="meal-link" href="./meal_intro_page.html">
-               <img 
-               class="meal-img" 
-               src="./content_mine/img_食譜頁/meals/meal-4.jpeg" 
-               alt="Japanese Gyozas"
-               >
-               <div class="meal-content">
-                  <div class="meal-tags">
-                     <span class="tag tag--vegan">vegan</span>
-                     <span class="tag tag--keto">keto</span>
-                  </div>
-                  <p class="meal-title">Cuban Mojo Shrimp</p>
-                  <ul class="meal-attributes">
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="flame"
-                        ></ion-icon>
-                        <span><strong>600</strong> calories</span>
-                     </li>
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="restaurant"
-                        ></ion-icon>
-                        <span>NutriScore &reg; <strong>89</strong></span>
-                     </li>
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="star"
-                        ></ion-icon>
-                        <sapn><strong>4.9</strong> rating (1221)</sapn>
-                     </li>
-                  </ul>
-               </div>
-            </a>
-         </div>
-         
-         <div class="meal">
-            <a class="meal-link" href="./meal_intro_page.html">
-               <img 
-               class="meal-img" 
-               src="./content_mine/img_食譜頁/meals/meal-5.jpeg" 
-               alt="Japanese Gyozas"
-               >
-               <div class="meal-content">
-                  <div class="meal-tags">
-                     <span class="tag tag--gluten-free">gluten-free</span>
-                  </div>
-                  <p class="meal-title">BBQ Pork Chop</p>
-                  <ul class="meal-attributes">
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="flame"
-                        ></ion-icon>
-                        <span><strong>796</strong> calories</span>
-                     </li>
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="restaurant"
-                        ></ion-icon>
-                        <span>NutriScore &reg; <strong>75</strong></span>
-                     </li>
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="star"
-                        ></ion-icon>
-                        <sapn><strong>5.0</strong> rating (666)</sapn>
-                     </li>
-                  </ul>
-               </div>
-            </a>
-         </div>
-         
-         <div class="meal">
-            <a class="meal-link" href="./meal_intro_page.html">
-               <img 
-               class="meal-img" 
-               src="./content_mine/img_食譜頁/meals/meal-6.jpeg" 
-               alt="Japanese Gyozas"
-               >
-               <div class="meal-content">
-                  <div class="meal-tags">
-                     <span class="tag tag--paleo">paleo</span>
-                  </div>
-                  <p class="meal-title">Philly Cheesesteak</p>
-                  <ul class="meal-attributes">
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="flame"
-                        ></ion-icon>
-                        <span><strong>563</strong> calories</span>
-                     </li>
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="restaurant"
-                        ></ion-icon>
-                        <span>NutriScore &reg; <strong>79</strong></span>
-                     </li>
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="star"
-                        ></ion-icon>
-                        <sapn><strong>4.9</strong> rating (350)</sapn>
-                     </li>
-                  </ul>
                </div>
             </a>
          </div>
@@ -722,29 +496,6 @@
                      <span class="tag tag--kid-frendly">kid-frendly</span>
                   </div>
                   <p class="meal-title">Strawberry Yugar</p>
-                  <ul class="meal-attributes">
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="flame"
-                        ></ion-icon>
-                        <span><strong>250</strong> calories</span>
-                     </li>
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="restaurant"
-                        ></ion-icon>
-                        <span>NutriScore &reg; <strong>66</strong></span>
-                     </li>
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="star"
-                        ></ion-icon>
-                        <sapn><strong>5.0</strong> rating (561)</sapn>
-                     </li>
-                  </ul>
                </div>
             </a>
          </div>
@@ -761,29 +512,6 @@
                      <span class="tag tag--kid-frendly">kid-frendly</span>
                   </div>
                   <p class="meal-title">Orange Cream</p>
-                  <ul class="meal-attributes">
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="flame"
-                        ></ion-icon>
-                        <span><strong>299</strong> calories</span>
-                     </li>
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="restaurant"
-                        ></ion-icon>
-                        <span>NutriScore &reg; <strong>69</strong></span>
-                     </li>
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="star"
-                        ></ion-icon>
-                        <sapn><strong>4.8</strong> rating (963)</sapn>
-                     </li>
-                  </ul>
                </div>
             </a>
          </div>
@@ -801,29 +529,6 @@
                      <span class="tag tag--kid-frendly">kid-frendly</span>
                   </div>
                   <p class="meal-title">Pancakes</p>
-                  <ul class="meal-attributes">
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="flame"
-                        ></ion-icon>
-                        <span><strong>167</strong> calories</span>
-                     </li>
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="restaurant"
-                        ></ion-icon>
-                        <span>NutriScore &reg; <strong>54</strong></span>
-                     </li>
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="star"
-                        ></ion-icon>
-                        <sapn><strong>4.7</strong> rating (911)</sapn>
-                     </li>
-                  </ul>
                </div>
             </a>
          </div>
@@ -840,29 +545,6 @@
                      <span class="tag tag--kid-frendly">kid-frendly</span>
                   </div>
                   <p class="meal-title">Strawberry Yugar</p>
-                  <ul class="meal-attributes">
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="flame"
-                        ></ion-icon>
-                        <span><strong>250</strong> calories</span>
-                     </li>
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="restaurant"
-                        ></ion-icon>
-                        <span>NutriScore &reg; <strong>66</strong></span>
-                     </li>
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="star"
-                        ></ion-icon>
-                        <sapn><strong>5.0</strong> rating (561)</sapn>
-                     </li>
-                  </ul>
                </div>
             </a>
          </div>
@@ -879,29 +561,6 @@
                      <span class="tag tag--kid-frendly">kid-frendly</span>
                   </div>
                   <p class="meal-title">Orange Cream</p>
-                  <ul class="meal-attributes">
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="flame"
-                        ></ion-icon>
-                        <span><strong>299</strong> calories</span>
-                     </li>
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="restaurant"
-                        ></ion-icon>
-                        <span>NutriScore &reg; <strong>69</strong></span>
-                     </li>
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="star"
-                        ></ion-icon>
-                        <sapn><strong>4.8</strong> rating (963)</sapn>
-                     </li>
-                  </ul>
                </div>
             </a>
          </div>
@@ -919,29 +578,6 @@
                      <span class="tag tag--kid-frendly">kid-frendly</span>
                   </div>
                   <p class="meal-title">Pancakes</p>
-                  <ul class="meal-attributes">
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="flame"
-                        ></ion-icon>
-                        <span><strong>167</strong> calories</span>
-                     </li>
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="restaurant"
-                        ></ion-icon>
-                        <span>NutriScore &reg; <strong>54</strong></span>
-                     </li>
-                     <li class="meal-attribute">
-                        <ion-icon 
-                        class="meal-icon" 
-                        name="star"
-                        ></ion-icon>
-                        <sapn><strong>4.7</strong> rating (911)</sapn>
-                     </li>
-                  </ul>
                </div>
             </a>
          </div>
@@ -959,24 +595,61 @@
       </div>
    </section>
 
-   <section class="section-ad-md">
+   <section class="section-cta">
       <div class="container">
-         <div class="ad-md-box">
-            <div class="grid grid--3-cols grid-h-v-center row-gap-sm">
-               <div class="doctor-img">
-                  <img src="./content_mine/img_食譜頁/doctor.png" alt="doctor image">
-               </div>
-               <div class="ad-md-heading">
-                  <p>Select your plan, and then pick your meals.</p>
-               </div>
-               <div class="ad-md-caption">
-                  <p>Try something new every week or just pick your
-                     favorites. Creating a customized menu to enjoy 
-                     each week makes your bistroMD date unique.</p>
-               </div>
-               <div class="ad-md-button"><a class="btn btn--full" href="#">Order now</a>
-               </div>
+         <div class="cta">
+            <div class="cta-text-box">
+               <h2 class="heading-secondary">
+                  Get your first day for free!
+               </h2>
+               <p class="cta-text">
+                  Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You can cancel or pause anytime. And the first meal is on us!
+               </p>
+               <form 
+               class="cta-form" 
+               action="plan_selected_page.html">
+                  <div>
+                     <label for="full-name">Full Name</label>
+                     <input 
+                     id="full-name" 
+                     type="text" 
+                     placeholder="Chen Ting"
+                     required>
+                  </div>
+
+                  <div>
+                     <label for="email">Email address</label>
+                     <input
+                     id="email" 
+                     type="email" 
+                     placeholder="YumYum@gmail.com"
+                     required
+                     >
+                  </div>
+
+                  <div>
+                     <label for="select-where">
+                        Where did you hear from us ?
+                     </label>
+                     <select id="select-where" required>
+                        <option value="">Choose an opotion</option>
+                        <option value="friends">friends</option>
+                        <option value="Youtube">YouTube videos</option>
+                        <option value="Facebook">Facebook ad</option>
+                        <option value="Podcast">Podcast</option>
+                        <option value="Others">Others</option>
+                     </select>
+                  </div>
+
+                  <button class="btn btn--form"
+                  >Get started now</button>
+               </form>
             </div>
+            <div 
+            class="cta-img-box" 
+            role="img" 
+            aria-label="people enjoying food"
+            ></div>
          </div>
       </div>
    </section>
@@ -1073,4 +746,9 @@
 
    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </body>
+
+<!-- swiper JS -->
+<script src="JavaScript/swiper-bundle.min.js"></script>
+<script src="JavaScript/general.js"></script>
+<script src="JavaScript/recipe.js"></script>
 </html>
