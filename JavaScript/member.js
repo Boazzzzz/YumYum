@@ -1,4 +1,5 @@
 function init() {
+   /*
    document.getElementById("search-bar").onclick = function() {
       document.getElementById("search-bar").style.width = "80%";
    }
@@ -12,9 +13,10 @@ function init() {
    //       document.getElementById("search-bar").style.width = "50%";
    //    }
    // }
-
+   */
 
    /* TABS */
+   /*
    const tabContent = document.querySelectorAll(".tab-content");
    const tabButton = document.querySelectorAll(".tab-button");
 
@@ -35,9 +37,10 @@ function init() {
    function hideAllButtons() {
       tabButton.forEach(button => button.classList.remove("active"));
    }
-
+   */
 
    /* DRAG MEALS */
+   /*
    const fills = document.querySelectorAll(".fill");
    const empties = document.querySelectorAll(".empty");
 
@@ -78,7 +81,26 @@ function init() {
    function dragDrop() {
       this.className = "empty"
       this.append(fill);
-   }
+   } */
+
+   // SIDE MENU TOGGLE
+
+   const sideBar = document.querySelector(".member-nav");
+   const sideMenuToggle = document.querySelector(".side-menu-toggle");
+   const navLinkText = document.querySelectorAll(".nav-link-text");
+   const logo = document.getElementById("logo");
+   const dashboardWidthToggle = document.querySelector(".dashboard");
+   const dashboardTopToggle = document.querySelector(".dashboard-top");
+
+   sideMenuToggle.addEventListener("click", () => {
+      sideBar.classList.toggle("close");
+      navLinkText.forEach(text => {
+         text.classList.toggle("hide");
+      })
+      logo.classList.toggle("hide");
+      dashboardWidthToggle.classList.toggle("dashboard-width-toggle");
+      dashboardTopToggle.classList.toggle("dashboard-top-toggle");
+   })
 }
 
 window.addEventListener("load", init, false);

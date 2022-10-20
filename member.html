@@ -18,7 +18,7 @@
    <title>Memeber</title>
 </head>
 <body>
-   <div class="side-container left-side-container">
+   <!-- <div class="side-container left-side-container">
       <a href="index.html">
          <img  class="logo member-logo" src="./content_mine/img/logo_yumyum.png" alt="YumYum logo">
       </a>
@@ -383,6 +383,59 @@
          </div>
          
       </div>
-   </main>
+   </main> -->
+   <nav class="member-nav">
+      <a id="logo" href="index.html">
+         <img  class="logo" src="./content_mine/img/logo_yumyum.png" alt="YumYum logo">
+      </a>
+
+      <div class="menu-items">
+         <ul class="nav-links">
+            <li>
+               <a class="nav-link" href="#">
+                  <div class="nav-icon"></div>
+                  <span class="nav-link-text">Overview</span>
+               </a>
+
+               <a class="nav-link" href="#">
+                  <div class="nav-icon"></div>
+                  <span class="nav-link-text">Dashboard</span>
+               </a>
+
+               <a class="nav-link" href="#">
+                  <div class="nav-icon"></div>
+                  <span class="nav-link-text">My Suscription</span>
+               </a>
+
+               <a class="nav-link" href="#">
+                  <div class="nav-icon"></div>
+                  <span class="nav-link-text">Meal List</span>
+               </a>
+            </li>
+         </ul>
+
+         <ul class="nav-links log-out">
+            <li>
+               <a class="nav-link" href="#">
+                  <div class="nav-icon log-out-icon"></div>
+                  <span class="nav-link-text">Log-out</span>
+               </a>
+            </li>
+         </ul>
+      </div>
+   </nav>
+
+   <section class="dashboard">
+      <div class="dashboard-top">
+         <ion-icon class="side-menu-toggle" name="menu-outline"></ion-icon>
+         <div class="search-bar">
+            <ion-icon name="search-outline"></ion-icon>
+            <input type="text" placeholder="Search">
+         </div>
+      </div>
+   </section>
+
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
 </body>
 </html>
