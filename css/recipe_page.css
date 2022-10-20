@@ -43,7 +43,8 @@
 }
 
 .search {
-   width: 50rem;
+   width: auto;
+   max-width: 500px;
    position: absolute;
    right: 0;
    bottom: 20%;
@@ -356,11 +357,10 @@ select::-ms-expand {
 }
 
 .view-plans-button {
-   width: 20%;
    position: absolute;
-   left: 0;
-   right: 0;
-   bottom: -16%;
+   left: 50%;
+   bottom: 0;
+   transform: translate(-50%,50%);
    margin: 0 auto;
 }
 
@@ -465,10 +465,6 @@ select::-ms-expand {
 
    .discount-label-box {
       margin-bottom: 3rem;
-   }
-
-   .view-plans-button {
-      bottom: -10%;
    }
 }
 /* MEDEA: 428px */

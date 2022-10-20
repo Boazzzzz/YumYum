@@ -335,14 +335,15 @@ body {
 }
 
 .tag {
-    display:inline-block;
-    padding: 0.4rem 0.8rem;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    color: #333;
-    border-radius: 100px;
-    font-weight: 600;
-    opacity: 80%;
+   display:inline-block;
+   padding: 0.4rem 0.8rem;
+   font-size: 1.2rem;
+   text-transform: uppercase;
+   color: #333;
+   border-radius: 100px;
+   font-weight: 600;
+   opacity: 80%;
+   width: fit-content;
 }
 
 .tag--vegitarian {
@@ -463,6 +464,10 @@ strong {
    html {
       font-size: 50%;
    }
+
+   .meal-tags {
+      flex-direction: column;
+   }
 }
 
 @media (max-width: 768px) {
@@ -497,5 +502,9 @@ strong {
 
    .subheading {
       text-align: center;
+   }
+
+   .meal-tags {
+      flex-direction: row;
    }
 }
