@@ -1,4 +1,4 @@
-/*
+
 body {
    background-color: #e6e6e6;
 }
@@ -13,11 +13,11 @@ body {
    top: 0%;
    z-index: 1;
 }
-*/
+
 /*********************************/
 /* LEFT SIDE */
 /*********************************/
-/*
+
 .left-side-container {
    max-width: 25rem;
    width: 100%;
@@ -110,11 +110,11 @@ body {
    width: 100%;
    height: 100%;
 }
-*/
+
 /*********************************/
 /* MAIN */
 /*********************************/
-/*
+
 .tab-content {
    animation: anime 1s;
    display: none;
@@ -131,9 +131,9 @@ body {
    padding: 4.8rem 3.2rem;
    margin: 0 auto;
 }
-*/
+
 /* OVERVIEW */
-/*
+
 .index {
    padding-bottom: 4.8rem;
    display: flex;
@@ -289,9 +289,9 @@ body {
 .microwave-time span {
    font-size: 1.2rem;
 }
-*/
+
 /* RIGHT SIDE */
-/*
+
 .right-side-container {
    max-width: 30rem;
    width: 100%;
@@ -364,9 +364,9 @@ body {
 .extras-name {
    font-weight: 600;
 }
-*/
+
 /* MEAL LIST */
-/*
+
 .weekday span {
    font-size: 2.8rem;
    color: #e67e22;
@@ -406,10 +406,19 @@ body {
    gap: 2.4rem;
 }
 
-.meal-img {
-   
+/*********************************/
+/* GENERAL */
+/*********************************/
+
+.section-main {
+   background-color: #fff;
+   height: 100vh;
+   width: calc(100% - 25rem);
+   position: relative;
+   left: 25rem;
+   padding: 1.2rem 2.4rem;
+   transition: all 0.5s;
 }
-*/
 
 /*********************************/
 /* NAVIGATION */
@@ -527,16 +536,6 @@ body {
 /*********************************/
 /* DASHBOARD */
 /*********************************/
-
-.dashboard {
-   background-color: #fff;
-   height: 100vh;
-   width: calc(100% - 25rem);
-   position: relative;
-   left: 25rem;
-   padding: 1.2rem 2.4rem;
-   transition: all 0.5s;
-}
 
 .dashboard-width-toggle {
    left: 8rem;
