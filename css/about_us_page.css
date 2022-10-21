@@ -221,7 +221,6 @@
 /* MEDIA QUERIES */
 /*********************************/
 
-/* MEDEA: 1200px */
 @media (max-width: 768px) {
    .intro01-container {
       grid-template-columns: 1fr;
