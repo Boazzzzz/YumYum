@@ -466,7 +466,14 @@ strong {
    }
 
    .meal-tags {
-      flex-direction: column;
+      white-space: nowrap;
+      overflow-x: scroll;
+      overflow: -moz-scrollbars-none;
+   }
+   
+   .meal-tags::-webkit-scrollbar {
+      width: 0;
+      background-color: transparent;
    }
 }
 
@@ -502,9 +509,5 @@ strong {
 
    .subheading {
       text-align: center;
-   }
-
-   .meal-tags {
-      flex-direction: row;
    }
 }

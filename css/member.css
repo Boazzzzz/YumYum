@@ -383,6 +383,11 @@
    overflow-x: scroll;
 }
 
+.history-contents-container::-webkit-scrollbar {
+   width: 0;
+   background-color: transparent;
+}
+
 .history-contents {
    width: 100%;
    min-width: 500px;

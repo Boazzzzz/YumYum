@@ -12,7 +12,12 @@
    <link rel="stylesheet" href="css/general.css">
    <link rel="stylesheet" href="css/header&footer.css">
    <link rel="stylesheet" href="css/first_page.css">
-   <link rel="stylesheet" href="css/gird.css">
+
+   <!-- jQuery -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+   <!-- owl carousel -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
    <script src="JavaScript/general.js"></script>
    <script src="JavaScript/first_page.js"></script>
@@ -30,10 +35,8 @@
          id="main-nav-text"
          >
             <ul class="main-nav-list">
-               <li>
-                  <a class="main-nav-link" href="about_us_page.html"
-                  >About us</a>
-               </li>
+               <li><a class="main-nav-link" href="about_us_page.html"
+               >About us</a></li>
                <li><a class="main-nav-link" href="recipe_page.html">On the menu</a></li>
                <li><a class="main-nav-link" href="#">Testimonials</a></li>
                <li><a class="main-nav-link" href="#">FAQ</a></li>
@@ -207,6 +210,60 @@
             </div>
          </div>
       </section>
+
+      <section class="section-gallery">
+         <div class="gallery">
+            <figure class="gallery-img">
+                <img 
+                src="content_mine/img/gallery/gallery_01.jpg" 
+                alt="Photo of food"
+                >
+            </figure>
+            <figure class="gallery-img">
+                <img 
+                src="content_mine/img/gallery/gallery_02.jpg" 
+                alt="Photo of food"
+                >
+            </figure>
+            <figure class="gallery-img">
+                <img 
+                src="content_mine/img/gallery/gallery_03.jpg" 
+                alt="Photo of food"
+                >
+            </figure>
+            <figure class="gallery-img">
+                <img 
+                src="content_mine/img/gallery/gallery_04.jpg" 
+                alt="Photo of food"
+                >
+            </figure>
+            <figure class="gallery-img">
+                <img 
+                src="content_mine/img/gallery/gallery_05.jpg" 
+                alt="Photo of food"
+                >
+            </figure>
+            <figure class="gallery-img">
+                <img 
+                src="content_mine/img/gallery/gallery_06.jpg" 
+                alt="Photo of food"
+                >
+            </figure>
+            <figure class="gallery-img">
+                <img 
+                src="content_mine/img/gallery/gallery_07.jpg" 
+                alt="Photo of food"
+                >
+            </figure>
+            <figure class="gallery-img">
+                <img 
+                src="content_mine/img/gallery/gallery_08.jpg" 
+                alt="Photo of food"
+                >
+            </figure>
+            
+        </div>
+      </section>
         
       <section class="section-meals">
          <div class="container">
@@ -296,137 +353,78 @@
          </div> -->
       </section>
 
-        <section class="section-testimonials">
-            <div class="testimonials-container">
-                <span class="subheading">Testimonials</span>
-                <h2 class="heading-secondary">
-                    Once you try it. you will completely fall for it.
-                </h2>
-                <div class="testimonials">
-                    <figure class="testimonial">
-                        <img 
-                        class="testimonial-img" 
-                        src="./content/img/customers/dave.jpg" 
-                        alt="Photo of customer Dave"
-                        >
-                        <blockquote class="testimonial-text">
-                           launched a startup which leaves me with no time for cooking, so YumYum is a life-saver. Now that I got used to it, I couldn't live without my daily meals! 
-                        </blockquote>
-                        <p class="testimonial-name">&mdash; Dave Bryson</p>
-                    </figure>
-                    
-                    <figure class="testimonial">
-                        <img 
-                        class="testimonial-img" 
-                        src="./content/img/customers/ben.jpg" 
-                        alt="Photo of customer Ben"
-                        >
-                        <blockquote class="testimonial-text">
-                           meals, delivered right to my home. We have lots of food delivery here, but no one comes even close to YumYum. Me and my family are so in love!
-                        </blockquote>
-                        <p class="testimonial-name">&mdash; Ben Hadley</p>
-                    </figure>
-                    
-                    <figure class="testimonial">
-                        <img 
-                        class="testimonial-img" 
-                        src="./content/img/customers/steve.jpg" 
-                        alt="Photo of customer Steve"
-                        >
-                        <blockquote class="testimonial-text">
-                            YumYum is a life saver! I just started a company, so there's no time for cooking. I couldn't live without my daily meals now! 
-                        </blockquote>
-                        <p class="testimonial-name">&mdash; Steve Miller</p>
-                    </figure>
-                    
-                    <figure class="testimonial">
-                        <img 
-                        class="testimonial-img" 
-                        src="./content/img/customers/hannah.jpg" 
-                        alt="Photo of customer Hannah"
-                        >
-                        <blockquote class="testimonial-text">
-                           delivery service in so good. I tried a lot of them and ended up with YumYum. Best food delivery service ever. Keep up the great work! 
-                        </blockquote>
-                        <p class="testimonial-name">&mdash; Hannah Smith</p>
-                    </figure>
-                </div>
+      <section class="section-testimonials">
+         <div class="container">
+            <span class="subheading">Testimonials</span>
+            <h2 class="heading-secondary">
+               Once you try it. you will completely fall for it.
+            </h2>
+            <div class="testimonials-wrapper">
+               <div class="testimonials-card">
+                  <span class="comma">❝</span>
+                  <p class="testimonials">YumYum is just awesome! I just launched a startup which leaves me with no time for cooking, so Omnifood is a life-saver. Now that I got used to it, I couldn't live without my daily meals!</p>
+                  <div class="testimonials-content">
+                     <div class="customer-info">
+                        <div class="customer-name">Patricia J. Wilson</div>
+                        <div class="customer-job">Designer</div>
+                        <div class="customer-stars">
+                           <span class="star">★</span>
+                           <span class="star">★</span>
+                           <span class="star">★</span>
+                           <span class="star">★</span>
+                           <span class="star star-gray">★</span>
+                        </div>
+                     </div>
+                     <div class="customer-img">
+                        <img src="content_mine/img/customers/customer-1.jpg" alt="Photo of customer">
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="testimonials-card">
+                  <span class="comma">❝</span>
+                  <p class="testimonials">Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food delivery here, but no one comes even close to YumYum. Me and my family are so in love!</p>
+                  <div class="testimonials-content">
+                     <div class="customer-info">
+                        <div class="customer-name">Anna G. Smith</div>
+                        <div class="customer-job">Police officer</div>
+                        <div class="customer-stars">
+                           <span class="star">★</span>
+                           <span class="star">★</span>
+                           <span class="star">★</span>
+                           <span class="star">★</span>
+                           <span class="star">★</span>
+                        </div>
+                     </div>
+                     <div class="customer-img">
+                        <img src="content_mine/img/customers/customer-2.jpg" alt="Photo of customer">
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="testimonials-card">
+                  <span class="comma">❝</span>
+                  <p class="testimonials"> I was looking for a quick and easy food delivery service. I tried a lot of them and ended up with YumYum. Best food delivery service in the Bay Area. Keep up the great work!</p>
+                  <div class="testimonials-content">
+                     <div class="customer-info">
+                        <div class="customer-name">David T. Friedel</div>
+                        <div class="customer-job">Engineer</div>
+                        <div class="customer-stars">
+                           <span class="star">★</span>
+                           <span class="star">★</span>
+                           <span class="star">★</span>
+                           <span class="star">★</span>
+                           <span class="star">★</span>
+                        </div>
+                     </div>
+                     <div class="customer-img">
+                        <img src="content_mine/img/customers/customer-3.jpg" alt="Photo of customer">
+                     </div>
+                  </div>
+               </div>
             </div>
-            <div class="gallery">
-                <figure class="gallery-item">
-                    <img 
-                    src="./content/img/gallery/gallery-1.jpg" 
-                    alt="Photo of beautifully arranged food"
-                    >
-                </figure>
-                <figure class="gallery-item">
-                    <img 
-                    src="./content/img/gallery/gallery-2.jpg" 
-                    alt="Photo of beautifully arranged food"
-                    >
-                </figure>
-                <figure class="gallery-item">
-                    <img 
-                    src="./content/img/gallery/gallery-3.jpg" 
-                    alt="Photo of beautifully arranged food"
-                    >
-                </figure>
-                <figure class="gallery-item">
-                    <img 
-                    src="./content/img/gallery/gallery-4.jpg" 
-                    alt="Photo of beautifully arranged food"
-                    >
-                </figure>
-                <figure class="gallery-item">
-                    <img 
-                    src="./content/img/gallery/gallery-5.jpg" 
-                    alt="Photo of beautifully arranged food"
-                    >
-                </figure>
-                <figure class="gallery-item">
-                    <img 
-                    src="./content/img/gallery/gallery-6.jpg" 
-                    alt="Photo of beautifully arranged food"
-                    >
-                </figure>
-                <figure class="gallery-item">
-                    <img 
-                    src="./content/img/gallery/gallery-7.jpg" 
-                    alt="Photo of beautifully arranged food"
-                    >
-                </figure>
-                <figure class="gallery-item">
-                    <img 
-                    src="./content/img/gallery/gallery-8.jpg" 
-                    alt="Photo of beautifully arranged food"
-                    >
-                </figure>
-                <figure class="gallery-item">
-                    <img 
-                    src="./content/img/gallery/gallery-9.jpg" 
-                    alt="Photo of beautifully arranged food"
-                    >
-                </figure>
-                <figure class="gallery-item">
-                    <img 
-                    src="./content/img/gallery/gallery-10.jpg" 
-                    alt="Photo of beautifully arranged food"
-                    >
-                </figure>
-                <figure class="gallery-item">
-                    <img 
-                    src="./content/img/gallery/gallery-11.jpg" 
-                    alt="Photo of beautifully arranged food"
-                    >
-                </figure>
-                <figure class="gallery-item">
-                    <img 
-                    src="./content/img/gallery/gallery-12.jpg" 
-                    alt="Photo of beautifully arranged food"
-                    >
-                </figure>
-            </div>
-        </section>
+         </div>
+      </section>
 
         <section class="section-pricing">
             <div class="container">
@@ -447,19 +445,19 @@
                         <ul class="list margin-bottom-auto">
                            <li class="list-item">
                               <ion-icon 
-                              class="list-icon" name="checkmark-circle-outline"
+                              class="list-icon" name="play-outline"
                               ></ion-icon>
                               <span>1 meal per day</span>
                            </li>
                            <li class="list-item">
                               <ion-icon 
-                              class="list-icon" name="checkmark-circle-outline"
+                              class="list-icon" name="play-outline"
                               ></ion-icon>
                               <span>Order from 11am and 9pm</span>
                            </li>
                            <li class="list-item">
                               <ion-icon 
-                              class="list-icon" name="checkmark-circle-outline"
+                              class="list-icon" name="play-outline"
                               ></ion-icon>
                               <span>Delivery is free</span>
                            </li>
@@ -485,25 +483,25 @@
                         <ul class="list">
                            <li class="list-item">
                               <ion-icon 
-                           class="list-icon" name="checkmark-circle-outline"
+                           class="list-icon" name="play-outline"
                            ></ion-icon>
                            <span><strong>2 meals</strong> per day</span>
                            </li>
                            <li class="list-item">
                               <ion-icon 
-                              class="list-icon" name="checkmark-circle-outline"
+                              class="list-icon" name="play-outline"
                               ></ion-icon>
                               <span>Order <strong>24/7</strong></span>
                            </li>
                            <li class="list-item">
                               <ion-icon 
-                              class="list-icon" name="checkmark-circle-outline"
+                              class="list-icon" name="play-outline"
                               ></ion-icon>
                               <span>Delivery is free</span>
                            </li>
                            <li class="list-item">
                               <ion-icon 
-                              class="list-icon" name="checkmark-circle-outline"
+                              class="list-icon" name="play-outline"
                               ></ion-icon>
                               <span>Get access to latest recipes</span>
                            </li>

@@ -291,6 +291,35 @@
 }
 
 /*********************************/
+/* GALLERY SECTION */
+/*********************************/
+
+.section-gallery {
+   background-color: #f2fbf6;
+}
+
+.gallery {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 1.6rem;
+   padding: 3.2rem 1.6rem;
+}
+
+.gallery-img {
+   overflow: hidden;
+}
+
+.gallery-img img {
+   width: 100%;
+   transition: all 0.5s;
+}
+
+.gallery-img img:hover {
+   transform: scale(1.2);
+   transition: all 0.5s;
+}
+
+/*********************************/
 /* MEALS SECTION */
 /*********************************/
 
@@ -303,59 +332,84 @@
 /*********************************/
 
 .section-testimonials {
-    background-color: #f2fbf6;
-    display: grid;
-    grid-template-columns: 55fr 45fr;
-    align-items: center;
+   background-color: #f2fbf6;
+   padding: 9.6rem 0;
 }
 
-.testimonials-container {
-    padding: 9.6rem;
+.testimonials-wrapper {
+   padding: 0 2.4rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.testimonials-card {
+   background-color: #fff;
+   border-radius: 9px;
+   padding: 2.4rem;
+   width: calc(100% / 3 - 1.2rem);
+   opacity: 0;
+   transition: opacity 1s ease-in;
+}
+
+.testimonials-card.fade-in {
+   opacity: 1;
+   transition: opacity 1s ease-in;
+}
+
+.comma {
+   font-size: 4.8rem;
+   color: #7AD7A7;
 }
 
 .testimonials {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 4.8rem;
-    column-gap: 8rem;
+   line-height: 1.6;
 }
 
-.testimonial-img {
-    width: 6.4rem;
-    border-radius: 50%;
-    margin-bottom: 1.2rem;
+.testimonials-content {
+   padding: 1.2rem 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
 }
 
-.testimonial-text {
-    font-size: 1.8rem;
-    line-height: 1.8;
-    margin-bottom: 1.6rem;
+.customer-name {
+   font-size: 2rem;
+   font-weight: 500;
 }
 
-.testimonial-name {
-    font-size: 1.6rem;
-    color: #6f6f6f;
+.customer-job {
+   font-size: 1.6rem;
+   color: #34495e;
+   margin-top: 1.2rem;
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.6rem;
-    padding: 1.6rem;
+.customer-stars {
+   margin-top: 2rem;
 }
 
-.gallery-item {
-    overflow: hidden;
+.star {
+   color: #ffd43b;
+   font-size: 2rem;
 }
 
-.gallery-item img {
-    display: block;
-    width: 100%;
-    transition: all 0.4s;
+.star-gray {
+   color: #aaa;
 }
 
-.gallery-item img:hover {
-    transform: scale(1.1);
+.customer-img {
+   width: 6.4rem;
+   height: 6.4rem;
+   border-radius: 50%;
+   padding: 0.2rem;
+   background-color: #34495e;
+}
+
+.customer-img img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 50%;
 }
 
 /*********************************/
@@ -414,7 +468,7 @@
 }
 
 .pricing-plan-advanced::after {
-    content: "Best value";
+    content: " Economical";
     position: absolute;
     top: 6%;
     right: -18%;
@@ -501,28 +555,12 @@
    .hero {
       gap: 4.8rem;
    }
-
-   .testimonials-container {
-      padding: 9.6rem 3.2rem;
-   }
 }
 
 /* MEDEA: 1024px */
 
 @media (max-width: 1024px) {
-   .testimonials-container {
-      padding: 9.6rem;
-   }
 
-   .testimonials {
-      width: 80%;
-      grid-template-columns: 1fr;
-   }
-
-   .gallery {
-      width: 80%;
-      grid-template-columns: repeat(2, 1fr);
-   }
 }
 
 /* MEDEA: 768px */
@@ -548,6 +586,19 @@
    .hero-img-box {
       width: 60%;
       justify-self: center;
+   }
+
+   .gallery {
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   .testimonials-wrapper {
+      flex-direction: column;
+      gap: 2.4rem;
+   }
+
+   .testimonials-card {
+      width: calc(100% - 12.8rem);
    }
 }
 
@@ -585,25 +636,6 @@
 
    .meal-container {
       padding: 0 6.4rem;
-   }
-
-   .diets-list {
-      width: fit-content;
-      margin: auto;
-   }
-
-   .section-testimonials {
-      grid-template-columns: 1fr;
-   }
-
-   .testimonials {
-      width: 100%;
-   }
-
-   .gallery {
-      grid-template-columns: repeat(6, 1fr);
-      padding: 2.4rem 0 4.8rem;
-      margin: auto;
    }
 
    .pricing-container {

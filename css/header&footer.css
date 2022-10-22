@@ -218,6 +218,12 @@
    }
 } 
 
+@media (max-width: 1024px) {
+   .header {
+      padding: 0 3.2rem;
+   }
+} 
+
 @media (max-width: 768px) {
    .btn-mobile-nav {
       display: block;

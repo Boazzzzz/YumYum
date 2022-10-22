@@ -1,6 +1,8 @@
 function init() {
-   // STEP SECTION SCROLLING
+   // step section silde in
+   // testimonials section fade in
    const boxes = document.querySelectorAll(".scrolling-box");
+   const testimonialsCard = document.querySelectorAll('.testimonials-card')
 
    window.addEventListener("scroll", checkBoxes);
 
@@ -18,6 +20,16 @@ function init() {
             box.classList.remove("show");
          }
       });
+         
+      testimonialsCard.forEach(card => {
+         const cardTop = card.getBoundingClientRect().top;
+
+         if(cardTop < triggerBottom) {
+            card.classList.add("fade-in");
+         } else {
+            card.classList.remove("fade-in");
+         }
+      });  
    }
 
    // PROGRESS STEPS AND BUTTONS
