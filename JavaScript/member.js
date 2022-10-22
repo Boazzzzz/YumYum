@@ -1,106 +1,53 @@
 function init() {
-   /*
-   document.getElementById("search-bar").onclick = function() {
-      document.getElementById("search-bar").style.width = "80%";
-   }
-
-   document.getElementById("go-back").addEventListener("click", () => {
-      history.back();
-    });
-
-   // window.onclick = function() {
-   //    if(document.getElementById("search-bar").style.width == "100%") {
-   //       document.getElementById("search-bar").style.width = "50%";
-   //    }
-   // }
-   */
-
-   /* TABS */
-   /*
-   const tabContent = document.querySelectorAll(".tab-content");
-   const tabButton = document.querySelectorAll(".tab-button");
-
-   tabButton.forEach((button, idx) => {
-      button.addEventListener("click", () => {
-         hideAllContents();
-         hideAllButtons();
-
-         button.classList.add("active");
-         tabContent[idx].classList.add("show");
-      });
-   });
-
-   function hideAllContents() {
-      tabContent.forEach(content => content.classList.remove("show"));
-   }
-   
-   function hideAllButtons() {
-      tabButton.forEach(button => button.classList.remove("active"));
-   }
-   */
-
-   /* DRAG MEALS */
-   /*
-   const fills = document.querySelectorAll(".fill");
-   const empties = document.querySelectorAll(".empty");
-
-   fills.forEach((fill) => {
-      fill.addEventListener("dragstart", dragStart);
-      fill.addEventListener("dragend", dragEnd);
-   });
-
-   for(const empty of empties) {
-      empty.addEventListener("dragover", dragOver);
-      empty.addEventListener("dragenter", dragEnter);
-      empty.addEventListener("dragleave", dragLeave);
-      empty.addEventListener("drop", dragDrop);
-   }
-
-   function dragStart() {
-      this.className += " hold";
-      setTimeout(() => this.className = "invisible", 0);
-   }
-   
-   function dragEnd() {
-      this.className = "fill";
-   }
-   
-   function dragOver(e) {
-      e.preventDefault();
-   }
-   
-   function dragEnter(e) {
-      e.preventDefault();
-      this.className += " hovered";
-   }
-   
-   function dragLeave() {
-      this.className = "empty";
-   }
-   
-   function dragDrop() {
-      this.className = "empty"
-      this.append(fill);
-   } */
 
    // SIDE MENU TOGGLE
 
-   const sideBar = document.querySelector(".member-nav");
-   const sideMenuToggle = document.querySelector(".side-menu-toggle");
+   const memberNav = document.querySelector(".member-nav");
    const navLinkText = document.querySelectorAll(".nav-link-text");
+   const sideMenuToggle = document.querySelectorAll(".side-menu-toggle");
    const logo = document.getElementById("logo");
-   const dashboardWidthToggle = document.querySelector(".dashboard");
-   const dashboardTopToggle = document.querySelector(".dashboard-top");
+   const mainContent = document.querySelectorAll(".main-content");
+   const mainContentTop = document.querySelectorAll(".main-content-top");
 
-   sideMenuToggle.addEventListener("click", () => {
-      sideBar.classList.toggle("close");
-      navLinkText.forEach(text => {
-         text.classList.toggle("hide");
+   sideMenuToggle.forEach(e => {
+      e.addEventListener("click", () => {
+         memberNav.classList.toggle("close");
+
+         logo.classList.toggle("hide");
+
+         navLinkText.forEach(text => {
+            text.classList.toggle("hide");
+         });
+
+         mainContent.forEach((content) => {
+            content.classList.toggle("main-width-toggle");
+         });
+         
+         mainContentTop.forEach((contentTop) => {
+            contentTop.classList.toggle("main-top-toggle");
+         });
+      });
+   });
+
+   // tabs
+   const navLink = document.querySelectorAll(".nav-link");
+
+   for (let i = 0; i < navLink.length; i++) {
+      navLink[i].addEventListener('click', function() {
+         tabDisplay(this);
       })
-      logo.classList.toggle("hide");
-      dashboardWidthToggle.classList.toggle("dashboard-width-toggle");
-      dashboardTopToggle.classList.toggle("dashboard-top-toggle");
-   })
+   }
+
+   function tabDisplay(activeTab) {
+      for (let i = 0; i < navLink.length; i++) {
+         if (navLink[i] == activeTab) {
+            mainContent[i].style.display = 'block';
+            window.scrollTo(0, 0);
+         } else {
+            mainContent[i].style.display = 'none';
+         }
+      }
+   }
 }
 
 window.addEventListener("load", init, false);

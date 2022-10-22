@@ -24,35 +24,53 @@
          <img  class="logo" src="./content_mine/img/logo_yumyum.png" alt="YumYum logo">
       </a>
       <nav class="main-nav">
-         <ul class="main-nav-list">
-            <li>
-               <a class="main-nav-link" href="about_us_page.html"
-               >About us</a>
-            </li>
-            <li><a class="main-nav-link" href="recipe_page.html">On the menu</a></li>
-            <li><a class="main-nav-link" href="#">Testimonials</a></li>
-            <li><a class="main-nav-link" href="#">Pricing</a></li>
-            <li><a class="main-nav-link nav-cta" href="plan_selected_page.html">Try it for free</a></li>
-         </ul>
-         <divs id="main-nav-user" class="main-nav-user">
+         <div 
+         class="main-nav-text hidden"
+         id="main-nav-text"
+         >
+            <ul class="main-nav-list">
+               <li>
+                  <a class="main-nav-link" href="about_us_page.html"
+                  >About us</a>
+               </li>
+               <li><a class="main-nav-link" href="recipe_page.html">On the menu</a></li>
+               <li><a class="main-nav-link" href="#">Testimonials</a></li>
+               <li><a class="main-nav-link" href="#">FAQ</a></li>
+               <li><a class="main-nav-link nav-cta" href="plan_selected_page.html">Try it for free</a></li>
+            </ul>
+         </div>
+         <div id="main-nav-user" class="main-nav-user">
             <img src="./content_mine/img/user icon.png" alt="user icon">
-         </divs>
+         </div>
       </nav>
       <div id="main-nav-extension" class="main-nav-extension hidden">
          <ul class="extension-list">
             <li><a class="main-nav-link" href="member.html">Member</a></li>
             <li><a class="main-nav-link" href="sign_in_page.html">Sign-in</a></li>
          </ul>
-      </div> 
-   </header>
+      </div>
 
+      <button class="btn-mobile-nav">
+         <ion-icon 
+         class="icon-mobile-nav" 
+         name="menu-outline"
+         ></ion-icon>
+         <ion-icon 
+         class="icon-mobile-nav hidden" 
+         name="close-outline"
+         ></ion-icon>
+      </button>
+   </header>
 
   <main>
    <section class="section-meal-details">
       <div class="container">
          <div class="grid grid--3-cols row-gap-md">
             <div class="meal-details">
-               <h2 class="meal-name"><span>Artichoke & Spinach Chicken</span><br> with Roasted Zucchini & Tomato Butter</h2>
+               <div class="meal-name-heart">
+                  <h2 class="meal-name"><span>Artichoke & Spinach Chicken</span><br> with Roasted Zucchini & Tomato Butter</h2>
+                  <span class="heart-icon" id="heart-icon">❤</span>
+               </div>
                <div>
                   <div class="meal-info grid grid--2-cols margin-bottom-sm row-gap-sm"
                   >
@@ -74,8 +92,10 @@
                      </div>
                   </div>
                </div>
-               <img src="./content_mine/img_餐點介紹頁/meal img/Artichoke & Spinach Chicken.jpg" alt="meal of Artichoke & Spinach Chicken img">
-               <div class="cal-catogoies">
+               <div class="meal-img">
+                  <img src="./content_mine/img_餐點介紹頁/meal img/Artichoke & Spinach Chicken.jpg" alt="meal of Artichoke & Spinach Chicken img">
+               </div>
+                  <div class="cal-catogoies">
                   <ion-icon class="list-icon" name="reader-outline"
                   ></ion-icon>
                   <p class="calories">870kcal</p>

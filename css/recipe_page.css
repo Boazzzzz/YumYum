@@ -226,12 +226,10 @@ input[type=radio]:checked + .label-radio {
 }
 
 select {
-/* Reset Select */
    appearance: none;
    outline: 0;
    border: 0;
    box-shadow: none;
-/* Personalize */
    flex: 1;
    padding: 0 1rem;
    color: #fff;
@@ -239,11 +237,11 @@ select {
    background-image: none;
    cursor: pointer;
 }
-/* Remove IE arrow */
+
 select::-ms-expand {
    display: none;
 }
-/* Custom Select wrapper */
+
 .select {
    position: relative;
    display: flex;
@@ -252,7 +250,7 @@ select::-ms-expand {
    border-radius: .25rem;
    overflow: hidden;
 }
-/* Arrow */
+
 .select::after {
    content: '\25BC';
    position: absolute;
@@ -263,7 +261,7 @@ select::-ms-expand {
    transition: .25s all ease;
    pointer-events: none;
 }
-/* Transition */
+
 .select:hover::after {
    color: #7AD7A7;
 }
