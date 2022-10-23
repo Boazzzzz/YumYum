@@ -15,36 +15,43 @@
 
    <script src="JavaScript/general.js"></script>
 
-   <title>plan-selected page</title>
+   <title>Plan Selected</title>
 </head>
 <body>
    <header class="header">
-      <a href="#">
+      <a href="index.html">
          <img  class="logo" src="./content_mine/img/logo_yumyum.png" alt="YumYum logo">
       </a>
       <nav class="main-nav">
-         <ul class="main-nav-list">
-            <li>
-               <a class="main-nav-link" href="about_us_page.html"
-               >About us</a>
-            </li>
-            <li><a class="main-nav-link" href="recipe_page.html">On the menu</a></li>
-            <li><a class="main-nav-link" href="#">Testimonials</a></li>
-            <li><a class="main-nav-link" href="#">Pricing</a></li>
-            <li><a class="main-nav-link nav-cta" href="plan_selected_page.html">Try it for free</a></li>
-         </ul>
-         <divs id="main-nav-user" class="main-nav-user">
-            <img src="./content_mine/img/user icon.png" alt="user icon">
-         </divs>
+         <div 
+         class="main-nav-text hidden"
+         id="main-nav-text"
+         >
+            <ul class="main-nav-list">
+               <li><a class="main-nav-link" href="about_us_page.html"
+               >About us</a></li>
+               <li><a class="main-nav-link" href="recipe_page.html">On the menu</a></li>
+               <li><a class="main-nav-link" href="faq.html">FAQ</a></li>
+               <li><a class="main-nav-link nav-cta" href="plan_selected_page.html">Try it for free</a></li>
+               <li class="member-sign-in">
+                  <a class="member-nav-link" href="member.html"><ion-icon name="person-circle-outline"></ion-icon>Member</a>
+                  <a class="member-nav-link" href="sign_in_page.html"><ion-icon name="log-in-outline"></ion-icon>Sign-in</a>
+               </li>
+            </ul>
+         </div>
       </nav>
-      <div id="main-nav-extension" class="main-nav-extension hidden">
-         <ul class="extension-list">
-            <li><a class="main-nav-link" href="member.html">Member</a></li>
-            <li><a class="main-nav-link" href="sign_in_page.html">Sign-in</a></li>
-         </ul>
-      </div> 
-   </header>
 
+      <button class="btn-mobile-nav">
+         <ion-icon 
+         class="icon-mobile-nav" 
+         name="menu-outline"
+         ></ion-icon>
+         <ion-icon 
+         class="icon-mobile-nav hidden" 
+         name="close-outline"
+         ></ion-icon>
+      </button>
+   </header>
 
    <main>
       <section class="section-plan-selected">

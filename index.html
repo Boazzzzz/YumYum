@@ -5,9 +5,13 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+   <!-- Google Fonts - rubik -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
    <link rel="stylesheet" href="css/general.css">
    <link rel="stylesheet" href="css/header&footer.css">
@@ -38,21 +42,15 @@
                <li><a class="main-nav-link" href="about_us_page.html"
                >About us</a></li>
                <li><a class="main-nav-link" href="recipe_page.html">On the menu</a></li>
-               <li><a class="main-nav-link" href="#">Testimonials</a></li>
-               <li><a class="main-nav-link" href="#">FAQ</a></li>
+               <li><a class="main-nav-link" href="faq.html">FAQ</a></li>
                <li><a class="main-nav-link nav-cta" href="plan_selected_page.html">Try it for free</a></li>
+               <li class="member-sign-in">
+                  <a class="member-nav-link" href="member.html"><ion-icon name="person-circle-outline"></ion-icon>Member</a>
+                  <a class="member-nav-link" href="sign_in_page.html"><ion-icon name="log-in-outline"></ion-icon>Sign-in</a>
+               </li>
             </ul>
          </div>
-         <div id="main-nav-user" class="main-nav-user">
-            <img src="./content_mine/img/user icon.png" alt="user icon">
-         </div>
       </nav>
-      <div id="main-nav-extension" class="main-nav-extension hidden">
-         <ul class="extension-list">
-            <li><a class="main-nav-link" href="member.html">Member</a></li>
-            <li><a class="main-nav-link" href="sign_in_page.html">Sign-in</a></li>
-         </ul>
-      </div>
 
       <button class="btn-mobile-nav">
          <ion-icon 
@@ -426,151 +424,149 @@
          </div>
       </section>
 
-        <section class="section-pricing">
-            <div class="container">
-                <span class="subheading">Pricing</span>
-                <h2 class="heading-secondary">
-                    Save your time and eat well right away
-                </h2>
-            </div>
+      <section class="section-pricing">
+         <div class="container">
+            <span class="subheading">Pricing</span>
+            <h2 class="heading-secondary">
+               Save your time and eat well right away
+            </h2>
+         </div>
 
-            <div class="container grid grid--2-cols grid-h-v-center margin-bottom-md pricing-container">
-               <div class="pricing-plan pricing-plan-beginner">
-                  <div class="pricing-plan-inner">
-                     <div class="pricing-plan-front">
-                        <header class="plan-header">
-                           <p class="plan-name">Beginner</p>
-                           <p class="plan-text">program</p>
-                        </header>
-                        <ul class="list margin-bottom-auto">
-                           <li class="list-item">
-                              <ion-icon 
-                              class="list-icon" name="play-outline"
-                              ></ion-icon>
-                              <span>1 meal per day</span>
-                           </li>
-                           <li class="list-item">
-                              <ion-icon 
-                              class="list-icon" name="play-outline"
-                              ></ion-icon>
-                              <span>Order from 11am and 9pm</span>
-                           </li>
-                           <li class="list-item">
-                              <ion-icon 
-                              class="list-icon" name="play-outline"
-                              ></ion-icon>
-                              <span>Delivery is free</span>
-                           </li>
-                        </ul>
-                     </div>
-                     <div class="pricing-plan-back">
-                        <p class="plan-price"><span>$</span>299</p>
-                        <p class="plan-text">per month. Less than $10 per meal!</p>
-                        <div class="plan-sign-up">
-                           <a href="plan_selected_page.html" class="btn btn--full">Get started</a>
-                        </div>    
-                     </div>
-                  </div>
-               </div>
-
-               <div class="pricing-plan pricing-plan-advanced">
-                  <div class="pricing-plan-inner">
-                     <div class="pricing-plan-front">
-                        <header class="plan-header">
-                           <p class="plan-name">Advanced</p>
-                           <p class="plan-text">program</p>
-                        </header>
-                        <ul class="list">
-                           <li class="list-item">
-                              <ion-icon 
+         <div class="container grid grid--2-cols grid-h-v-center margin-bottom-md pricing-container">
+            <div class="pricing-plan pricing-plan-beginner">
+               <div class="pricing-plan-inner">
+                  <div class="pricing-plan-front">
+                     <header class="plan-header">
+                        <p class="plan-name">Beginner</p>
+                        <p class="plan-text">program</p>
+                     </header>
+                     <ul class="list margin-bottom-auto">
+                        <li class="list-item">
+                           <ion-icon 
                            class="list-icon" name="play-outline"
                            ></ion-icon>
-                           <span><strong>2 meals</strong> per day</span>
-                           </li>
-                           <li class="list-item">
-                              <ion-icon 
-                              class="list-icon" name="play-outline"
-                              ></ion-icon>
-                              <span>Order <strong>24/7</strong></span>
-                           </li>
-                           <li class="list-item">
-                              <ion-icon 
-                              class="list-icon" name="play-outline"
-                              ></ion-icon>
-                              <span>Delivery is free</span>
-                           </li>
-                           <li class="list-item">
-                              <ion-icon 
-                              class="list-icon" name="play-outline"
-                              ></ion-icon>
-                              <span>Get access to latest recipes</span>
-                           </li>
-                        </ul>
-                     </div>
-                     <div class="pricing-plan-back">
-                        <p class="plan-price"><span>$</span>538</p>
-                        <p class="plan-text">per month. Less than $9 per meal!</p>
-                        <div class="plan-sign-up">
-                           <a href="plan_selected_page.html" class="btn btn--full">Get started</a>
-                        </div>
+                           <span>1 meal per day</span>
+                        </li>
+                        <li class="list-item">
+                           <ion-icon 
+                           class="list-icon" name="play-outline"
+                           ></ion-icon>
+                           <span>Order from 11am and 9pm</span>
+                        </li>
+                        <li class="list-item">
+                           <ion-icon 
+                           class="list-icon" name="play-outline"
+                           ></ion-icon>
+                           <span>Delivery is free</span>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="pricing-plan-back">
+                     <p class="plan-price"><span>$</span>299</p>
+                     <p class="plan-text">per month. Less than $10 per meal!</p>
+                     <div class="plan-sign-up">
+                        <a href="plan_selected_page.html" class="btn btn--full">Get started</a>
+                     </div>    
+                  </div>
+               </div>
+            </div>
+
+            <div class="pricing-plan pricing-plan-advanced">
+               <div class="pricing-plan-inner">
+                  <div class="pricing-plan-front">
+                     <header class="plan-header">
+                        <p class="plan-name">Advanced</p>
+                        <p class="plan-text">program</p>
+                     </header>
+                     <ul class="list">
+                        <li class="list-item">
+                           <ion-icon 
+                        class="list-icon" name="play-outline"
+                        ></ion-icon>
+                        <span><strong>2 meals</strong> per day</span>
+                        </li>
+                        <li class="list-item">
+                           <ion-icon 
+                           class="list-icon" name="play-outline"
+                           ></ion-icon>
+                           <span>Order <strong>24/7</strong></span>
+                        </li>
+                        <li class="list-item">
+                           <ion-icon 
+                           class="list-icon" name="play-outline"
+                           ></ion-icon>
+                           <span>Delivery is free</span>
+                        </li>
+                        <li class="list-item">
+                           <ion-icon 
+                           class="list-icon" name="play-outline"
+                           ></ion-icon>
+                           <span>Get access to latest recipes</span>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="pricing-plan-back">
+                     <p class="plan-price"><span>$</span>538</p>
+                     <p class="plan-text">per month. Less than $9 per meal!</p>
+                     <div class="plan-sign-up">
+                        <a href="plan_selected_page.html" class="btn btn--full">Get started</a>
                      </div>
                   </div>
                </div>
-
-
-               <!-- FOR MOBILE -->
             </div>
 
-            <div class="container grid">
-                <aside class="plan-details">
-                    Prices include all applicable taxes. You can cancel at any time. 
-                     Both plans include the followings:
-                </aside>
-            </div>
+            <!-- FOR MOBILE -->
+         </div>
 
-            <div class="container grid grid--4-cols">
-                <div class="feature">
-                    <ion-icon 
-                    class="feature-icon" 
-                    name="infinite-outline"
-                    ></ion-icon>
-                    <p class="feature-title">365 days/year</p>
-                    <P class="feature-text">
-                        Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage.
-                    </P>
-                </div>
-                <div class="feature">
-                    <ion-icon 
-                    class="feature-icon" 
-                    name="leaf-outline"
-                    ></ion-icon>
-                    <p class="feature-title">100% organic</p>
-                    <P class="feature-text">
-                     All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics.
-                </div>
-                <div class="feature">
-                    <ion-icon 
-                    class="feature-icon" 
-                    name="earth-outline"
-                    ></ion-icon>
-                    <p class="feature-title">No waste</p>
-                    <P class="feature-text">
-                        All our partners only use reusable containers to package all your meals.
-                    </P>
-                </div>
-                <div class="feature">
-                    <ion-icon 
-                    class="feature-icon" 
-                    name="pause-outline"
-                    ></ion-icon>
-                    <p class="feature-title">Pause anytime</p>
-                    <P class="feature-text">
-                        Going on vacation? Just pause your subscription, and we refund unused days.
-                    </P>
-                </div>
-                
+         <div class="container grid">
+               <aside class="plan-details">
+                  Prices include all applicable taxes. You can cancel at any time. 
+                  Both plans include the followings:
+               </aside>
+         </div>
+
+         <div class="container grid grid--4-cols">
+            <div class="feature">
+               <ion-icon 
+               class="feature-icon" 
+               name="infinite-outline"
+               ></ion-icon>
+               <p class="feature-title">365 days/year</p>
+               <P class="feature-text">
+                  Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage.
+               </P>
             </div>
-        </section>
+            <div class="feature">
+               <ion-icon 
+               class="feature-icon" 
+               name="leaf-outline"
+               ></ion-icon>
+               <p class="feature-title">100% organic</p>
+               <P class="feature-text">
+               All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics.
+            </div>
+            <div class="feature">
+               <ion-icon 
+               class="feature-icon" 
+               name="earth-outline"
+               ></ion-icon>
+               <p class="feature-title">No waste</p>
+               <P class="feature-text">
+                  All our partners only use reusable containers to package all your meals.
+               </P>
+            </div>
+            <div class="feature">
+               <ion-icon 
+               class="feature-icon" 
+               name="pause-outline"
+               ></ion-icon>
+               <p class="feature-title">Pause anytime</p>
+               <P class="feature-text">
+                  Going on vacation? Just pause your subscription, and we refund unused days.
+               </P>
+            </div>
+         </div>
+      </section>
    </main>
 
    <footer class="footer">

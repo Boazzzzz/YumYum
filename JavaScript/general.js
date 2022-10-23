@@ -1,9 +1,4 @@
 function init() {
-   document.getElementById("main-nav-user").onclick = function() {
-      let mainNavExtension = document.getElementById("main-nav-extension");
-
-      mainNavExtension.classList.toggle("hidden");
-   }
 
    /* btn-mobile-menu */
    const menuButton = document.querySelectorAll(".icon-mobile-nav");
