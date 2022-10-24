@@ -12,19 +12,9 @@
    color: #888;
 }
 
-.data-flex-row {
+.data-flex {
    display: flex;
    gap: 3rem;
-}
-
-.price-detail {
-   display: flex;
-   justify-content: space-between;
-}
-
-.price-detail span {
-   color: #888;
-   font-size: 1.8rem;
 }
 
 /* ------------------------------ */
@@ -40,7 +30,7 @@ main {
 }
 
 .data-nav {
-   margin-left: 20%;
+   margin: auto;
 }
 
 .data-nav-text {
@@ -51,11 +41,13 @@ main {
 
 .data-nav-text span {
    color: #6ec296;
-   border-bottom: 2px solid currentColor;
 }
 
 .data {
-   width: 60rem;
+   display: grid;
+   grid-template-columns: 5fr 4fr;
+   column-gap: 6.4rem;
+   row-gap: 9.6rem;
 }
 
 .hint {
@@ -65,7 +57,7 @@ main {
    gap: 2.4rem;
 }
 
-.hint a,
+.hunt a,
 .hint span {
    font-size: 1.4rem;
 }
@@ -87,12 +79,36 @@ main {
    border-left: 1px solid #333;
 }
 
+.price-detail {
+   display: flex;
+   justify-content: space-between;
+}
+
+.price-detail span {
+   color: #888;
+   font-size: 1.8rem;
+}
+
+.program-detail {
+   display: flex;
+   justify-content: space-between;
+}
+
+.program-detail span {
+   font-size: 1.8rem;
+}
+
 .discpunt-code {
    margin-top: 2.4rem;
 }
 
 .discount-code-input {
    flex-grow: 1;
+}
+
+.btn-apply {
+   background-color: #eee;
+   border: 1px solid #888;
 }
 
 .price-total {
@@ -118,6 +134,67 @@ main {
    align-self: flex-end;
 }
 
+@media (max-width: 1024px) {
+   
+}
 
+@media (max-width: 768px) {
+
+   .data-page-header {
+      flex-direction: column;
+      height: 16rem;
+      padding: 3.2rem;
+      align-items: flex-start;
+      gap: 1.6rem;
+   }
+
+   .data-flex {
+      flex-direction: column;
+   }
+
+   .hint {
+      display: contents;
+   }
+
+   .program-detail {
+      flex-direction: column;
+      gap: 0.6rem;
+      margin-bottom: 0.8rem;
+   }
+
+   .total-price-detail {
+      flex-direction: column;
+      gap: 0.6rem;
+   }
+}
+
+@media (max-width: 428px) {
+
+   main {
+      padding-bottom: 4.8rem;
+   }
+
+   .data {
+      grid-template-columns: 1fr;
+      row-gap: 4.8rem;
+   }
+
+   .program-detail {
+      flex-direction: row;
+   }
+
+   .price-details {
+      border-left: 0;
+      border-top: 1px solid #333;
+   }
+
+   .total-price-detail {
+      flex-direction: row;
+   }
+
+   .btn-continue {
+      align-self: center;
+   }
+}
 
 

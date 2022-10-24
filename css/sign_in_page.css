@@ -45,6 +45,10 @@
    margin-bottom: 1.6rem;
 }
 
+.data input::placeholder {
+   padding: 0 0.8rem;
+}
+
 .data label {
    font-size: 2rem;
 }
@@ -107,7 +111,8 @@
 }
 
 .app-download-img {
-   height: 40rem;
+   width: 100%;
+   max-width: 20rem;
    grid-column: 1 / span 2;
 }
 
@@ -117,4 +122,12 @@
 
 .app-download-store img {
    height: 4.4rem;
+}
+
+@media (max-width: 768px) {
+   .sign-in-page {
+      width: 100%;
+      max-width: 70rem;
+      grid-template-columns: 1fr;
+   }
 }

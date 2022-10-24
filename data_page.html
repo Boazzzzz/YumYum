@@ -28,8 +28,8 @@
    </header>
 
    <main>
-      <div class="container grid grid--2-cols">
-         <div class="data">
+      <div class="container data">
+         <div>
             <div class="hint">
                <span>Already have an account &#63;</span>
                <a class="link" href="sign_in_page.html">Sign in</a>
@@ -49,12 +49,12 @@
             
             <div class="data-flex-column">
                <span>SHIPPING ADDRESS</span>
-               <div class="data-flex-row">
+               <div class="data-flex">
                   <input class="data-input" type="text" placeholder="First Name">
                   <input class="data-input" type="text" placeholder="Last Name">
                </div>
                <input class="data-input" type="text" placeholder="Apartment, suite, etc (optional)">
-               <div class="data-flex-row">
+               <div class="data-flex">
                   <input class="data-input" type="text" placeholder="City">
                   <select class="data-select" name="" id="">
                      <option value="State / Province">
@@ -65,22 +65,22 @@
                </div>
                <input class="data-input" type="text" placeholder="Phone">
                <select class="data-select" name="" id="">
-                  <option value="State / Province">
-                     Gender
-                  </option>
+                  <option value="State / Province">Gender</option>
+                  <option value="State / Province">Male</option>
+                  <option value="State / Province">Female</option>
                </select>
             </div>
          </div>
 
          <div class="price-details">
-            <div class="price-detail">
+            <div class="program-detail">
                <span>Advanced program</span>
                <span>$ 538</span>
             </div>
             <a class="link" href="plan_selected_page.html">change plan</a>
-            <div class="data-flex-row discpunt-code">
+            <div class="data-flex discpunt-code">
                <input class="data-input discount-code-input" type="text" placeholder="discount code">
-               <button type="submit">Apply</button>
+               <button class="btn-apply" type="submit">Apply</button>
             </div>
             <div class="price-total">
                <div class="price-detail">
@@ -91,7 +91,7 @@
                   <span>month total</span>
                   <span>$ 538</span>
                </div>
-               <div class="price-detail">
+               <div class="price-detail total-price-detail">
                   <span>Total Price</span>
                   <span>$ 538</span>
                </div>
@@ -112,28 +112,28 @@
 
             <ul class="social-links">
                <li>
-                     <a class="footer-link" href="#">
-                        <ion-icon 
-                        class="social-icon" 
-                        name="logo-instagram"
-                        ></ion-icon>
-                     </a>
+                  <a class="footer-link" href="#">
+                     <ion-icon 
+                     class="social-icon" 
+                     name="logo-instagram"
+                     ></ion-icon>
+                  </a>
                </li>
                <li>
-                     <a class="footer-link" href="#">
-                        <ion-icon 
-                        class="social-icon" 
-                        name="logo-twitter"
-                        ></ion-icon>
-                     </a>
+                  <a class="footer-link" href="#">
+                     <ion-icon 
+                     class="social-icon" 
+                     name="logo-twitter"
+                     ></ion-icon>
+                  </a>
                </li>
                <li>
-                     <a class="footer-link" href="#">
-                        <ion-icon 
-                        class="social-icon" 
-                        name="logo-facebook"
-                        ></ion-icon>
-                     </a>
+                  <a class="footer-link" href="#">
+                     <ion-icon 
+                     class="social-icon" 
+                     name="logo-facebook"
+                     ></ion-icon>
+                  </a>
                </li>
             </ul>
 
@@ -145,41 +145,56 @@
             <address class="contacts"> 
                <p>17 W Mountain Street, Glendale,ca, 91202  United States</p>
                <p>
-                     <a 
-                     class="footer-link" href="tel:123456789"
-                     >123456789</a><br>
-                     <a 
-                     class="footer-link" href="mailto:YumYum@gmail.com"
-                     >YumYum@gmail.com</a>
+                  <a 
+                  class="footer-link" href="tel:123456789"
+                  >123456789</a><br>
+                  <a 
+                  class="footer-link" href="mailto:YumYum@gmail.com"
+                  >YumYum@gmail.com</a>
                </p>
             </address>
          </div>
          <nav class="nav-col">
             <p class="footer-heading">Acount</p>
             <ul class="footer-nav">
-               <li><a class="footer-link" href="#">Create account</a></li>
-               <li><a class="footer-link" href="member_page.html">Sign in</a></li>
-               <li><a class="footer-link" href="#">iOS app</a></li>
-               <li><a class="footer-link" href="#">Android app</a></li>
+               <li><a class="footer-link" href="#">Sign up</a></li>
+               <li>
+                  <a class="footer-link" href="member_page.html"
+                  >Sign in</a>
+               </li>
+               <li><a class="footer-link" href="#">iOS APP</a></li>
+               <li><a class="footer-link" href="#">Android APP</a></li>
             </ul>
          </nav>
          <nav class="nav-col">
             <p class="footer-heading">Company</p>
             <ul class="footer-nav">
                <li><a class="footer-link" href="about_us_page.html">About YumYum</a></li>
-               <li><a class="footer-link" href="#">For Business</a></li>
-               <li><a class="footer-link" href="#">Cooking partners</a></li>
+               <li><a class="footer-link" href="#">Business</a></li>
+               <li><a class="footer-link" href="#">Be our chef</a></li>
                <li><a class="footer-link" href="#">Careers</a></li>
             </ul>
          </nav>
          <nav class="nav-col">
             <p class="footer-heading">Resources</p>
             <ul class="footer-nav">
-               <li><a class="footer-link" href="#">Recipe directory</a></li>
-               <li><a class="footer-link" href="#">Help center</a></li>
-               <li><a class="footer-link" href="#">Privacy & terms</a></li>
+               <li>
+                  <a class="footer-link" href="#"
+                  >Recipe directory</a>
+               </li>
+               <li>
+                  <a class="footer-link" href="#">Kitchens</a>
+               </li>
+               <li>
+                  <a class="footer-link" href="#"
+                  >Ingredients</a>
+               </li>
             </ul>
          </nav>
+      </div>
+      <div class="container">
+         <p class="alert-text">本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。</p>
+         <p class="alert-text">This website is a student project only for learning and displaying.</p>
       </div>
    </footer>
 

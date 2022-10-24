@@ -14,6 +14,7 @@
    <link rel="stylesheet" href="css/plan-selected-page.css">
 
    <script src="JavaScript/general.js"></script>
+   <script src="JavaScript/plan-selected.js"></script>
 
    <title>Plan Selected</title>
 </head>
@@ -65,104 +66,100 @@
          </div>
 
          <div class="container plan-selected">
-            <div class="programs-plans grid grid--2-cols">
-               <div class="programs">
-                  <span class="programs-heading">Select a program</span>
-                  <form action="" class="grid grid--2-cols grid-h-v-center column-gap-md row-gap-md">
-                     <div class="program-box">
-                        <input type="radio" name="mealplan" value="Standard" id="mealplan-one" class="hidden-box" >
-                        <label for="mealplan-one" class="label-radio">
-                           <div class="display-box">
-                              <span class="program">Standard</span>
-                           </div>
-                        </label>
+            <div class="programs-plans">
+               <div class="grid grid--2-cols grid-programs margin-bottom-sm">
+                  <div class="programs">
+                     <span class="programs-heading">Select a program</span>
+                     <form action="" class="grid grid--2-cols grid-h-v-center column-gap-md row-gap-md">
+                        <div class="program-box">
+                           <input type="radio" name="mealplan" value="Standard" id="mealplan-one" class="hidden-box" >
+                           <label for="mealplan-one" class="label-radio">
+                              <div class="display-box">
+                                 <span class="program">Standard</span>
+                              </div>
+                           </label>
+                        </div>
+                  
+                        <div class="program-box">
+                           <input type="radio" name="mealplan" value="Keto Flex" id="mealplan-two" class="hidden-box" >
+                           <label for="mealplan-two" class="label-radio">
+                              <div class="display-box">
+                                 <span class="program">Keto Flex</span>
+                              </div>
+                           </label>
+                        </div>
+                  
+                        <div class="program-box">
+                           <input type="radio" name="mealplan" value="Heart Healthy" id="mealplan-three" class="hidden-box" >
+                           <label 
+                           for="mealplan-three" 
+                           class="label-radio"
+                           >
+                              <div class="display-box">
+                                 <span class="program">Heart Healthy</span>
+                              </div>
+                           </label>
+                        </div>
+                  
+                        <div class="program-box">
+                           <input type="radio" name="mealplan" value="Diabetic" id="mealplan-four" class="hidden-box" >
+                           <label for="mealplan-four" class="label-radio">
+                              <div class="display-box">
+                                 <span class="program">Diabetic</span>
+                              </div>
+                           </label>
+                        </div>
+                  
+                        <div class="program-box">
+                           <input type="radio" name="mealplan" value="Gluten Free" id="mealplan-five" class="hidden-box" >
+                           <label for="mealplan-five" class="label-radio">
+                              <div class="display-box">
+                                 <span class="program">Gluten Free</span>
+                              </div>
+                           </label>
+                        </div>
+                  
+                        <div class="program-box">
+                           <input type="radio" name="mealplan" value="Menopause" id="mealplan-six" class="hidden-box" >
+                           <label for="mealplan-six" class="label-radio">
+                              <div class="display-box">
+                                 <span class="program">Menopause</span>
+                              </div>
+                           </label>
+                        </div>
+                     </form>
+                     <p class="programs-text">Our Signature Program combines the science of healthy weight loss with the convenience of chef-prepared meals. We'll help you reach your goals and enjoy the journey!</p>
+                  </div>
+                  
+                  <div class="programs">
+                     <span class="programs-heading">Choose a plan</span>
+                     <form action="" class="grid grid--2-cols grid-h-v-center column-gap-md row-gap-md">
+                        <div class="program-box">
+                           <input type="radio" name="priceplan" value="Normal" id="priceplan-one" class="hidden-box" >
+                           <label id="plan-checkbox" for="priceplan-one" class="label-radio">
+                              <div class="display-box">
+                                 <span class="program">Beginner</span>
+                              </div>
+                           </label>
+                        </div>
+                  
+                        <div class="program-box">
+                           <input type="radio" name="priceplan" value="VIP" id="priceplan-two" class="hidden-box" >
+                           <label id="plan-checkbox" for="priceplan-two" class="label-radio">
+                              <div class="display-box">
+                                 <span class="program">Advanced</span>
+                              </div>
+                           </label>
+                        </div>
+                     </form>
+                     <p class="programs-text">DELIVERED FRESH DAILY. READY-TO-EAT. CUSTOMIZE YOUR MEALS. PAUSE ANYTIME.</p>
+                     <div class="plan-price-box">
+                        <p class="plan-price"><strong>$</strong>---</p>
+                        <p class="plan-price-description">on the first month</p>
                      </div>
-                     
-                     <div class="program-box">
-                        <input type="radio" name="mealplan" value="Keto Flex" id="mealplan-two" class="hidden-box" >
-                        <label for="mealplan-two" class="label-radio">
-                           <div class="display-box">
-                              <span class="program">Keto Flex</span>
-                           </div>
-                        </label>
-                     </div>
-                     
-                     <div class="program-box">
-                        <input type="radio" name="mealplan" value="Heart Healthy" id="mealplan-three" class="hidden-box" >
-                        <label for="mealplan-three" class="label-radio">
-                           <div class="display-box">
-                              <span class="program">Heart Healthy</span>
-                           </div>
-                        </label>
-                     </div>
-                     
-                     <div class="program-box">
-                        <input type="radio" name="mealplan" value="Diabetic" id="mealplan-four" class="hidden-box" >
-                        <label for="mealplan-four" class="label-radio">
-                           <div class="display-box">
-                              <span class="program">Diabetic</span>
-                           </div>
-                        </label>
-                     </div>
-                     
-                     <div class="program-box">
-                        <input type="radio" name="mealplan" value="Gluten Free" id="mealplan-five" class="hidden-box" >
-                        <label for="mealplan-five" class="label-radio">
-                           <div class="display-box">
-                              <span class="program">Gluten Free</span>
-                           </div>
-                        </label>
-                     </div>
-                     
-                     <div class="program-box">
-                        <input type="radio" name="mealplan" value="Menopause" id="mealplan-six" class="hidden-box" >
-                        <label for="mealplan-six" class="label-radio">
-                           <div class="display-box">
-                              <span class="program">Menopause</span>
-                           </div>
-                        </label>
-                     </div>
-                  </form>
-
-                  <p class="programs-text">Our Signature Program combines the science of healthy weight loss with the convenience of chef-prepared meals. We'll help you reach your goals and enjoy the journey!</p>
-               </div>
-               
-               <div class="programs">
-                  <span class="programs-heading">Choose a plan</span>
-                  <form action="" class="grid grid--2-cols grid-h-v-center column-gap-md row-gap-md">
-                     <div class="program-box">
-                        <input type="radio" name="priceplan" value="Normal" id="priceplan-one" class="hidden-box" >
-                        <label for="priceplan-one" class="label-radio">
-                           <div class="display-box">
-                              <span class="program">Normal</span>
-                           </div>
-                        </label>
-                     </div>
-                     
-                     <div class="program-box">
-                        <input type="radio" name="priceplan" value="VIP" id="priceplan-two" class="hidden-box" >
-                        <label for="priceplan-two" class="label-radio">
-                           <div class="display-box">
-                              <span class="program">VIP</span>
-                           </div>
-                        </label>
-                     </div>
-                  </form>
-
-                  <p class="programs-text">DELIVERED FRESH DAILY. READY-TO-EAT. CUSTOMIZE YOUR MEALS. PAUSE ANYTIME.</p>
-                  <div class="plan-price-box">
-                     <p class="plan-price"><strong>$</strong>299</p>
-                     <p class="plan-price-description">on the first month</p>
                   </div>
                </div>
-
-               <div class="divider"></div>
-            </div>
-         </div>
-         <div class="container center-text">
-            <div>
-               <a href="data_page.html" class="btn btn--full"
-               >Select this plan</a>
+               <a href="data_page.html" class="btn btn--full btn-select-plan">Select this plan</a>
             </div>
          </div>
       </section>
@@ -173,7 +170,7 @@
                Program Benefits
             </h2>
             <p class="program-featured-text">We prepare each meal by hand, using fresh ingredients to deliver quality you won't find from other delivery services. Our mission is to provide each of our members with access to the tools and support necessary to achieve life-transforming wellness. Utilizing the science of metabolism correction, we promise to deliver great-tasting, healthy meals that help you reach your goals.</p>
-            <div class="grid grid--4-cols">
+            <div class="grid grid--4-cols program-features">
                <div class="program-feature">
                   <p>Personalized support from our Registered Dietitians</p>
                   <div class="program-feature-img">
@@ -205,91 +202,98 @@
 
    <footer class="footer">
       <div class="container grid grid--footer">
-            <div class="logo-col">
-               <a class="footer-logo" href="index.html">
-                  <img  
-                  class="logo" 
-                  src="./content_mine/img/logo_yumyum.png">
-               </a>
+         <div class="logo-col">
+            <a class="footer-logo" href="index.html">
+               <img  
+               class="logo" 
+               src="./content_mine/img/logo_yumyum.png">
+            </a>
 
-               <ul class="social-links">
-                  <li>
-                     <a class="footer-link" href="#">
-                        <ion-icon 
-                        class="social-icon" 
-                        name="logo-instagram"
-                        ></ion-icon>
-                     </a>
-                  </li>
-                  <li>
-                     <a class="footer-link" href="#">
-                        <ion-icon 
-                        class="social-icon" 
-                        name="logo-twitter"
-                        ></ion-icon>
-                     </a>
-                  </li>
-                  <li>
-                     <a class="footer-link" href="#">
-                        <ion-icon 
-                        class="social-icon" 
-                        name="logo-facebook"
-                        ></ion-icon>
-                     </a>
-                  </li>
-               </ul>
+            <ul class="social-links">
+               <li>
+                  <a class="footer-link" href="#">
+                     <ion-icon 
+                     class="social-icon" 
+                     name="logo-instagram"
+                     ></ion-icon>
+                  </a>
+               </li>
+               <li>
+                  <a class="footer-link" href="#">
+                     <ion-icon 
+                     class="social-icon" 
+                     name="logo-twitter"
+                     ></ion-icon>
+                  </a>
+               </li>
+               <li>
+                  <a class="footer-link" href="#">
+                     <ion-icon 
+                     class="social-icon" 
+                     name="logo-facebook"
+                     ></ion-icon>
+                  </a>
+               </li>
+            </ul>
 
-               <p class="copyright">Copyright &copy; by YumYum, Inc. All rights reserved.
+            <p class="copyright">Copyright &copy; by YumYum, Inc. All rights reserved.
+            </p>
+         </div>
+         <div class="address-col">
+            <p class="footer-heading">Contact us</p>
+            <address class="contacts"> 
+               <p>17 W Mountain Street, Glendale,ca, 91202  United States</p>
+               <p>
+                  <a 
+                  class="footer-link" href="tel:123456789"
+                  >123456789</a><br>
+                  <a 
+                  class="footer-link" href="mailto:YumYum@gmail.com"
+                  >YumYum@gmail.com</a>
                </p>
-            </div>
-            <div class="address-col">
-               <p class="footer-heading">Contact us</p>
-               <address class="contacts"> 
-                  <p>17 W Mountain Street, Glendale,ca, 91202  United States</p>
-                  <p>
-                     <a 
-                     class="footer-link" href="tel:123456789"
-                     >123456789</a><br>
-                     <a 
-                     class="footer-link" href="mailto:YumYum@gmail.com"
-                     >YumYum@gmail.com</a>
-                  </p>
-               </address>
-            </div>
-            <nav class="nav-col">
-               <p class="footer-heading">Acount</p>
-               <ul class="footer-nav">
-                  <li><a class="footer-link" href="#">Create account</a></li>
-                  <li>
-                     <a class="footer-link" href="member_page.html"
-                     >Sign in</a>
-                  </li>
-                  <li><a class="footer-link" href="#">iOS app</a></li>
-                  <li><a class="footer-link" href="#">Android app</a></li>
-               </ul>
-            </nav>
-            <nav class="nav-col">
-               <p class="footer-heading">Company</p>
-               <ul class="footer-nav">
-                  <li>
-                     <a 
-                     class="footer-link" 
-                     href="about_us_page.html"
-                     >About YumYum</a>
-                  </li>
-                  <li><a class="footer-link" href="#">For Business</a></li>
-                  <li><a class="footer-link" href="#">Cooking partners</a></li>
-                  <li><a class="footer-link" href="#">Careers</a></li>
-               </ul>
-            </nav>
-            <nav class="nav-col">
-               <p class="footer-heading">Resources</p>
-               <ul class="footer-nav">
-                  <li><a class="footer-link" href="#">Recipe directory</a></li>
-                  <li><a class="footer-link" href="#">Help center</a></li>
-                  <li><a class="footer-link" href="#">Privacy & terms</a></li>
-               </ul>
-            </nav>
+            </address>
+         </div>
+         <nav class="nav-col">
+            <p class="footer-heading">Acount</p>
+            <ul class="footer-nav">
+               <li><a class="footer-link" href="#">Sign up</a></li>
+               <li>
+                  <a class="footer-link" href="member_page.html"
+                  >Sign in</a>
+               </li>
+               <li><a class="footer-link" href="#">iOS APP</a></li>
+               <li><a class="footer-link" href="#">Android APP</a></li>
+            </ul>
+         </nav>
+         <nav class="nav-col">
+            <p class="footer-heading">Company</p>
+            <ul class="footer-nav">
+               <li><a class="footer-link" href="about_us_page.html">About YumYum</a></li>
+               <li><a class="footer-link" href="#">Business</a></li>
+               <li><a class="footer-link" href="#">Be our chef</a></li>
+               <li><a class="footer-link" href="#">Careers</a></li>
+            </ul>
+         </nav>
+         <nav class="nav-col">
+            <p class="footer-heading">Resources</p>
+            <ul class="footer-nav">
+               <li>
+                  <a class="footer-link" href="#"
+                  >Recipe directory</a>
+               </li>
+               <li>
+                  <a class="footer-link" href="#">Kitchens</a>
+               </li>
+               <li>
+                  <a class="footer-link" href="#"
+                  >Ingredients</a>
+               </li>
+            </ul>
+         </nav>
+      </div>
+      <div class="container">
+         <p class="alert-text">本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。</p>
+         <p class="alert-text">This website is a student project only for learning and displaying.</p>
       </div>
    </footer>
 
