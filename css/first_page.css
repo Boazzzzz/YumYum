@@ -419,7 +419,7 @@
 
 .pricing-plan {
    border-radius: 11px;
-   width: 40rem;
+   width: 36rem;
    height: 48rem;
    perspective: 100rem;
    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.15);
@@ -468,7 +468,7 @@
     content: " Economical";
     position: absolute;
     top: 6%;
-    right: -18%;
+    right: -20%;
     text-transform: uppercase;
     font-size: 1.4rem;
     font-weight: 700;
