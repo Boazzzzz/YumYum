@@ -1,5 +1,5 @@
 /*********************************/
-/* DATA PAGE GENERAL */
+/* PAYMENT GENERAL */
 /*********************************/
 
 .data-input,
@@ -15,6 +15,38 @@
 .data-flex {
    display: flex;
    gap: 3rem;
+}
+
+/* light box */
+
+.light-box {
+   position: fixed;
+   background-color: #eee;
+   width: fit-content;
+   height: fit-content;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 10;
+   display: none;
+   align-items: center;
+   justify-content: center;
+   padding: 2.4rem 1.2rem;
+   border: 1px solid currentColor;
+   border-radius: 9px;
+   font-size: 2rem;
+   gap: 1.2rem;
+   transition: all 0.3s ease-in;
+}
+
+.light-box.show {
+   display: flex;
+   transition: all 0.3s ease-in;
+}
+
+.close-btn {
+   font-size: 2.4rem;
+   cursor: pointer;
 }
 
 /* ------------------------------ */
@@ -231,6 +263,7 @@ main {
    cursor: pointer;
    transition: 0.3s linear;
    border-radius: 9px;
+   text-align: center;
 }
 
 .submit-btn:hover {
@@ -317,8 +350,18 @@ main {
       gap: 1.6rem;
    }
 
+   .data {
+      grid-template-columns: 1fr;
+      row-gap: 4.8rem;
+   }
+
    .data-flex {
       flex-direction: column;
+   }
+
+   .price-details {
+      border-left: 0;
+      border-top: 1px solid #333;
    }
 
    .program-detail {
@@ -339,18 +382,8 @@ main {
       padding-bottom: 4.8rem;
    }
 
-   .data {
-      grid-template-columns: 1fr;
-      row-gap: 4.8rem;
-   }
-
    .program-detail {
       flex-direction: row;
-   }
-
-   .price-details {
-      border-left: 0;
-      border-top: 1px solid #333;
    }
 
    .total-price-detail {

@@ -48,6 +48,23 @@ function init() {
    cvvInput.addEventListener('input', (e) => {
       cvvBox.innerText = e.target.value;
    });
+
+   // light box
+
+   const submitButton = document.querySelector('.submit-btn');
+   const main = document.querySelector('main');
+   const lightBox = document.querySelector('.light-box');
+   const closeButton = document.querySelector('.close-btn');
+
+   submitButton.addEventListener('click', () => {
+      main.style.opacity = '5%';
+      lightBox.classList.add('show');
+   }); 
+
+   closeButton.addEventListener('click', () => {
+      main.style.opacity = '100%';
+      lightBox.classList.remove('show');
+   });
 }
 
 window.addEventListener('load', init, false);
