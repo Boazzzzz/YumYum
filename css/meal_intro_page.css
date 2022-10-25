@@ -19,7 +19,7 @@ main {
 }
 
 /*********************************/
-/* MEAL DETAILS SECTION */
+/* MEAL OVERVIEW SECTION */
 /*********************************/
 
 .meal-overview {
@@ -121,6 +121,10 @@ main {
    font-size: 1.8rem;
 }
 
+.meal-tags {
+   overflow: auto;
+}
+
 .rating {
    margin-left: auto;
    font-size: 3.6rem;
@@ -128,9 +132,9 @@ main {
 }
 
 .rating input {
-float: right;
-opacity: 0;
-position: absolute;
+   float: right;
+   opacity: 0;
+   position: absolute;
 }
 
 .rating a,
@@ -147,7 +151,7 @@ position: absolute;
 .rating a:hover,
 .rating a:hover ~ a,
 .rating a:focus,
-.rating a:focus ~ a		{
+.rating a:focus ~ a {
    color: #ffd43b;
    cursor: pointer;
 }
@@ -331,6 +335,20 @@ position: absolute;
    align-items: center;
 }
 
+.preparation-img {
+   overflow: hidden;
+}
+
+.preparation-img img {
+   width: 100%;
+   transition: all 0.3s;
+}
+
+.preparation-img img:hover {
+   transform: scale(1.1);
+   transition: all 0.3s;
+}
+
 .preparation-heading {
    font-size: 2.8rem;
    margin-bottom: 1.6rem;
@@ -380,10 +398,6 @@ position: absolute;
    font-style: italic;
    letter-spacing: 0.75px;
    line-height: 1.05;
-}
-
-.preparation-img img {
-   width: 100%;
 }
 
 /*********************************/

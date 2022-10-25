@@ -21,11 +21,11 @@ var swiper = new Swiper(".slide-content", {
          slidesPerView: 1,
       },
       
-      768: {
+      428: {
          slidesPerView: 2,
       },
       
-      1200: {
+      1024: {
          slidesPerView: 3,
       },
    }

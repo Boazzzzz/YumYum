@@ -123,8 +123,9 @@
 }
 
 .intro01-imgs :nth-child(3) {
-   top: 28rem;
+   top: 20rem;
    left: 30rem;
+   transform: scale(0.9);
 }
 
 .intro01-img img {
@@ -259,6 +260,7 @@
    .intro01-img {
       position: static;
       margin: 4.8rem auto;
+      opacity: 100%;
    }
 
    .intro01-texts {

@@ -10,7 +10,7 @@
 .section-hero::before {
    content: "";
    background-image: url(../content_mine/img/hero-min.jpg), linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
-   filter: brightness(30%);
+   filter: brightness(80%);
    background-position: center;
    background-size: cover;
    background-attachment: fixed;
@@ -321,7 +321,40 @@
 /*********************************/
 
 .section-meals {
-    padding: 9.6rem 0;
+   padding: 9.6rem 0;
+}
+
+.meals-container {
+   display: block;
+   white-space: nowrap;
+   background-color: #fff;
+   overflow-x: scroll;
+   width: fit-content;
+   transform: translate3d(0, 0, 0);
+   padding-bottom: 6.4rem;
+   max-width: 100vw;
+}
+
+.meals-container::-webkit-scrollbar {
+   width: 20px;
+   
+}
+ 
+ .meals-container::-webkit-scrollbar-track {
+   box-shadow: inset 0 0 5px grey;
+   border-radius: 10px;
+   
+}
+ 
+ .meals-container::-webkit-scrollbar-thumb {
+   background: #aaa;
+   border-radius: 10px;
+}
+
+.meal {
+   width: 30rem;
+   display: inline-block;
+   margin: 0 3.2rem;
 }
 
 /*********************************/
@@ -354,9 +387,10 @@
    transition: opacity 1s ease-in;
 }
 
-.comma {
-   font-size: 4.8rem;
-   color: #7AD7A7;
+.book-outline {
+   font-size: 3.6rem;
+   color: #34495e;
+   margin-bottom: 2.4rem;
 }
 
 .testimonials {

@@ -11,11 +11,12 @@
 
    <link rel="stylesheet" href="css/general.css">
    <link rel="stylesheet" href="css/header&footer.css">
-   <link rel="stylesheet" href="css/data_page.css">
+   <link rel="stylesheet" href="css/payment.css">
 
    <script src="JavaScript/general.js"></script>
+   <script src="JavaScript/payment.js"></script>
 
-   <title>Data page</title>
+   <title>Payment</title>
 </head>
 <body>
    <header class="header data-page-header">
@@ -23,53 +24,90 @@
          <img  class="logo" src="./content_mine/img/logo_yumyum.png" alt="YumYum logo">
       </a>
       <nav class="data-nav">
-         <p class="data-nav-text">SELECT PLAN > <span>ADDRESS</span> > PAYMENT > PICK YOUR MEALS</p>
+         <p class="data-nav-text">SELECT PLAN > ADDRESS > <span>PAYMENT</span> > PICK YOUR MEALS</p>
       </nav>
    </header>
 
    <main>
       <div class="container data">
-         <div>
-            <div class="hint">
-               <span>Already have an account &#63;</span>
-               <a class="link" href="sign_in_page.html">Sign in</a>
-            </div>
-            <div class="data-flex-column">
-               <span>CREATE ACCOUNT</span>
-               <input class="data-input" type="text" placeholder="Email">
-               <input 
-               class="data-input" 
-               type="text" 
-               placeholder="Password">
-               <input 
-               class="data-input" 
-               type="text" 
-               placeholder="Confirm Password">
-            </div>
-            
-            <div class="data-flex-column">
-               <span>SHIPPING ADDRESS</span>
-               <div class="data-flex">
-                  <input class="data-input" type="text" placeholder="First Name">
-                  <input class="data-input" type="text" placeholder="Last Name">
+         <div class="credit-card-container">
+            <div class="card-front">
+               <div class="bank-visa">
+                  <span class="bank">YumYum bank</span>
+                  <img src="content_mine/img/credit-card/visa.png" alt="visa img">
                </div>
-               <input class="data-input" type="text" placeholder="Apartment, suite, etc (optional)">
-               <div class="data-flex">
-                  <input class="data-input" type="text" placeholder="City">
-                  <select class="data-select" name="" id="">
-                     <option value="State / Province">
-                        State / Province
-                     </option>
-                  </select>
-                  <input class="data-input" type="text" placeholder="Postal code">
+               <img src="content_mine/img/credit-card/chip.png" alt="chip img">
+               <div class="card-number-box">****************</div>
+               <div class="flex-box">
+                  <div class="box">
+                     <span>card holder</span>
+                     <div class="card-holder-name">Full Name</div>
+                  </div>
+                  <div class="box">
+                     <span>expires</span>
+                     <div class="expiration">
+                        <div class="exp-month">mm</div>
+                        <div class="exp-year">yy</div>
+                     </div>
+                  </div>
                </div>
-               <input class="data-input" type="text" placeholder="Phone">
-               <select class="data-select" name="" id="">
-                  <option value="State / Province">Gender</option>
-                  <option value="State / Province">Male</option>
-                  <option value="State / Province">Female</option>
-               </select>
             </div>
+
+            <div class="card-back">
+               <div class="stripe"></div>
+               <div class="box">
+                  <span>CVV</span>
+                  <div class="cvv-box"></div>
+                  <img src="content_mine/img/credit-card/visa.png" alt="visa img">
+               </div>
+            </div>
+
+            <form>
+               <div class="input-box">
+                  <span class="card-number">card number</span>
+                  <input type="text" maxlength="16" class="card-number-input">
+               </div>
+               <div class="input-box">
+                  <span>card Name</span>
+                  <input type="text" maxlength="16" class="card-name-input">
+               </div>
+               <div class="mm-yy-cvv">
+                  <div class="input-box">
+                     <span>expiration mm</span>
+                     <select class="month-input">
+                        <option value="month" selected disabled>month</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                     </select>
+                  </div>
+                  
+                  <div class="input-box">
+                     <span>expiration yy</span>
+                     <select class="year-input">
+                        <option value="year" selected disabled>year</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                     </select>
+                  </div>
+                  <div class="input-box">
+                     <span>CVV</span>
+                     <input type="text" maxlength="4" class="cvv-input">
+                  </div>
+               </div>
+               <input type="submit" value="submit" class="submit-btn">
+            </form>
          </div>
 
          <div class="price-details">
@@ -95,7 +133,10 @@
                   <span>Total Price</span>
                   <span>$ 538</span>
                </div>
-               <a href="payment.html" class="btn btn--full btn-continue">Continue</a>
+               <div class="prev-continue">
+                  <a href="data_page.html" class="btn btn--full btn-continue">Previous</a>
+                  <a href="#" class="btn btn--full btn-continue">Continue</a>
+               </div>
             </div>
          </div>
       </div>

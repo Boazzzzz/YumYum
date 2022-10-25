@@ -15,6 +15,7 @@
    <link rel="stylesheet" href="css/sign_in_page.css">
 
    <script src="JavaScript/general.js"></script>
+   <script src="JavaScript/sign_in.js"></script>
 
    <title>Sign in</title>
 </head>
@@ -55,77 +56,106 @@
       </button>
    </header>
 
-    <main>
-        <section class="section-member">
-            <div class="container grid grid--2-cols sign-in-page">
-                <div class="sign-in-box">
-                    <p class="sign-in-text">Sign in</p>
-                    <div class="data-input">
-                        <div class="data">
-                           <label for="emailadd">Email address : </label><br>
-                           <input 
-                           type="text" 
-                           id="emailadd" 
-                           placeholder="YumYum@gmail.com"
-                           >
+   <main>
+      <section class="section-member">
+         <div class="container grid grid--2-cols sign-in-page">
+               <div class="sign-in-box">
+                  <div class="heading-sign">
+                     <p class="sign-text sign-active">Sign in</p>
+                     <p class="sign-text">Sign up</p>
+                  </div>
+                  
+                  <div class="data-input data-show">
+                     <form>
+                        <div class="form-controller">
+                           <input type="text" required>
+                           <label>Email</label>
                         </div>
-                        <div class="data">
-                           <label for="password">Password : </label><br>
-                           <input type="text" id="password">
+                        <div class="form-controller">
+                           <input type="password" required>
+                           <label>Password</label>
                         </div>
-                        <div class="forget-password">
-                           <a 
-                           class="link " 
-                           href="#"
-                           >forget password &#63;</a>
-                        </div>
-                        <div class="log-in-text">
-                           <a 
-                           href="javascript:history.back()" 
-                           class="btn btn--full"
-                           >Log in</a>
-                        </div>
-                        <div class="divider">
-                           <div class="line"></div>
-                           <p>or</p>
-                           <div class="line"></div>
-                        </div>
-                        <div class="sign-in-community">
-                            <div class="sign-in-app">
-                                <img src="./content_mine/img_登入頁/community/facebook (1).png" alt="">
-                                <p>Continue with Facebook</p>
-                            </div>
-                            <div class="sign-in-app">
-                                <img src="./content_mine/img_登入頁/community/google.png" alt="">
-                                <p>Continue with Google</p>
-                            </div>
-                        </div>
-                        <p class="hint-text">Not a member &#63; <a class="link" href="#">Sign up</a>
-                        </p>
-                    </div>
-                </div>
+                     </form>
+                     <div class="forget-password">
+                        <a 
+                        class="link " 
+                        href="#"
+                        >forget password &#63;</a>
+                     </div>
+                     <div class="log-in-text">
+                        <a 
+                        href="member.html" 
+                        class="btn btn--full"
+                        >Sign in</a>
+                     </div>
+                     <div class="divider">
+                        <div class="line"></div>
+                        <p>or</p>
+                        <div class="line"></div>
+                     </div>
+                     <div class="sign-in-community">
+                           <div class="sign-in-app">
+                              <img src="./content_mine/img_登入頁/community/facebook (1).png" alt="">
+                              <p>Continue with Facebook</p>
+                           </div>
+                           <div class="sign-in-app">
+                              <img src="./content_mine/img_登入頁/community/google.png" alt="">
+                              <p>Continue with Google</p>
+                           </div>
+                     </div>
+                     <p class="hint-text">Not a member &#63; <a class="link" href="#">Sign up</a>
+                     </p>
+                  </div>
 
-                <div class="grid grid--2-cols column-gap-sm">
-                    <img 
-                    class="app-download-img" 
-                    src="./content_mine/img_登入頁/man-taking-phone.png"
-                    >
-                    <a class="app-download-store" href="#">
-                        <img 
-                        src="./content_mine/img_登入頁/community/Download_on_the_App_Store.png" 
-                        alt="link to download on the App Store"
-                        >
-                    </a>
-                    <a class="app-download-store" href="#">
-                        <img 
-                        src="./content_mine/img_登入頁/community/Google_Play_Store_badge.png" 
-                        alt="link to download on the Google Play"
-                        >
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
+                  <div class="data-input">
+                     <form>
+                        <div class="form-controller">
+                           <input type="text" required>
+                           <label>Name</label>
+                        </div>
+                        <div class="form-controller">
+                           <input type="text" required>
+                           <label>Email</label>
+                        </div>
+                        <div class="form-controller">
+                           <input type="password" required>
+                           <label>Password</label>
+                        </div>
+                        <div class="form-controller">
+                           <input type="password" required>
+                           <label>Password Confirmed</label>
+                        </div>
+                     </form>
+                     <div class="sign-up-text">
+                        <a 
+                        href="sign_in_page.html" 
+                        class="btn btn--full"
+                        >Sign up</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="grid grid--2-cols column-gap-sm">
+                  <img 
+                  class="app-download-img" 
+                  src="./content_mine/img_登入頁/man-taking-phone.png"
+                  >
+                  <a class="app-download-store" href="#">
+                     <img 
+                     src="./content_mine/img_登入頁/community/Download_on_the_App_Store.png" 
+                     alt="link to download on the App Store"
+                     >
+                  </a>
+                  <a class="app-download-store" href="#">
+                     <img 
+                     src="./content_mine/img_登入頁/community/Google_Play_Store_badge.png" 
+                     alt="link to download on the Google Play"
+                     >
+                  </a>
+               </div>
+         </div>
+      </section>
+   </main>
 
    <footer class="footer">
       <div class="container grid grid--footer">

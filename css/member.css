@@ -191,6 +191,10 @@
    cursor: pointer;
 }
 
+.search-bar input:focus {
+   outline: 1px solid #888;
+}
+
 .member-img {
    height: 3.6rem;
    border-radius: 50%;
@@ -483,6 +487,10 @@
 
    .meal-title {
       text-align: center;
+   }
+
+   .ingredients {
+      grid-template-columns: repeat(2, 1fr);
    }
 
    .calories {
