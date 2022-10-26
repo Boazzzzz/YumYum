@@ -22,7 +22,7 @@ function init() {
    const downButton = document.querySelector('.down-button')
    const slidesLength = slideRight.querySelectorAll('div').length
 
-let activeSlideIndex = 0
+   let activeSlideIndex = 0
 
    slideLeft.style.top = `-${(slidesLength - 1) * 100}vh`
 
@@ -45,6 +45,27 @@ let activeSlideIndex = 0
 
       slideRight.style.transform = `translateY(-${activeSlideIndex * sliderHeight}px)`
       slideLeft.style.transform = `translateY(${activeSlideIndex * sliderHeight}px)`
+   }
+
+   // features section fade in
+   const programFeature = document.querySelectorAll('.program-feature')
+
+   window.addEventListener("scroll", checkBoxes);
+
+   checkBoxes();
+
+   function checkBoxes() {
+      const triggerBottom = window.innerHeight / 5 * 4;
+
+      programFeature.forEach(feature => {
+         const boxTop = feature.getBoundingClientRect().top;
+
+         if(boxTop < triggerBottom) {
+            feature.classList.add("show");
+         } else {
+            feature.classList.remove("show");
+         }
+      });
    }
 }
 

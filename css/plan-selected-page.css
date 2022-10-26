@@ -250,7 +250,7 @@ input[type=radio]:checked + .label-radio {
 /*********************************/
 
 .program-featured-section {
-   padding: 9.6rem 0;
+   padding: 9.6rem 0 12.8rem;
 }
 
 .program-featured-text {
@@ -274,6 +274,14 @@ input[type=radio]:checked + .label-radio {
    position: relative;
    display: flex;
    align-items: center;
+   box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.1);
+   opacity: 0;
+   transition: 0.5s ease-in;
+}
+
+.show {
+   opacity: 100%;
+   transition: 0.5s ease-in;
 }
 
 .program-feature p {
@@ -293,14 +301,29 @@ input[type=radio]:checked + .label-radio {
    border-radius: 50%;
    position: absolute;
    margin: auto;
-   left: 0;
-   right: 0;
+   left: 50%;
+   transform: translateX(-50%);
    top: -20%;
 }
 
 .program-feature-img img {
    width: 100%;
    opacity: 60%;
+}
+
+.program-feature::before {
+   position: absolute;
+   content: "";
+   border-radius: 50%;
+   width: 80%;
+   height: 4.8rem;
+   margin: 0 0.8rem;
+   opacity: 50%;
+   transform: translate(-50%, -100%);
+   left: 50%;
+   bottom: -60%;
+   background-image: radial-gradient(#9fa2a5, #fff);;
+
 }
 
 /*********************************/
@@ -340,7 +363,7 @@ input[type=radio]:checked + .label-radio {
    
    .program-features {
       grid-template-columns: 1fr;
-      row-gap: 9.6rem;
+      row-gap: 16rem;
    }
 }
 
