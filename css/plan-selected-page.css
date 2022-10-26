@@ -322,7 +322,7 @@ input[type=radio]:checked + .label-radio {
    transform: translate(-50%, -100%);
    left: 50%;
    bottom: -60%;
-   background-image: radial-gradient(ellipse #9fa2a5, #fff);;
+   background-image: radial-gradient(#9fa2a5, #fff);;
 
 }
 
