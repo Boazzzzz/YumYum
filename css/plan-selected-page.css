@@ -250,7 +250,7 @@ input[type=radio]:checked + .label-radio {
 /*********************************/
 
 .program-featured-section {
-   padding: 9.6rem 0 12.8rem;
+   padding: 9.6rem 0 16rem;
 }
 
 .program-featured-text {
@@ -316,13 +316,12 @@ input[type=radio]:checked + .label-radio {
    content: "";
    border-radius: 50%;
    width: 80%;
-   height: 4.8rem;
+   height: 1.2rem;
    margin: 0 0.8rem;
-   opacity: 50%;
    transform: translate(-50%, -100%);
    left: 50%;
-   bottom: -60%;
-   background-image: radial-gradient(#9fa2a5, #fff);;
+   bottom: -40%;
+   background-image: radial-gradient(ellipse, #bcbcbc, #fff);;
 
 }
 
