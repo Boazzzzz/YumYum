@@ -1,764 +1,911 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-   <!-- Google Fonts - rubik -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+      <!-- Google Fonts - rubik -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+         rel="stylesheet"
+      />
 
-   <!-- Font Awesome -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+      <!-- Font Awesome -->
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      />
 
-   <link rel="stylesheet" href="css/general.css">
-   <link rel="stylesheet" href="css/header&footer.css">
-   <link rel="stylesheet" href="css/first_page.css">
+      <link rel="stylesheet" href="css/general.css" />
+      <link rel="stylesheet" href="css/header&footer.css" />
+      <link rel="stylesheet" href="css/first_page.css" />
 
-   <!-- jQuery -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+      <!-- jQuery -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
-   <!-- owl carousel -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <!-- owl carousel -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-   <script src="JavaScript/general.js"></script>
-   <script src="JavaScript/first_page.js"></script>
+      <script src="JavaScript/general.js"></script>
+      <script src="JavaScript/first_page.js"></script>
 
-   <title>YumYum</title>
-</head>
-<body>
-   <header class="header">
-      <a href="index.html">
-         <img  class="logo" src="./content_mine/img/logo_yumyum.png" alt="YumYum logo">
-      </a>
-      <nav class="main-nav">
-         <div 
-         class="main-nav-text hidden"
-         id="main-nav-text"
-         >
-            <ul class="main-nav-list">
-               <li><a class="main-nav-link" href="about_us_page.html"
-               >About us</a></li>
-               <li><a class="main-nav-link" href="recipe_page.html">On the menu</a></li>
-               <li><a class="main-nav-link" href="faq.html">FAQ</a></li>
-               <li><a class="main-nav-link nav-cta" href="plan_selected_page.html">Try it for free</a></li>
-               <li class="member-sign-in">
-                  <a class="member-nav-link" href="member.html"><ion-icon name="person-circle-outline"></ion-icon>Member</a>
-                  <a class="member-nav-link" href="sign_in_page.html"><ion-icon name="log-in-outline"></ion-icon>Sign-in</a>
-               </li>
-            </ul>
-         </div>
-      </nav>
+      <title>YumYum</title>
+   </head>
+   <body>
+      <header class="header">
+         <a href="index.html">
+            <img
+               class="logo"
+               src="./content_mine/img/logo_yumyum.png"
+               alt="YumYum logo"
+            />
+         </a>
+         <nav class="main-nav">
+            <div class="main-nav-text hidden" id="main-nav-text">
+               <ul class="main-nav-list">
+                  <li>
+                     <a class="main-nav-link" href="about_us_page.html"
+                        >About us</a
+                     >
+                  </li>
+                  <li>
+                     <a class="main-nav-link" href="recipe_page.html"
+                        >On the menu</a
+                     >
+                  </li>
+                  <li><a class="main-nav-link" href="faq.html">FAQ</a></li>
+                  <li>
+                     <a
+                        class="main-nav-link nav-cta"
+                        href="plan_selected_page.html"
+                        >Try it for free</a
+                     >
+                  </li>
+                  <li class="member-sign-in">
+                     <a class="member-nav-link" href="member.html"
+                        ><ion-icon name="person-circle-outline"></ion-icon
+                        >Member</a
+                     >
+                     <a class="member-nav-link" href="sign_in_page.html"
+                        ><ion-icon name="log-in-outline"></ion-icon>Sign-in</a
+                     >
+                  </li>
+               </ul>
+            </div>
+         </nav>
 
-      <button class="btn-mobile-nav">
-         <ion-icon 
-         class="icon-mobile-nav" 
-         name="menu-outline"
-         ></ion-icon>
-         <ion-icon 
-         class="icon-mobile-nav hidden" 
-         name="close-outline"
-         ></ion-icon>
-      </button>
-   </header>
+         <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon
+               class="icon-mobile-nav hidden"
+               name="close-outline"
+            ></ion-icon>
+         </button>
+      </header>
 
-   <main>
-      <section class="section-hero">
-         <div class="hero">
-            <div class="hero-text-box">
-               <h1 class="heading-primary">
-                  Say hello to super healthy meals!
-               </h1>
-               <p class="hero-description">
-                  DELIVERED FRESH DAILY. READY-TO-EAT. CUSTOMIZE 
-                  YOUR MEALS. PAUSE ANYTIME.
-               </p>
-               <a href="plan_selected_page.html" class="btn btn--full margin-right-sm">Get started</a>
-               <a href="#section-how" class="btn btn--outline">Learn more &darr;</a>
-               <div class="delivered-meals">
-                  <div class="delivered-imgs">
-                     <img src="content_mine/img/customers/customer-7.jpg" alt="Customer photo">
-                     <img src="content_mine/img/customers/22.jpg" alt="Customer photo">
-                     <img src="content_mine/img/customers/29.jpg" alt="Customer photo">
-                     <img src="content_mine/img/customers/dave.jpg" alt="Customer photo">
-                     <img src="content_mine/img/customers/hannah.jpg" alt="Customer photo">
-                     <img src="content_mine/img/customers/ben.jpg" alt="Customer photo">
-                  </div>
-                  <p class="delivered-text">
-                     Our customers say <span>Great (4.8)</span> out of 5 based on 24,392 reviews !
+      <main>
+         <section class="section-hero">
+            <div class="hero">
+               <div class="hero-text-box">
+                  <h1 class="heading-primary">
+                     Say hello to super healthy meals!
+                  </h1>
+                  <p class="hero-description">
+                     DELIVERED FRESH DAILY. READY-TO-EAT. CUSTOMIZE YOUR MEALS.
+                     PAUSE ANYTIME.
                   </p>
+                  <a
+                     href="plan_selected_page.html"
+                     class="btn btn--full margin-right-sm"
+                     >Get started</a
+                  >
+                  <a href="#section-how" class="btn btn--outline"
+                     >Learn more &darr;</a
+                  >
+                  <div class="delivered-meals">
+                     <div class="delivered-imgs">
+                        <img
+                           src="content_mine/img/customers/customer-7.jpg"
+                           alt="Customer photo"
+                        />
+                        <img
+                           src="content_mine/img/customers/22.jpg"
+                           alt="Customer photo"
+                        />
+                        <img
+                           src="content_mine/img/customers/29.jpg"
+                           alt="Customer photo"
+                        />
+                        <img
+                           src="content_mine/img/customers/dave.jpg"
+                           alt="Customer photo"
+                        />
+                        <img
+                           src="content_mine/img/customers/hannah.jpg"
+                           alt="Customer photo"
+                        />
+                        <img
+                           src="content_mine/img/customers/ben.jpg"
+                           alt="Customer photo"
+                        />
+                     </div>
+                     <p class="delivered-text">
+                        Our customers say <span>Great (4.8)</span> out of 5
+                        based on 24,392 reviews !
+                     </p>
+                  </div>
+               </div>
+               <ul class="hero-icons">
+                  <li class="hero-icon">
+                     <img
+                        src="./content_mine/img/icons/motorbike.png"
+                        alt="mortorbike icon"
+                     />
+                     <strong>Fast</strong>
+                  </li>
+                  <li class="hero-icon">
+                     <img
+                        src="./content_mine/img/icons/location.png"
+                        alt="location icon"
+                     />
+                     <strong>Pick up</strong>
+                  </li>
+                  <li class="hero-icon">
+                     <img
+                        src="./content_mine/img/icons/restaurant-cutlery-circular-symbol-of-a-spoon-and-a-fork-in-a-circle.png"
+                        alt="dining icon"
+                     />
+                     <strong>Dine in</strong>
+                  </li>
+               </ul>
+            </div>
+            <div class="container featured-in">
+               <div class="seen-on-text">Seen on</div>
+               <div class="logos">
+                  <img
+                     src="content_mine/img/logos/techcrunch.png"
+                     alt="Techcrunch"
+                  />
+                  <img
+                     src="content_mine/img/logos/business-insider.png"
+                     alt="Business Insider logo"
+                  />
+                  <img
+                     src="content_mine/img/logos/the-new-york-times.png"
+                     alt="The New York Times logo"
+                  />
+                  <img
+                     src="content_mine/img/logos/forbes.png"
+                     alt="Forbes logo"
+                  />
+                  <img
+                     src="content_mine/img/logos/usa-today.png"
+                     alt="USA Today logo"
+                  />
                </div>
             </div>
-            <ul class="hero-icons">
-               <li class="hero-icon">
-                  <img src="./content_mine/img/icons/motorbike.png" alt="mortorbike icon">
-                  <strong>Fast</strong>
+         </section>
+
+         <section class="section-how" id="section-how">
+            <div class="container">
+               <span class="subheading">How it works</span>
+               <h2 class="heading-secondary">
+                  Your daily dose of health in 3 simple steps
+               </h2>
+            </div>
+
+            <ol class="container how-container">
+               <li class="scrolling-box">
+                  <div class="step-number-box">
+                     <p class="step-number">01</p>
+                  </div>
+                  <div class="step-text-box">
+                     <h3 class="heading-tertiary">
+                        Tell us what you like (and what not)
+                     </h3>
+                     <p class="step-description">
+                        Never again waste time thinking about what to eat!
+                        YumYum will create a 100% personalized weekly meal plan
+                        just for you. It makes sure you get all the nutrients
+                        and vitamins you need, no matter what diet you follow!
+                     </p>
+                  </div>
                </li>
-               <li class="hero-icon">
-                  <img src="./content_mine/img/icons/location.png" alt="location icon">
-                  <strong>Pick up</strong>
+
+               <li class="scrolling-box">
+                  <div class="step-text-box">
+                     <h3 class="heading-tertiary">
+                        Approve your weekly meal plan
+                     </h3>
+                     <p class="step-description">
+                        Once per week, approve the meal plan generated for you
+                        by YumYum. You can change ingredients, swap entire
+                        meals, or even add your own recipes.
+                     </p>
+                  </div>
+                  <div class="step-number-box">
+                     <p class="step-number">02</p>
+                  </div>
                </li>
-               <li class="hero-icon">
-                  <img src="./content_mine/img/icons/restaurant-cutlery-circular-symbol-of-a-spoon-and-a-fork-in-a-circle.png" alt="dining icon">
-                  <strong>Dine in</strong>
+
+               <li class="scrolling-box">
+                  <div class="step-number-box">
+                     <p class="step-number">03</p>
+                  </div>
+                  <div class="step-text-box">
+                     <h3 class="heading-tertiary">
+                        Receive meals at convenient time
+                     </h3>
+                     <p class="step-description">
+                        Best chefs in town will cook your selected meal every
+                        day, and we will deliver it to your door whenever works
+                        best for you. You can change delivery schedule and
+                        address daily!
+                     </p>
+                  </div>
                </li>
-            </ul>
-         </div>
-         <div class="container featured-in">
-            <div class="seen-on-text">Seen on</div>
-            <div class="logos">
-               <img 
-               src="content_mine/img/logos/techcrunch.png" alt="Techcrunch">
-               <img 
-               src="content_mine/img/logos/business-insider.png" 
-               alt="Business Insider logo">
-               <img 
-               src="content_mine/img/logos/the-new-york-times.png" 
-               alt="The New York Times logo">
-               <img 
-               src="content_mine/img/logos/forbes.png" 
-               alt="Forbes logo">
-               <img 
-               src="content_mine/img/logos/usa-today.png" 
-               alt="USA Today logo">
-            </div>
-         </div>
-      </section>
+            </ol>
 
-      <section class="section-how" id="section-how"> 
-         <div class="container">
-            <span class="subheading">How it works</span>
-            <h2 class="heading-secondary">Your daily dose of health in 3 simple steps</h2>
-         </div>
+            <div class="container">
+               <div class="progress-container">
+                  <div class="progress-number">
+                     <div class="progress-line" id="progress-line"></div>
+                     <div class="circle progress-active">1</div>
+                     <div class="circle">2</div>
+                     <div class="circle">3</div>
+                     <div class="circle">4</div>
+                  </div>
+                  <button class="progress-btn" id="prev" disabled>Prev</button>
+                  <button class="progress-btn" id="next">Next</button>
+               </div>
 
-         <ol class="container how-container">
-            <li class="scrolling-box">
-               <div class="step-number-box">
-                  <p class="step-number">01</p>
-               </div>
-               <div class="step-text-box">
-                  <h3 class="heading-tertiary">Tell us what you like (and what not)</h3>
-                  <p class="step-description">
-                     Never again waste time thinking about what to eat! YumYum will create a 100% personalized weekly meal plan just for you. It makes sure you get all the nutrients and vitamins you need, no matter what diet you follow!
-                  </p>
-               </div>
-            </li>
-
-            <li class="scrolling-box">
-               <div class="step-text-box">
-                  <h3 class="heading-tertiary">Approve your weekly meal plan</h3>
-                  <p class="step-description">
-                     Once per week, approve the meal plan generated for you by YumYum. You can change ingredients, swap entire meals, or even add your own recipes.
-                  </p>
-               </div>
-               <div class="step-number-box">
-                  <p class="step-number">02</p>
-               </div>
-            </li>
-
-            <li class="scrolling-box">
-               <div class="step-number-box">
-                  <p class="step-number">03</p>
-               </div>
-               <div class="step-text-box">
-                  <h3 class="heading-tertiary">Receive meals at convenient time</h3>
-                  <p class="step-description">
-                     Best chefs in town will cook your selected meal every day, and we will deliver it to your door whenever works best for you. You can change delivery schedule and address daily!
-                  </p>
-               </div>
-            </li>
-         </ol>
-
-         <div class="container">
-            <div class="progress-container">
-               <div class="progress-number">
-                  <div class="progress-line" id="progress-line"></div>
-                  <div class="circle progress-active">1</div>
-                  <div class="circle">2</div>
-                  <div class="circle">3</div>
-                  <div class="circle">4</div>
-               </div>
-               <button 
-               class="progress-btn" 
-               id="prev" 
-               disabled
-               >Prev</button>
-               <button class="progress-btn" id="next">Next</button>
-            </div>
-               
-            <div class="grid grid--4-cols grid--center-h">
-               <div class="progress">
-                  <img class="progress-img" src="./content_mine/img/how-it-works pic/task.png" alt="">        
-                  <p class="progress-caption">Choose a plan</p>
-               </div>
-               <div class="progress progress-hide">
-                  <img class="progress-img" src="./content_mine/img/how-it-works pic/pot.png">
-                  <p class="progress-caption">We prep</p>
-               </div>
-               <div class="progress progress-hide">
-                  <img class="progress-img" src="./content_mine/img/how-it-works pic/delivery.png">
-                  <p class="progress-caption">We deliver</p>
-               </div>
-               <div class="progress progress-hide">
-                  <img class="progress-img" src="./content_mine/img/how-it-works pic/microwave.png">
-                  <p class="progress-caption">Heat & Enjoy</p>
+               <div class="grid grid--4-cols grid--center-h">
+                  <div class="progress">
+                     <img
+                        class="progress-img"
+                        src="./content_mine/img/how-it-works pic/task.png"
+                        alt=""
+                     />
+                     <p class="progress-caption">Choose a plan</p>
+                  </div>
+                  <div class="progress progress-hide">
+                     <img
+                        class="progress-img"
+                        src="./content_mine/img/how-it-works pic/pot.png"
+                     />
+                     <p class="progress-caption">We prep</p>
+                  </div>
+                  <div class="progress progress-hide">
+                     <img
+                        class="progress-img"
+                        src="./content_mine/img/how-it-works pic/delivery.png"
+                     />
+                     <p class="progress-caption">We deliver</p>
+                  </div>
+                  <div class="progress progress-hide">
+                     <img
+                        class="progress-img"
+                        src="./content_mine/img/how-it-works pic/microwave.png"
+                     />
+                     <p class="progress-caption">Heat & Enjoy</p>
+                  </div>
                </div>
             </div>
-         </div>
-      </section>
+         </section>
 
-      <section class="section-gallery">
-         <div class="gallery">
-            <figure class="gallery-img">
-                <img 
-                src="content_mine/img/gallery/gallery_01.jpg" 
-                alt="Photo of food"
-                >
-            </figure>
-            <figure class="gallery-img">
-                <img 
-                src="content_mine/img/gallery/gallery_02.jpg" 
-                alt="Photo of food"
-                >
-            </figure>
-            <figure class="gallery-img">
-                <img 
-                src="content_mine/img/gallery/gallery_03.jpg" 
-                alt="Photo of food"
-                >
-            </figure>
-            <figure class="gallery-img">
-                <img 
-                src="content_mine/img/gallery/gallery_04.jpg" 
-                alt="Photo of food"
-                >
-            </figure>
-            <figure class="gallery-img">
-                <img 
-                src="content_mine/img/gallery/gallery_05.jpg" 
-                alt="Photo of food"
-                >
-            </figure>
-            <figure class="gallery-img">
-                <img 
-                src="content_mine/img/gallery/gallery_06.jpg" 
-                alt="Photo of food"
-                >
-            </figure>
-            <figure class="gallery-img">
-                <img 
-                src="content_mine/img/gallery/gallery_07.jpg" 
-                alt="Photo of food"
-                >
-            </figure>
-            <figure class="gallery-img">
-                <img 
-                src="content_mine/img/gallery/gallery_08.jpg" 
-                alt="Photo of food"
-                >
-            </figure>
-            
-        </div>
-      </section>
-        
-      <section class="section-meals">
-         <div class="container">
-            <span class="subheading">On the menu</span>
-            <h2 class="heading-secondary">
-               YumYum serves 1,000+ recipes
-            </h2>
-         </div>
-   
-         <div class="container meals-container">
-            <div class="meal">
-               <a class="meal-link" href="meal_intro_page.html">
-                  <img 
-                  class="meal-img" 
-                  src="content_mine/img/meals/meal-5.jpeg" 
-                  alt="meal img"
-                  >
-                  <div class="meal-content">
-                     <div class="meal-tags">
-                        <span class="tag tag--vegitarian">Vegetarian</span>
+         <section class="section-gallery">
+            <div class="gallery">
+               <figure class="gallery-img">
+                  <img
+                     src="content_mine/img/gallery/gallery_01.jpg"
+                     alt="Photo of food"
+                  />
+               </figure>
+               <figure class="gallery-img">
+                  <img
+                     src="content_mine/img/gallery/gallery_02.jpg"
+                     alt="Photo of food"
+                  />
+               </figure>
+               <figure class="gallery-img">
+                  <img
+                     src="content_mine/img/gallery/gallery_03.jpg"
+                     alt="Photo of food"
+                  />
+               </figure>
+               <figure class="gallery-img">
+                  <img
+                     src="content_mine/img/gallery/gallery_04.jpg"
+                     alt="Photo of food"
+                  />
+               </figure>
+               <figure class="gallery-img">
+                  <img
+                     src="content_mine/img/gallery/gallery_05.jpg"
+                     alt="Photo of food"
+                  />
+               </figure>
+               <figure class="gallery-img">
+                  <img
+                     src="content_mine/img/gallery/gallery_06.jpg"
+                     alt="Photo of food"
+                  />
+               </figure>
+               <figure class="gallery-img">
+                  <img
+                     src="content_mine/img/gallery/gallery_07.jpg"
+                     alt="Photo of food"
+                  />
+               </figure>
+               <figure class="gallery-img">
+                  <img
+                     src="content_mine/img/gallery/gallery_08.jpg"
+                     alt="Photo of food"
+                  />
+               </figure>
+            </div>
+         </section>
+
+         <section class="section-meals">
+            <div class="container">
+               <span class="subheading">On the menu</span>
+               <h2 class="heading-secondary">YumYum serves 1,000+ recipes</h2>
+            </div>
+
+            <div class="container meals-container">
+               <div class="meal">
+                  <a class="meal-link" href="meal_intro_page.html">
+                     <img
+                        class="meal-img"
+                        src="content_mine/img/meals/meal-5.jpeg"
+                        alt="meal img"
+                     />
+                     <div class="meal-content">
+                        <div class="meal-tags">
+                           <span class="tag tag--vegitarian">Vegetarian</span>
+                        </div>
+                        <p class="meal-title">BBQ pork chop</p>
                      </div>
-                     <p class="meal-title">BBQ pork chop</p>
-                  </div>
-                  <div class="meal-ratings">
-                     <ion-icon class="star" name="star-outline"></ion-icon>
-                     <span class="meal-ratings-number">4.8</span>
-                  </div>
-               </a>
+                     <div class="meal-ratings">
+                        <ion-icon class="star" name="star-outline"></ion-icon>
+                        <span class="meal-ratings-number">4.8</span>
+                     </div>
+                  </a>
+               </div>
+
+               <div class="meal">
+                  <a class="meal-link" href="meal_intro_page.html">
+                     <img
+                        class="meal-img"
+                        src="content_mine/img/meals/meal-6.jpeg"
+                        alt="meal img"
+                     />
+                     <div class="meal-content">
+                        <div class="meal-tags">
+                           <span class="tag tag--vegan">Vegan</span>
+                           <span class="tag tag--paleo">Paleo</span>
+                        </div>
+                        <p class="meal-title">Philly cheesesteak</p>
+                     </div>
+                     <div class="meal-ratings">
+                        <ion-icon class="star" name="star-outline"></ion-icon>
+                        <span class="meal-ratings-number">4.8</span>
+                     </div>
+                  </a>
+               </div>
+
+               <div class="meal">
+                  <a class="meal-link" href="meal_intro_page.html">
+                     <img
+                        class="meal-img"
+                        src="content_mine/img/meals/meal-7.jpeg"
+                        alt="meal img"
+                     />
+                     <div class="meal-content">
+                        <div class="meal-tags">
+                           <span class="tag tag--keto">Keto</span>
+                        </div>
+                        <p class="meal-title">Sliced turkey</p>
+                     </div>
+                     <div class="meal-ratings">
+                        <ion-icon class="star" name="star-outline"></ion-icon>
+                        <span class="meal-ratings-number">4.8</span>
+                     </div>
+                  </a>
+               </div>
+
+               <div class="meal">
+                  <a class="meal-link" href="meal_intro_page.html">
+                     <img
+                        class="meal-img"
+                        src="content_mine/img/meals/meal-5.jpeg"
+                        alt="meal img"
+                     />
+                     <div class="meal-content">
+                        <div class="meal-tags">
+                           <span class="tag tag--vegitarian">Vegetarian</span>
+                        </div>
+                        <p class="meal-title">BBQ pork chop</p>
+                     </div>
+                     <div class="meal-ratings">
+                        <ion-icon class="star" name="star-outline"></ion-icon>
+                        <span class="meal-ratings-number">4.8</span>
+                     </div>
+                  </a>
+               </div>
+
+               <div class="meal">
+                  <a class="meal-link" href="meal_intro_page.html">
+                     <img
+                        class="meal-img"
+                        src="content_mine/img/meals/meal-6.jpeg"
+                        alt="meal img"
+                     />
+                     <div class="meal-content">
+                        <div class="meal-tags">
+                           <span class="tag tag--vegan">Vegan</span>
+                           <span class="tag tag--paleo">Paleo</span>
+                        </div>
+                        <p class="meal-title">Philly cheesesteak</p>
+                     </div>
+                     <div class="meal-ratings">
+                        <ion-icon class="star" name="star-outline"></ion-icon>
+                        <span class="meal-ratings-number">4.8</span>
+                     </div>
+                  </a>
+               </div>
+
+               <div class="meal">
+                  <a class="meal-link" href="meal_intro_page.html">
+                     <img
+                        class="meal-img"
+                        src="content_mine/img/meals/meal-7.jpeg"
+                        alt="meal img"
+                     />
+                     <div class="meal-content">
+                        <div class="meal-tags">
+                           <span class="tag tag--keto">Keto</span>
+                        </div>
+                        <p class="meal-title">Sliced turkey</p>
+                     </div>
+                     <div class="meal-ratings">
+                        <ion-icon class="star" name="star-outline"></ion-icon>
+                        <span class="meal-ratings-number">4.8</span>
+                     </div>
+                  </a>
+               </div>
+
+               <div class="meal">
+                  <a class="meal-link" href="meal_intro_page.html">
+                     <img
+                        class="meal-img"
+                        src="content_mine/img/meals/meal-5.jpeg"
+                        alt="meal img"
+                     />
+                     <div class="meal-content">
+                        <div class="meal-tags">
+                           <span class="tag tag--vegitarian">Vegetarian</span>
+                        </div>
+                        <p class="meal-title">BBQ pork chop</p>
+                     </div>
+                     <div class="meal-ratings">
+                        <ion-icon class="star" name="star-outline"></ion-icon>
+                        <span class="meal-ratings-number">4.8</span>
+                     </div>
+                  </a>
+               </div>
+
+               <div class="meal">
+                  <a class="meal-link" href="meal_intro_page.html">
+                     <img
+                        class="meal-img"
+                        src="content_mine/img/meals/meal-6.jpeg"
+                        alt="meal img"
+                     />
+                     <div class="meal-content">
+                        <div class="meal-tags">
+                           <span class="tag tag--vegan">Vegan</span>
+                           <span class="tag tag--paleo">Paleo</span>
+                        </div>
+                        <p class="meal-title">Philly cheesesteak</p>
+                     </div>
+                     <div class="meal-ratings">
+                        <ion-icon class="star" name="star-outline"></ion-icon>
+                        <span class="meal-ratings-number">4.8</span>
+                     </div>
+                  </a>
+               </div>
             </div>
 
-            <div class="meal">
-               <a class="meal-link" href="meal_intro_page.html">
-                  <img 
-                  class="meal-img" 
-                  src="content_mine/img/meals/meal-6.jpeg" 
-                  alt="meal img"
-                  >
-                  <div class="meal-content">
-                     <div class="meal-tags">
-                        <span class="tag tag--vegan">Vegan</span>
-                        <span class="tag tag--paleo">Paleo</span>
-                     </div>
-                     <p class="meal-title">Philly cheesesteak</p>
-                  </div>
-                  <div class="meal-ratings">
-                     <ion-icon class="star" name="star-outline"></ion-icon>
-                     <span class="meal-ratings-number">4.8</span>
-                  </div>
-               </a>
-            </div>
-            
-            <div class="meal">
-               <a class="meal-link" href="meal_intro_page.html">
-                  <img 
-                  class="meal-img" 
-                  src="content_mine/img/meals/meal-7.jpeg" 
-                  alt="meal img"
-                  >
-                  <div class="meal-content">
-                     <div class="meal-tags">
-                        <span class="tag tag--keto">Keto</span>
-                     </div>
-                     <p class="meal-title">Sliced turkey</p>
-                  </div>
-                  <div class="meal-ratings">
-                     <ion-icon class="star" name="star-outline"></ion-icon>
-                     <span class="meal-ratings-number">4.8</span>
-                  </div>
-               </a>
-            </div>
-            
-            <div class="meal">
-               <a class="meal-link" href="meal_intro_page.html">
-                  <img 
-                  class="meal-img" 
-                  src="content_mine/img/meals/meal-5.jpeg" 
-                  alt="meal img"
-                  >
-                  <div class="meal-content">
-                     <div class="meal-tags">
-                        <span class="tag tag--vegitarian">Vegetarian</span>
-                     </div>
-                     <p class="meal-title">BBQ pork chop</p>
-                  </div>
-                  <div class="meal-ratings">
-                     <ion-icon class="star" name="star-outline"></ion-icon>
-                     <span class="meal-ratings-number">4.8</span>
-                  </div>
-               </a>
-            </div>
-            
-            <div class="meal">
-               <a class="meal-link" href="meal_intro_page.html">
-                  <img 
-                  class="meal-img" 
-                  src="content_mine/img/meals/meal-6.jpeg" 
-                  alt="meal img"
-                  >
-                  <div class="meal-content">
-                     <div class="meal-tags">
-                        <span class="tag tag--vegan">Vegan</span>
-                        <span class="tag tag--paleo">Paleo</span>
-                     </div>
-                     <p class="meal-title">Philly cheesesteak</p>
-                  </div>
-                  <div class="meal-ratings">
-                     <ion-icon class="star" name="star-outline"></ion-icon>
-                     <span class="meal-ratings-number">4.8</span>
-                  </div>
-               </a>
-            </div>
-
-            <div class="meal">
-               <a class="meal-link" href="meal_intro_page.html">
-                  <img 
-                  class="meal-img" 
-                  src="content_mine/img/meals/meal-7.jpeg" 
-                  alt="meal img"
-                  >
-                  <div class="meal-content">
-                     <div class="meal-tags">
-                        <span class="tag tag--keto">Keto</span>
-                     </div>
-                     <p class="meal-title">Sliced turkey</p>
-                  </div>
-                  <div class="meal-ratings">
-                     <ion-icon class="star" name="star-outline"></ion-icon>
-                     <span class="meal-ratings-number">4.8</span>
-                  </div>
-               </a>
-            </div>
-            
-            <div class="meal">
-               <a class="meal-link" href="meal_intro_page.html">
-                  <img 
-                  class="meal-img" 
-                  src="content_mine/img/meals/meal-5.jpeg" 
-                  alt="meal img"
-                  >
-                  <div class="meal-content">
-                     <div class="meal-tags">
-                        <span class="tag tag--vegitarian">Vegetarian</span>
-                     </div>
-                     <p class="meal-title">BBQ pork chop</p>
-                  </div>
-                  <div class="meal-ratings">
-                     <ion-icon class="star" name="star-outline"></ion-icon>
-                     <span class="meal-ratings-number">4.8</span>
-                  </div>
-               </a>
-            </div>
-
-            <div class="meal">
-               <a class="meal-link" href="meal_intro_page.html">
-                  <img 
-                  class="meal-img" 
-                  src="content_mine/img/meals/meal-6.jpeg" 
-                  alt="meal img"
-                  >
-                  <div class="meal-content">
-                     <div class="meal-tags">
-                        <span class="tag tag--vegan">Vegan</span>
-                        <span class="tag tag--paleo">Paleo</span>
-                     </div>
-                     <p class="meal-title">Philly cheesesteak</p>
-                  </div>
-                  <div class="meal-ratings">
-                     <ion-icon class="star" name="star-outline"></ion-icon>
-                     <span class="meal-ratings-number">4.8</span>
-                  </div>
-               </a>
-            </div>
-         </div>
-
-         <!-- <div class="container all-recipes">
+            <!-- <div class="container all-recipes">
                <a href="recipe_page.html" class="link">
                   See all recipes &rarr;
                </a>
          </div> -->
-      </section>
+         </section>
 
-      <section class="section-testimonials">
-         <div class="container">
-            <span class="subheading">Testimonials</span>
-            <h2 class="heading-secondary">
-               Once you try it. you will completely fall for it.
-            </h2>
-            <div class="testimonials-wrapper">
-               <div class="testimonials-card">
-                  <ion-icon class="book-outline" name="book-outline"></ion-icon>
-                  <p class="testimonials">YumYum is just awesome! I just launched a startup which leaves me with no time for cooking, so Omnifood is a life-saver. Now that I got used to it, I couldn't live without it!</p>
-                  <div class="testimonials-content">
-                     <div class="customer-info">
-                        <div class="customer-name">Patricia J. Wilson</div>
-                        <div class="customer-job">Designer</div>
-                        <div class="customer-stars">
-                           <span class="star">★</span>
-                           <span class="star">★</span>
-                           <span class="star">★</span>
-                           <span class="star">★</span>
-                           <span class="star star-gray">★</span>
+         <section class="section-testimonials">
+            <div class="container">
+               <span class="subheading">Testimonials</span>
+               <h2 class="heading-secondary">
+                  Once you try it. you will completely fall for it.
+               </h2>
+               <div class="testimonials-wrapper">
+                  <div class="testimonials-card">
+                     <ion-icon
+                        class="book-outline"
+                        name="book-outline"
+                     ></ion-icon>
+                     <p class="testimonials">
+                        YumYum is just awesome! I just launched a startup which
+                        leaves me with no time for cooking, so Omnifood is a
+                        life-saver. Now that I got used to it, I couldn't live
+                        without it!
+                     </p>
+                     <div class="testimonials-content">
+                        <div class="customer-info">
+                           <div class="customer-name">Patricia J. Wilson</div>
+                           <div class="customer-job">Designer</div>
+                           <div class="customer-stars">
+                              <span class="star">★</span>
+                              <span class="star">★</span>
+                              <span class="star">★</span>
+                              <span class="star">★</span>
+                              <span class="star star-gray">★</span>
+                           </div>
                         </div>
-                     </div>
-                     <div class="customer-img">
-                        <img src="content_mine/img/customers/customer-1.jpg" alt="Photo of customer">
+                        <div class="customer-img">
+                           <img
+                              src="content_mine/img/customers/customer-1.jpg"
+                              alt="Photo of customer"
+                           />
+                        </div>
                      </div>
                   </div>
-               </div>
-               
-               <div class="testimonials-card">
-                  <ion-icon class="book-outline" name="book-outline"></ion-icon>
-                  <p class="testimonials">Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food delivery here, but no one comes even close to YumYum. Me and my family are so in love!</p>
-                  <div class="testimonials-content">
-                     <div class="customer-info">
-                        <div class="customer-name">Anna G. Smith</div>
-                        <div class="customer-job">Police officer</div>
-                        <div class="customer-stars">
-                           <span class="star">★</span>
-                           <span class="star">★</span>
-                           <span class="star">★</span>
-                           <span class="star">★</span>
-                           <span class="star">★</span>
+
+                  <div class="testimonials-card">
+                     <ion-icon
+                        class="book-outline"
+                        name="book-outline"
+                     ></ion-icon>
+                     <p class="testimonials">
+                        Inexpensive, healthy and great-tasting meals, delivered
+                        right to my home. We have lots of food delivery here,
+                        but no one comes even close to YumYum. Me and my family
+                        are so in love!
+                     </p>
+                     <div class="testimonials-content">
+                        <div class="customer-info">
+                           <div class="customer-name">Anna G. Smith</div>
+                           <div class="customer-job">Police officer</div>
+                           <div class="customer-stars">
+                              <span class="star">★</span>
+                              <span class="star">★</span>
+                              <span class="star">★</span>
+                              <span class="star">★</span>
+                              <span class="star">★</span>
+                           </div>
                         </div>
-                     </div>
-                     <div class="customer-img">
-                        <img src="content_mine/img/customers/customer-2.jpg" alt="Photo of customer">
+                        <div class="customer-img">
+                           <img
+                              src="content_mine/img/customers/customer-2.jpg"
+                              alt="Photo of customer"
+                           />
+                        </div>
                      </div>
                   </div>
-               </div>
-               
-               <div class="testimonials-card">
-                  <ion-icon class="book-outline" name="book-outline"></ion-icon>
-                  <p class="testimonials"> I was looking for a quick and easy food delivery service. I tried a lot of them and ended up with YumYum. Best food delivery service in the Bay Area. Keep up the great work!</p>
-                  <div class="testimonials-content">
-                     <div class="customer-info">
-                        <div class="customer-name">David T. Friedel</div>
-                        <div class="customer-job">Engineer</div>
-                        <div class="customer-stars">
-                           <span class="star">★</span>
-                           <span class="star">★</span>
-                           <span class="star">★</span>
-                           <span class="star">★</span>
-                           <span class="star">★</span>
+
+                  <div class="testimonials-card">
+                     <ion-icon
+                        class="book-outline"
+                        name="book-outline"
+                     ></ion-icon>
+                     <p class="testimonials">
+                        I was looking for a quick and easy food delivery
+                        service. I tried a lot of them and ended up with YumYum.
+                        Best food delivery service in the Bay Area. Keep up the
+                        great work!
+                     </p>
+                     <div class="testimonials-content">
+                        <div class="customer-info">
+                           <div class="customer-name">David T. Friedel</div>
+                           <div class="customer-job">Engineer</div>
+                           <div class="customer-stars">
+                              <span class="star">★</span>
+                              <span class="star">★</span>
+                              <span class="star">★</span>
+                              <span class="star">★</span>
+                              <span class="star">★</span>
+                           </div>
                         </div>
-                     </div>
-                     <div class="customer-img">
-                        <img src="content_mine/img/customers/customer-3.jpg" alt="Photo of customer">
+                        <div class="customer-img">
+                           <img
+                              src="content_mine/img/customers/customer-3.jpg"
+                              alt="Photo of customer"
+                           />
+                        </div>
                      </div>
                   </div>
                </div>
             </div>
-         </div>
-      </section>
+         </section>
 
-      <section class="section-pricing">
-         <div class="container">
-            <span class="subheading">Pricing</span>
-            <h2 class="heading-secondary">
-               Save your time and eat well right away
-            </h2>
-         </div>
-
-         <div class="container grid grid--2-cols grid-h-v-center margin-bottom-md pricing-container">
-            <div class="pricing-plan pricing-plan-beginner">
-               <div class="pricing-plan-inner">
-                  <div class="pricing-plan-front">
-                     <header class="plan-header">
-                        <p class="plan-name">Beginner</p>
-                        <p class="plan-text">program</p>
-                     </header>
-                     <ul class="list margin-bottom-auto">
-                        <li class="list-item">
-                           <ion-icon 
-                           class="list-icon" name="play-outline"
-                           ></ion-icon>
-                           <span>1 meal per day</span>
-                        </li>
-                        <li class="list-item">
-                           <ion-icon 
-                           class="list-icon" name="play-outline"
-                           ></ion-icon>
-                           <span>Order from 11am and 9pm</span>
-                        </li>
-                        <li class="list-item">
-                           <ion-icon 
-                           class="list-icon" name="play-outline"
-                           ></ion-icon>
-                           <span>Delivery is free</span>
-                        </li>
-                     </ul>
-                  </div>
-                  <div class="pricing-plan-back">
-                     <p class="plan-price"><span>$</span>299</p>
-                     <p class="plan-text">per month. Less than $10 per meal!</p>
-                     <div class="plan-sign-up">
-                        <a href="plan_selected_page.html" class="btn btn--full">Get started</a>
-                     </div>    
-                  </div>
-               </div>
+         <section class="section-pricing">
+            <div class="container">
+               <span class="subheading">Pricing</span>
+               <h2 class="heading-secondary">
+                  Save your time and eat well right away
+               </h2>
             </div>
 
-            <div class="pricing-plan pricing-plan-advanced">
-               <div class="pricing-plan-inner">
-                  <div class="pricing-plan-front">
-                     <header class="plan-header">
-                        <p class="plan-name">Advanced</p>
-                        <p class="plan-text">program</p>
-                     </header>
-                     <ul class="list">
-                        <li class="list-item">
-                           <ion-icon 
-                        class="list-icon" name="play-outline"
-                        ></ion-icon>
-                        <span><strong>2 meals</strong> per day</span>
-                        </li>
-                        <li class="list-item">
-                           <ion-icon 
-                           class="list-icon" name="play-outline"
-                           ></ion-icon>
-                           <span>Order <strong>24/7</strong></span>
-                        </li>
-                        <li class="list-item">
-                           <ion-icon 
-                           class="list-icon" name="play-outline"
-                           ></ion-icon>
-                           <span>Delivery is free</span>
-                        </li>
-                        <li class="list-item">
-                           <ion-icon 
-                           class="list-icon" name="play-outline"
-                           ></ion-icon>
-                           <span>Get access to latest recipes</span>
-                        </li>
-                     </ul>
-                  </div>
-                  <div class="pricing-plan-back">
-                     <p class="plan-price"><span>$</span>538</p>
-                     <p class="plan-text">per month. Less than $9 per meal!</p>
-                     <div class="plan-sign-up">
-                        <a href="plan_selected_page.html" class="btn btn--full">Get started</a>
+            <div
+               class="container grid grid--2-cols grid-h-v-center margin-bottom-md pricing-container"
+            >
+               <div class="pricing-plan pricing-plan-beginner">
+                  <div class="pricing-plan-inner">
+                     <div class="pricing-plan-front">
+                        <header class="plan-header">
+                           <p class="plan-name">Beginner</p>
+                           <p class="plan-text">program</p>
+                        </header>
+                        <ul class="list margin-bottom-auto">
+                           <li class="list-item">
+                              <ion-icon
+                                 class="list-icon"
+                                 name="play-outline"
+                              ></ion-icon>
+                              <span>1 meal per day</span>
+                           </li>
+                           <li class="list-item">
+                              <ion-icon
+                                 class="list-icon"
+                                 name="play-outline"
+                              ></ion-icon>
+                              <span>Order from 11am and 9pm</span>
+                           </li>
+                           <li class="list-item">
+                              <ion-icon
+                                 class="list-icon"
+                                 name="play-outline"
+                              ></ion-icon>
+                              <span>Delivery is free</span>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="pricing-plan-back">
+                        <p class="plan-price"><span>$</span>299</p>
+                        <p class="plan-text">
+                           per month. Less than $10 per meal!
+                        </p>
+                        <div class="plan-sign-up">
+                           <a
+                              href="plan_selected_page.html"
+                              class="btn btn--full"
+                              >Get started</a
+                           >
+                        </div>
                      </div>
                   </div>
                </div>
+
+               <div class="pricing-plan pricing-plan-advanced">
+                  <div class="pricing-plan-inner">
+                     <div class="pricing-plan-front">
+                        <header class="plan-header">
+                           <p class="plan-name">Advanced</p>
+                           <p class="plan-text">program</p>
+                        </header>
+                        <ul class="list">
+                           <li class="list-item">
+                              <ion-icon
+                                 class="list-icon"
+                                 name="play-outline"
+                              ></ion-icon>
+                              <span><strong>2 meals</strong> per day</span>
+                           </li>
+                           <li class="list-item">
+                              <ion-icon
+                                 class="list-icon"
+                                 name="play-outline"
+                              ></ion-icon>
+                              <span>Order <strong>24/7</strong></span>
+                           </li>
+                           <li class="list-item">
+                              <ion-icon
+                                 class="list-icon"
+                                 name="play-outline"
+                              ></ion-icon>
+                              <span>Delivery is free</span>
+                           </li>
+                           <li class="list-item">
+                              <ion-icon
+                                 class="list-icon"
+                                 name="play-outline"
+                              ></ion-icon>
+                              <span>Get access to latest recipes</span>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="pricing-plan-back">
+                        <p class="plan-price"><span>$</span>538</p>
+                        <p class="plan-text">
+                           per month. Less than $9 per meal!
+                        </p>
+                        <div class="plan-sign-up">
+                           <a
+                              href="plan_selected_page.html"
+                              class="btn btn--full"
+                              >Get started</a
+                           >
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- FOR MOBILE -->
             </div>
 
-            <!-- FOR MOBILE -->
-         </div>
-
-         <div class="container grid">
+            <div class="container grid">
                <aside class="plan-details">
-                  Prices include all applicable taxes. You can cancel at any time. 
-                  Both plans include the followings:
+                  Prices include all applicable taxes. You can cancel at any
+                  time. Both plans include the followings:
                </aside>
+            </div>
+
+            <div class="container grid grid--4-cols">
+               <div class="feature">
+                  <ion-icon
+                     class="feature-icon"
+                     name="infinite-outline"
+                  ></ion-icon>
+                  <p class="feature-title">365 days/year</p>
+                  <p class="feature-text">
+                     Never cook again! We really mean that. Our subscription
+                     plans include up to 365 days/year coverage.
+                  </p>
+               </div>
+               <div class="feature">
+                  <ion-icon class="feature-icon" name="leaf-outline"></ion-icon>
+                  <p class="feature-title">100% organic</p>
+                  <p class="feature-text">
+                     All our vegetables are fresh, organic and local. Animals
+                     are raised without added hormones or antibiotics.
+                  </p>
+               </div>
+
+               <div class="feature">
+                  <ion-icon
+                     class="feature-icon"
+                     name="earth-outline"
+                  ></ion-icon>
+                  <p class="feature-title">No waste</p>
+                  <p class="feature-text">
+                     All our partners only use reusable containers to package
+                     all your meals.
+                  </p>
+               </div>
+               <div class="feature">
+                  <ion-icon
+                     class="feature-icon"
+                     name="pause-outline"
+                  ></ion-icon>
+                  <p class="feature-title">Pause anytime</p>
+                  <p class="feature-text">
+                     Going on vacation? Just pause your subscription, and we
+                     refund unused days.
+                  </p>
+               </div>
+            </div>
+         </section>
+      </main>
+
+      <footer class="footer">
+         <div class="container grid grid--footer">
+            <div class="logo-col">
+               <a class="footer-logo" href="index.html">
+                  <img class="logo" src="./content_mine/img/logo_yumyum.png" />
+               </a>
+
+               <ul class="social-links">
+                  <li>
+                     <a class="footer-link" href="#">
+                        <ion-icon
+                           class="social-icon"
+                           name="logo-instagram"
+                        ></ion-icon>
+                     </a>
+                  </li>
+                  <li>
+                     <a class="footer-link" href="#">
+                        <ion-icon
+                           class="social-icon"
+                           name="logo-twitter"
+                        ></ion-icon>
+                     </a>
+                  </li>
+                  <li>
+                     <a class="footer-link" href="#">
+                        <ion-icon
+                           class="social-icon"
+                           name="logo-facebook"
+                        ></ion-icon>
+                     </a>
+                  </li>
+               </ul>
+
+               <p class="copyright">
+                  Copyright &copy; by YumYum, Inc. All rights reserved.
+               </p>
+            </div>
+            <div class="address-col">
+               <p class="footer-heading">Contact us</p>
+               <address class="contacts">
+                  <p>17 W Mountain Street, Glendale,ca, 91202 United States</p>
+                  <p>
+                     <a class="footer-link" href="tel:123456789">123456789</a
+                     ><br />
+                     <a class="footer-link" href="mailto:YumYum@gmail.com"
+                        >YumYum@gmail.com</a
+                     >
+                  </p>
+               </address>
+            </div>
+            <nav class="nav-col">
+               <p class="footer-heading">Acount</p>
+               <ul class="footer-nav">
+                  <li><a class="footer-link" href="#">Sign up</a></li>
+                  <li>
+                     <a class="footer-link" href="member_page.html">Sign in</a>
+                  </li>
+                  <li><a class="footer-link" href="#">iOS APP</a></li>
+                  <li><a class="footer-link" href="#">Android APP</a></li>
+               </ul>
+            </nav>
+            <nav class="nav-col">
+               <p class="footer-heading">Company</p>
+               <ul class="footer-nav">
+                  <li>
+                     <a class="footer-link" href="about_us_page.html"
+                        >About YumYum</a
+                     >
+                  </li>
+                  <li><a class="footer-link" href="#">Business</a></li>
+                  <li><a class="footer-link" href="#">Be our chef</a></li>
+                  <li><a class="footer-link" href="#">Careers</a></li>
+               </ul>
+            </nav>
+            <nav class="nav-col">
+               <p class="footer-heading">Resources</p>
+               <ul class="footer-nav">
+                  <li>
+                     <a class="footer-link" href="#">Recipe directory</a>
+                  </li>
+                  <li>
+                     <a class="footer-link" href="#">Kitchens</a>
+                  </li>
+                  <li>
+                     <a class="footer-link" href="#">Ingredients</a>
+                  </li>
+               </ul>
+            </nav>
          </div>
-
-         <div class="container grid grid--4-cols">
-            <div class="feature">
-               <ion-icon 
-               class="feature-icon" 
-               name="infinite-outline"
-               ></ion-icon>
-               <p class="feature-title">365 days/year</p>
-               <P class="feature-text">
-                  Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage.
-               </P>
-            </div>
-            <div class="feature">
-               <ion-icon 
-               class="feature-icon" 
-               name="leaf-outline"
-               ></ion-icon>
-               <p class="feature-title">100% organic</p>
-               <P class="feature-text">
-               All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics.
-            </div>
-            <div class="feature">
-               <ion-icon 
-               class="feature-icon" 
-               name="earth-outline"
-               ></ion-icon>
-               <p class="feature-title">No waste</p>
-               <P class="feature-text">
-                  All our partners only use reusable containers to package all your meals.
-               </P>
-            </div>
-            <div class="feature">
-               <ion-icon 
-               class="feature-icon" 
-               name="pause-outline"
-               ></ion-icon>
-               <p class="feature-title">Pause anytime</p>
-               <P class="feature-text">
-                  Going on vacation? Just pause your subscription, and we refund unused days.
-               </P>
-            </div>
-         </div>
-      </section>
-   </main>
-
-   <footer class="footer">
-      <div class="container grid grid--footer">
-         <div class="logo-col">
-            <a class="footer-logo" href="index.html">
-               <img  
-               class="logo" 
-               src="./content_mine/img/logo_yumyum.png">
-            </a>
-
-            <ul class="social-links">
-               <li>
-                  <a class="footer-link" href="#">
-                     <ion-icon 
-                     class="social-icon" 
-                     name="logo-instagram"
-                     ></ion-icon>
-                  </a>
-               </li>
-               <li>
-                  <a class="footer-link" href="#">
-                     <ion-icon 
-                     class="social-icon" 
-                     name="logo-twitter"
-                     ></ion-icon>
-                  </a>
-               </li>
-               <li>
-                  <a class="footer-link" href="#">
-                     <ion-icon 
-                     class="social-icon" 
-                     name="logo-facebook"
-                     ></ion-icon>
-                  </a>
-               </li>
-            </ul>
-
-            <p class="copyright">Copyright &copy; by YumYum, Inc. All rights reserved.
+         <div class="container">
+            <p class="alert-text">
+               本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。
+            </p>
+            <p class="alert-text">
+               This website is a student project only for learning and
+               displaying.
             </p>
          </div>
-         <div class="address-col">
-            <p class="footer-heading">Contact us</p>
-            <address class="contacts"> 
-               <p>17 W Mountain Street, Glendale,ca, 91202  United States</p>
-               <p>
-                  <a 
-                  class="footer-link" href="tel:123456789"
-                  >123456789</a><br>
-                  <a 
-                  class="footer-link" href="mailto:YumYum@gmail.com"
-                  >YumYum@gmail.com</a>
-               </p>
-            </address>
-         </div>
-         <nav class="nav-col">
-            <p class="footer-heading">Acount</p>
-            <ul class="footer-nav">
-               <li><a class="footer-link" href="#">Sign up</a></li>
-               <li>
-                  <a class="footer-link" href="member_page.html"
-                  >Sign in</a>
-               </li>
-               <li><a class="footer-link" href="#">iOS APP</a></li>
-               <li><a class="footer-link" href="#">Android APP</a></li>
-            </ul>
-         </nav>
-         <nav class="nav-col">
-            <p class="footer-heading">Company</p>
-            <ul class="footer-nav">
-               <li><a class="footer-link" href="about_us_page.html">About YumYum</a></li>
-               <li><a class="footer-link" href="#">Business</a></li>
-               <li><a class="footer-link" href="#">Be our chef</a></li>
-               <li><a class="footer-link" href="#">Careers</a></li>
-            </ul>
-         </nav>
-         <nav class="nav-col">
-            <p class="footer-heading">Resources</p>
-            <ul class="footer-nav">
-               <li>
-                  <a class="footer-link" href="#"
-                  >Recipe directory</a>
-               </li>
-               <li>
-                  <a class="footer-link" href="#">Kitchens</a>
-               </li>
-               <li>
-                  <a class="footer-link" href="#"
-                  >Ingredients</a>
-               </li>
-            </ul>
-         </nav>
-      </div>
-      <div class="container">
-         <p class="alert-text">本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。</p>
-         <p class="alert-text">This website is a student project only for learning and displaying.</p>
-      </div>
-   </footer>
+      </footer>
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
-    </script>
-</body>
+      <script
+         type="module"
+         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      ></script>
+   </body>
 </html>
